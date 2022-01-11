@@ -8,59 +8,100 @@ using Unity.MLAgents.Sensors;
 public class CarAgent : Agent
 {
     [SerializeField] private Transform target;
-    [SerializeField] private float moveSpeed = 5f;
-    [SerializeField] private float rotateSpeed = 120f;
+    [SerializeField] private Pathfinding gps;
 
     private Rigidbody rigid;
+    private CarAgentWheel wheelController;
+
+    private List<Vector3> path;
+    private int index = 0;
+    private Vector3 direction;
 
     public override void Initialize()
     {
         rigid = GetComponent<Rigidbody>();
+        wheelController = GetComponent<CarAgentWheel>();
     }
 
     public override void OnEpisodeBegin()
     {
-        this.transform.localPosition = new Vector3(Random.Range(-9f, 0f), 0, Random.Range(-9f, 9f));
-        this.transform.rotation = Quaternion.Euler(Vector3.up * Random.Range(0f, 360f));
-        rigid.velocity = Vector3.zero;
-
-        target.localPosition = new Vector3(Random.Range(0f, 9f), 0, Random.Range(-9f, 9f));
-    }
-
-    public override void Heuristic(in ActionBuffers actionsOut)
-    {
-        int move = Mathf.RoundToInt(Input.GetAxisRaw("Vertical"));
-        int rotate = Mathf.RoundToInt(Input.GetAxisRaw("Horizontal"));
-
-        ActionSegment<int> actions = actionsOut.DiscreteActions;
-        actions[0] = move + 1;
-        actions[1] = rotate + 1;
-    }
-
-    public override void OnActionReceived(ActionBuffers actions)
-    {
-        float move = actions.DiscreteActions[0] - 1;
-        float rotate = actions.DiscreteActions[1] - 1;
-
-        transform.localPosition += transform.forward * move * moveSpeed * Time.deltaTime;
-        transform.Rotate(0, rotate * rotateSpeed * Time.deltaTime, 0); 
+        path = gps.FindPath(this.transform.position, target.position);
+        index = 0;
     }
 
     public override void CollectObservations(VectorSensor sensor)
     {
-        //sensor.AddObservation(target.localPosition); 
+        UpdatePath();
+        sensor.AddObservation(direction); 
+    }
+
+    private Vector3 GetDirection()
+    {
+        Vector3 d = path[index] - this.transform.position;
+        d.y = 0;
+        return d;
+    }
+
+    private void UpdatePath()
+    {
+        direction = GetDirection();
+        if(direction.magnitude <= 0.1f)
+        {
+            index++;
+            direction = GetDirection();
+        }
+        direction.Normalize();
+    }
+
+    public override void Heuristic(in ActionBuffers actionsOut)
+    {
+        // Input keys
+        float move = Input.GetAxis("Vertical");
+        float rotate = Input.GetAxis("Horizontal");
+        bool isBraking = Input.GetKey(KeyCode.Space);
+
+        // Continous
+        ActionSegment<float> actionsContinu = actionsOut.ContinuousActions;
+        actionsContinu[0] = move;
+        actionsContinu[1] = rotate;
+
+        // Discrete
+        ActionSegment<int> actionsDiscrete = actionsOut.DiscreteActions;
+        actionsDiscrete[0] = (isBraking) ? 1 : 0;
+    }
+
+    public override void OnActionReceived(ActionBuffers actions)
+    {
+        float move = actions.ContinuousActions[0];
+        float rotate = actions.ContinuousActions[1];
+        bool isBraking = (actions.DiscreteActions[0] == 1);
+
+        wheelController.SetActions(move, rotate, isBraking);
+
+        //force to move
+        AddReward(-0.1f);
+
+        //move in general direction
+        Vector3 newDirection = GetDirection().normalized;
+        Vector3 forward = transform.forward;
+        forward.y = 0;
+        forward.Normalize();
+        float angle = Vector3.Angle(forward, newDirection);
+
+        if(angle < 90 && angle > -90)
+            AddReward(0.5f);
     }
 
     private void OnTriggerEnter(Collider other) {
 
-        if (other.tag == "Goal")
+        if (index == path.Count - 1)
         {
-            AddReward(1f);
+            AddReward(100f);
             EndEpisode();
         }
         if (other.tag == "Wall")
         {
-            AddReward(-1f);
+            AddReward(-20f);
             EndEpisode();
         }
     }
