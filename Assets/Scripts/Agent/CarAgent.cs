@@ -55,14 +55,13 @@ public class CarAgent : Agent
 
         if (other.tag == "Goal")
         {
-            SetReward(1f);
+            AddReward(1f);
             EndEpisode();
         }
         if (other.tag == "Wall")
         {
-            SetReward(-1f);
+            AddReward(-1f);
             EndEpisode();
         }
-        //AddReward();
     }
 }
