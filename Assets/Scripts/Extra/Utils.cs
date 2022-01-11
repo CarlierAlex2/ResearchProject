@@ -15,7 +15,7 @@ public class Utils
                                             int fontSize, Color color, TextAnchor textAnchor, TextAlignment textAlignment, int sortingOrder)
     {
         GameObject obj = new GameObject("text", typeof(TextMesh));
-        obj.layer = 12; //?
+        obj.layer = 8;
         Transform transform = obj.transform;
         transform.SetParent(parent, false);
         transform.localScale = new Vector3(0.25f, 0.25f, 0.25f);
