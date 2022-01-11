@@ -61,3 +61,4 @@ crashlytics-build.properties
 # Self defined
 Assets/Toon Vehicles Free/**
 Assets/POLYGON city pack/**
+venv/**
