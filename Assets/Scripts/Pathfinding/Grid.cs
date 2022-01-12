@@ -65,6 +65,7 @@ public class Grid<TGridObject>
                 Vector3 worldPos = GetWorldPosition(x, y);
                 Vector3 textPos = worldPos + new Vector3(cellSize, 0, cellSize) * 0.5f;
                 textArray[x,y] = Utils.CreateWorldText(gridArray[x,y].ToString(), null, textPos, fontSize, color, TextAnchor.MiddleCenter);
+                textArray[x,y].gameObject.SetActive(false);
             }
         }
     }
