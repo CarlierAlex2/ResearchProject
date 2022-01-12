@@ -78,8 +78,9 @@ public class CarAgent : Agent
     //--- REWARDS ---------------------------------------------------------------------
     private void RewardCar()
     {
+        float reward = ConfigReward.TIME;
+
         // move + velocity
-        AddReward(ConfigReward.TIME);
         Vector3 velocity = rigid.velocity;
         velocity.y = 0;
         float velocityAngle = Mathf.Abs(Vector3.Angle(this.transform.forward, velocity.normalized));
@@ -89,30 +90,31 @@ public class CarAgent : Agent
             float diff = ConfigAgent.VELOCITY_MIN - rigid.velocity.magnitude;
             float r = ConfigReward.VELOCITY_MIN;
             r = r * diff / ConfigAgent.VELOCITY_MIN;
-            AddReward(r);
+            reward += r;
         }
 
         //if(velocityAngle < ConfigAgent.VELOCITY_ANGLE)
-        //    AddReward(ConfigReward.VELOCITY_ANGLE);
+        //    reward += ConfigReward.VELOCITY_ANGLE;
 
         //checkpoints
         if(isCheckPoint)
         {
-            AddReward(ConfigReward.CHECKPOINT);
+            reward += ConfigReward.CHECKPOINT;
             isCheckPoint = false;
         }
         float angle = Mathf.Abs(GetAngleDirection());
         if (angle > ConfigAgent.VELOCITY_ANGLE)
         {
-            AddReward(ConfigReward.CHECKPOINT_PASS);
+            reward += ConfigReward.CHECKPOINT_PASS;
             SetPath();
         }
 
         //finish episode
         if (index >= path.Count - 1)
         {
-            AddReward(ConfigReward.GOAL);
+            reward += ConfigReward.GOAL;
         }
+        SetReward(reward);
     }
 
 
@@ -147,6 +149,9 @@ public class CarAgent : Agent
             float move = actions.ContinuousActions[0];
             float rotate = actions.ContinuousActions[1];
             bool isBraking = (actions.DiscreteActions[0] == 1);
+            
+            if (isBraking)
+                AddReward(ConfigReward.BREAK);
 
             wheelController.SetActions(move, rotate, isBraking);
         }
@@ -210,7 +215,7 @@ public class CarAgent : Agent
     {
         if (collision.gameObject.tag == "Wall")
         {
-            AddReward(ConfigReward.WALL_ENTER);
+            SetReward(ConfigReward.WALL_ENTER);
             Debug.Log("Hit wall!");
         }
     }
@@ -218,7 +223,7 @@ public class CarAgent : Agent
     private void OnCollisionStay(Collision collision) 
     {
         if (collision.gameObject.tag == "Wall")
-            AddReward(ConfigReward.WALL_STAY);
+            SetReward(ConfigReward.WALL_STAY);
     }
 
 
