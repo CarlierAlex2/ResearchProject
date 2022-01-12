@@ -9,7 +9,7 @@ using Unity.MLAgents.Sensors;
 
 public class CarAgent : Agent
 {
-    //mlagents-learn config/CarAgent1.yaml --run-id=CarAgent2 --env=builds/CarAgent1
+    //mlagents-learn config/CarAgent2.yaml --run-id=CarAgent2 --env=builds/CarAgent2
     [SerializeField] private Transform target;
     [SerializeField] private Transform gpsObj;
 
@@ -119,6 +119,14 @@ public class CarAgent : Agent
     private void RewardCar()
     {
         float reward = ConfigReward.TIME;
+
+        // move + velocity
+        Vector3 velocity = rigid.velocity;
+        velocity.y = 0;
+        Vector3 localVelocity = transform.InverseTransformDirection(velocity);
+        var forwardSpeedDiff = (1 - localVelocity.z);
+        var rewardVelocity = Mathf.Abs(forwardSpeedDiff) / ConfigAgent.VELOCITY_MIN;
+        reward += ((rewardVelocity > 0) ? (rewardVelocity * ConfigReward.VELOCITY_MIN) : 0f);
 
         //miss turn
         //Vector3 forward = transform.forward;
