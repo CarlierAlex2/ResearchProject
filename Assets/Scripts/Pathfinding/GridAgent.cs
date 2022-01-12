@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class GridAgent : MonoBehaviour
 {
+    //mlagents-learn config/CarAgent1.yaml --run-id=CarAgent1
+
     [SerializeField] GPS gps;
     [SerializeField] private Transform goal = null;
     private List<Vector3> path = null;

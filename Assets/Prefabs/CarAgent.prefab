@@ -239,7 +239,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 247
+    m_Bits: 1271
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 1
@@ -620,7 +620,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2898520998807869544}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 5.2, y: 0.25, z: 6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -670,7 +670,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a5c9d521e5ef4759a8246a07d52221e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DecisionPeriod: 1
+  DecisionPeriod: 5
   TakeActionsBetweenDecisions: 0
 --- !u!114 &8903566928104377478
 MonoBehaviour:
@@ -687,10 +687,9 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 3000
+  MaxStep: 5000
   target: {fileID: 0}
-  moveSpeed: 5
-  rotateSpeed: 120
+  gpsObj: {fileID: 0}
 --- !u!114 &8903566928104377479
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -704,7 +703,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BrainParameters:
-    VectorObservationSize: 0
+    VectorObservationSize: 4
     NumStackedVectorObservations: 1
     m_ActionSpec:
       m_NumContinuousActions: 2
@@ -716,7 +715,7 @@ MonoBehaviour:
   m_Model: {fileID: 0}
   m_InferenceDevice: 0
   m_BehaviorType: 0
-  m_BehaviorName: My Behavior
+  m_BehaviorName: CarAgent1
   TeamId: 0
   m_UseChildSensors: 1
   m_UseChildActuators: 1
@@ -741,8 +740,8 @@ MonoBehaviour:
   frontLeftTransform: {fileID: 2898520997820386509}
   backRightTransform: {fileID: 2898520997629514080}
   backLeftTransform: {fileID: 2898520997952095933}
-  ACCELERATION: 35
-  BREAKING_FORCE: 200
+  ACCELERATION: 100
+  BREAKING_FORCE: 500
   TURN_ANGLE: 25
 --- !u!114 &8903566928104377473
 MonoBehaviour:
@@ -758,8 +757,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Camera: {fileID: 2898520997948096407}
   m_SensorName: CameraSensor
-  m_Width: 128
-  m_Height: 128
+  m_Width: 84
+  m_Height: 84
   m_Grayscale: 0
   m_ObservationType: 0
   m_ObservationStacks: 1

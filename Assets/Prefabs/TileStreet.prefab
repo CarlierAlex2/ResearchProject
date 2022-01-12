@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2458425083262673991}
   - component: {fileID: 2458425083262673992}
   - component: {fileID: 2458425083262673993}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90,7 +90,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2458425084192020820}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Street 4 Prefab (8)
   m_TagString: Floor
   m_Icon: {fileID: 0}
@@ -121,7 +121,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2458425084252483221}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Lines
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -153,9 +153,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2458425084372508814}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: TileStreet
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -187,7 +187,7 @@ GameObject:
   - component: {fileID: 2458425084770985564}
   - component: {fileID: 2458425084770985569}
   - component: {fileID: 2458425084770985566}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Plane (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -269,7 +269,7 @@ GameObject:
   - component: {fileID: 2458425085268056647}
   - component: {fileID: 2458425085268056644}
   - component: {fileID: 2458425085268056645}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: street
   m_TagString: Untagged
   m_Icon: {fileID: 0}

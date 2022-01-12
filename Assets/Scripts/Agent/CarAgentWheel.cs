@@ -50,6 +50,15 @@ public class CarAgentWheel : MonoBehaviour
         UpdateWheel();
     }
 
+    public void ResetWheels()
+    {
+        frontRight.motorTorque = 0;
+        frontLeft.motorTorque = 0;
+
+        frontRight.brakeTorque = Mathf.Infinity;
+        frontLeft.brakeTorque = Mathf.Infinity;
+    }
+
     private void Acceleration(float input, bool isBraking)
     {
         // Acceleration
