@@ -5,24 +5,34 @@ using Unity.MLAgents;
 using Unity.MLAgents.Actuators;
 using Unity.MLAgents.Sensors;
 
+
+
 public class CarAgent : Agent
 {
+    //mlagents-learn config/CarAgent1.yaml --run-id=CarAgent2 --env=builds/CarAgent1
     [SerializeField] private Transform target;
     [SerializeField] private Transform gpsObj;
-    private GPS pathfinding;
 
+    //---
     private Rigidbody rigid;
     private CarAgentWheel wheelController;
+    private GPS pathfinding;
 
-
+    //---
     private Vector3 startPos;
     private Quaternion startRot;
 
-    private List<Vector3> path;
+    //---
     private int index = 0;
+    private List<Vector3> path;
     private Vector3 direction;
-    private bool isEpisodeRunning = false;
 
+    //---
+    private bool isEpisodeRunning = false;
+    private bool isCheckPoint = false;
+
+
+    //--- INITIALIZE ---------------------------------------------------------------------
     public override void Initialize()
     {
         Debug.Log("Initialize Agent");
@@ -45,19 +55,56 @@ public class CarAgent : Agent
         index = 0;
         path = null;
         direction = Vector3.zero;
+
         isEpisodeRunning = true;
+
+        isCheckPoint = false;
     }
 
+    //--- OBSERVATION ---------------------------------------------------------------------
     public override void CollectObservations(VectorSensor sensor)
     {
-        if(!isEpisodeRunning)
-            return;
+        if(isEpisodeRunning)
+        {
+            UpdatePath();
+            RewardCar();
+        }
 
-        UpdatePath();
         sensor.AddObservation(direction); 
         sensor.AddObservation(rigid.velocity.magnitude); 
     }
 
+
+    //--- REWARDS ---------------------------------------------------------------------
+    private void RewardCar()
+    {
+        // move + velocity
+        AddReward(ConfigReward.TIME);
+        if(rigid.velocity.magnitude < ConfigAgent.VELOCITY_MIN)
+            AddReward(ConfigReward.VELOCITY_MIN);
+
+        //checkpoints
+        if(isCheckPoint)
+        {
+            AddReward(ConfigReward.CHECKPOINT);
+            isCheckPoint = false;
+        }
+        float angle = GetAngleDirection();
+        if (Mathf.Abs(angle) > ConfigAgent.CHECKPOINT_ANGLE_MAX)
+        {
+            AddReward(ConfigReward.CHECKPOINT_PASS);
+            SetPath();
+        }
+
+        //finish episode
+        if (index >= path.Count - 1)
+        {
+            AddReward(ConfigReward.GOAL);
+        }
+    }
+
+
+    //--- ACTIONS ---------------------------------------------------------------------
     public override void Heuristic(in ActionBuffers actionsOut)
     {
         // Input keys
@@ -76,41 +123,30 @@ public class CarAgent : Agent
     }
 
     public override void OnActionReceived(ActionBuffers actions)
-    {
-        if(!isEpisodeRunning)
+    {      
+        if(!isEpisodeRunning || path == null)
             return;
 
-        float move = actions.ContinuousActions[0];
-        float rotate = actions.ContinuousActions[1];
-        bool isBraking = (actions.DiscreteActions[0] == 1);
-
-        wheelController.SetActions(move, rotate, isBraking);
-
-        //force to move
-        AddReward(-0.1f);
-
-        //move in general direction
-        float angle = GetAngleDirection();
-        if(Mathf.Abs(angle) < 90)
-            AddReward(0.5f);
-        else
-            AddReward(-1f);
-
-        if(rigid.velocity.magnitude > 0.05f)
-            AddReward(0.05f);
-
-        if (index >= path.Count - 1)
+        if (isEpisodeRunning)
         {
-            AddReward(100f);
-            FinishEpisode();
+            if (index >= (path.Count - 1)) //finish episode
+                FinishEpisode();
+
+            float move = actions.ContinuousActions[0];
+            float rotate = actions.ContinuousActions[1];
+            bool isBraking = (actions.DiscreteActions[0] == 1);
+
+            wheelController.SetActions(move, rotate, isBraking);
         }
     }
 
-    private Vector3 GetDirection()
+
+    //--- PATH ---------------------------------------------------------------------
+    private Vector3 GetDirection(float offset = 0f)
     {
         if(index < path.Count)
         {
-            Vector3 d = path[index] - this.transform.position;
+            Vector3 d = path[index] - (this.transform.position + this.transform.forward * offset);
             d.y = 0;
             return d;
         }
@@ -119,35 +155,28 @@ public class CarAgent : Agent
 
     private void UpdatePath()
     {
-        if(path == null)
+        if(path == null) // check if path exists
             SetPath();
-        float angle = GetAngleDirection();
-        if (Mathf.Abs(angle) > 120)
+        if(path == null) // still doesn't exist => no direction
         {
-            SetPath();
-            AddReward(-10f);
+            direction = Vector3.zero;
+            return;
         }
             
-        if(path == null)
-            direction = Vector3.zero;
-        else
+        Vector3 checkpointVector = GetDirection(ConfigAgent.CHECKPOINT_OFFSET); // get current direction
+        if(checkpointVector.magnitude <= ConfigAgent.CHECKPOINT_RANGE)
         {
-            direction = GetDirection();
-            if(direction.magnitude <= 4f)
-            {
-                Debug.Log("Update path, index=" + index);
-                index++;
-                direction = GetDirection();
-                AddReward(10f);
-            }
-            direction.Normalize();
+            index++;
+            isCheckPoint = true;
+            Debug.Log("Update path, index=" + index);
         }
+        direction = GetDirection().normalized;
     }
 
     private void SetPath()
     {
         path = pathfinding.FindPath(this.transform.position, target.position);
-        index = 0;
+        index = ConfigAgent.INDEX_START;
     }
 
     private float GetAngleDirection()
@@ -163,19 +192,29 @@ public class CarAgent : Agent
         return Vector3.Angle(forward, newDirection);
     }
 
-    private void OnTriggerEnter(Collider other) {
 
-        if (other.tag == "Wall")
+    //--- COLLISIONS ---------------------------------------------------------------------
+    private void OnCollisionEnter(Collision collision) 
+    {
+        if (collision.gameObject.tag == "Wall")
         {
-            AddReward(-20f);
-            FinishEpisode();
-            Debug.Log("End episode!");
+            AddReward(ConfigReward.WALL_ENTER);
+            Debug.Log("Hit wall!");
         }
     }
 
+    private void OnCollisionStay(Collision collision) 
+    {
+        if (collision.gameObject.tag == "Wall")
+            AddReward(ConfigReward.WALL_STAY);
+    }
+
+
+    //--- FINISH ---------------------------------------------------------------------
     private void FinishEpisode()
     {
-        isEpisodeRunning = true;
-        EndEpisode();
+        isEpisodeRunning = false;
+        Debug.Log("End episode!");
+        EndEpisode(); // calls CollectObservations => don't nest
     }
 }

@@ -71,7 +71,7 @@ public class Pathfinding
     {
         grid.GetXY(startPos, out int startX, out int startY);
         grid.GetXY(endPos, out int endX, out int endY);
-        Debug.Log("Path from " + startX + ", " + startY + " to " + endX + ", " + endY);
+        //Debug.Log("Path from " + startX + ", " + startY + " to " + endX + ", " + endY);
         List<PathNode> path = FindPath(startX, startY, endX, endY);
         if (path == null)
             return null;
@@ -192,12 +192,15 @@ public class Pathfinding
 
         for(int x = node.x - 1; x <= node.x + 1; x++)
         {
-            for(int y = node.y - 1; y <= node.y + 1; y++)
-            {
-                PathNode n = GetNode(x, y);
-                if (n != null)
-                    neighbourList.Add(n);
-            }
+            PathNode n = GetNode(x, node.y);
+            if (n != null)
+                neighbourList.Add(n);
+        }
+        for(int y = node.y - 1; y <= node.y + 1; y++)
+        {
+            PathNode n = GetNode(node.x, y);
+            if (n != null)
+                neighbourList.Add(n);
         }
 
         return neighbourList;
