@@ -8186,6 +8186,10 @@ PrefabInstance:
       propertyPath: MaxStep
       value: 1200
       objectReference: {fileID: 0}
+    - target: {fileID: 8903566928104377479, guid: 528e967c763413943934395969470681, type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 5022602860645237092, guid: 8514544dcda9f7f4c8bb7a506da0acef, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 528e967c763413943934395969470681, type: 3}
 --- !u!4 &8792239944023972143 stripped
