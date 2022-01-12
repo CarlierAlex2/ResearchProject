@@ -11575,6 +11575,36 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2658951729122162316, guid: 22fea813fa4ce2f48956772a06d5e925, type: 3}
   m_PrefabInstance: {fileID: 1626898538612328805}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &3635980617271459814 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2658951729122162307, guid: 22fea813fa4ce2f48956772a06d5e925, type: 3}
+  m_PrefabInstance: {fileID: 1626898538612328805}
+  m_PrefabAsset: {fileID: 0}
+--- !u!20 &5548623640901280769 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 6598701804095434084, guid: 22fea813fa4ce2f48956772a06d5e925, type: 3}
+  m_PrefabInstance: {fileID: 1626898538612328805}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8756236122326642915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3635980617271459814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 282f342c2ab144bf38be65d4d0c4e07d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Camera: {fileID: 5548623640901280769}
+  m_SensorName: CameraSensor
+  m_Width: 48
+  m_Height: 48
+  m_Grayscale: 0
+  m_ObservationType: 0
+  m_ObservationStacks: 2
+  m_Compression: 1
 --- !u!1001 &2177961675572049682
 PrefabInstance:
   m_ObjectHideFlags: 0
