@@ -80,8 +80,20 @@ public class CarAgent : Agent
     {
         // move + velocity
         AddReward(ConfigReward.TIME);
+        Vector3 velocity = rigid.velocity;
+        velocity.y = 0;
+        float velocityAngle = Mathf.Abs(Vector3.Angle(this.transform.forward, velocity.normalized));
+
         if(rigid.velocity.magnitude < ConfigAgent.VELOCITY_MIN)
-            AddReward(ConfigReward.VELOCITY_MIN);
+        {
+            float diff = ConfigAgent.VELOCITY_MIN - rigid.velocity.magnitude;
+            float r = ConfigReward.VELOCITY_MIN;
+            r = r * diff / ConfigAgent.VELOCITY_MIN;
+            AddReward(r);
+        }
+
+        //if(velocityAngle < ConfigAgent.VELOCITY_ANGLE)
+        //    AddReward(ConfigReward.VELOCITY_ANGLE);
 
         //checkpoints
         if(isCheckPoint)
@@ -89,8 +101,8 @@ public class CarAgent : Agent
             AddReward(ConfigReward.CHECKPOINT);
             isCheckPoint = false;
         }
-        float angle = GetAngleDirection();
-        if (Mathf.Abs(angle) > ConfigAgent.CHECKPOINT_ANGLE_MAX)
+        float angle = Mathf.Abs(GetAngleDirection());
+        if (angle > ConfigAgent.VELOCITY_ANGLE)
         {
             AddReward(ConfigReward.CHECKPOINT_PASS);
             SetPath();
