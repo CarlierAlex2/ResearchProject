@@ -71,7 +71,10 @@ public class CarAgent : Agent
         }
 
         sensor.AddObservation(direction); 
-        sensor.AddObservation(rigid.velocity.magnitude); 
+        Vector3 velocity = rigid.velocity;
+        velocity.y = 0;
+        Vector3 localVelocity = transform.InverseTransformDirection(velocity);
+        sensor.AddObservation(localVelocity); 
     }
 
 
@@ -83,7 +86,7 @@ public class CarAgent : Agent
         // move + velocity
         Vector3 velocity = rigid.velocity;
         velocity.y = 0;
-        Vector3 localVelocity =transform.InverseTransformDirection(velocity);
+        Vector3 localVelocity = transform.InverseTransformDirection(velocity);
         var forwardSpeed = localVelocity.z;
         if(Mathf.Abs(forwardSpeed) >= ConfigAgent.VELOCITY_MIN)
         {
@@ -187,7 +190,8 @@ public class CarAgent : Agent
             isCheckPoint = true;
             Debug.Log("Update path, index=" + index);
         }
-        direction = GetDirection().normalized;
+        direction = GetDirection();
+        direction = transform.InverseTransformDirection(direction).normalized;
     }
 
     private void SetPath()
