@@ -50,6 +50,12 @@ public class CarAgentWheel : MonoBehaviour
         UpdateWheel();
     }
 
+    public void ResetVelocity()
+    {
+        rigid.velocity = Vector3.zero;
+        ResetWheels();
+    }
+
     public void ResetWheels()
     {
         frontRight.motorTorque = 0;

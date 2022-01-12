@@ -7,7 +7,7 @@ using Unity.MLAgents.Sensors;
 
 
 
-public class CarAgent : Agent
+public class CarAgent1 : Agent
 {
     //mlagents-learn config/CarAgent1.yaml --run-id=CarAgent2 --env=builds/CarAgent1
     [SerializeField] private Transform target;
@@ -25,8 +25,7 @@ public class CarAgent : Agent
     //---
     private int index = 0;
     private List<Vector3> path;
-    private Vector3 directionGPS;
-    private Vector3 velocity;
+    private Vector3 direction;
 
     //---
     private bool isEpisodeRunning = false;
@@ -47,24 +46,18 @@ public class CarAgent : Agent
 
     public override void OnEpisodeBegin()
     {
-        ResetEnvironment();
-        wheelController.ResetVelocity();
-        ResetAgent();
-    }
-
-    private void ResetEnvironment()
-    {
         transform.position = startPos;
         transform.rotation = startRot;
-    }
 
-    private void ResetAgent()
-    {
+        rigid.velocity = Vector3.zero;
+        wheelController.ResetWheels();
+
         index = 0;
         path = null;
         direction = Vector3.zero;
 
         isEpisodeRunning = true;
+
         isCheckPoint = false;
     }
 
@@ -74,74 +67,56 @@ public class CarAgent : Agent
         if(isEpisodeRunning)
         {
             UpdatePath();
-            GetAgentInfo();
             RewardCar();
         }
 
-
-        Vector3 localDirectionGPS = transform.InverseTransformDirection(directionGPS);
-        Vector3 localVelocity = transform.InverseTransformDirection(velocity);
-
-        sensor.AddObservation(localDirectionGPS.x); 
-        sensor.AddObservation(localDirectionGPS.z); 
-
-        sensor.AddObservation(localVelocity.x); 
-        sensor.AddObservation(localVelocity.z); 
-    }
-
-    //--- INFO ---------------------------------------------------------------------
-    private void GetAgentInfo()
-    {
-        GetDirectionGPS();
-        GetVelocity();
-    }
-
-    private void GetDirectionGPS(float offset = 0f)
-    {
-        if(index < path.Count)
-        {
-            directionGPS = path[index] - this.transform.position;
-            directionGPS.y = 0;
-            directionGPS.Normalize();
-        }
-        else
-            directionGPS = Vector3.zero;
-    }
-
-    private void GetVelocity()
-    {
-        velocity = rigid.velocity;
+        sensor.AddObservation(direction); 
+        Vector3 velocity = rigid.velocity;
         velocity.y = 0;
+        Vector3 localVelocity = transform.InverseTransformDirection(velocity);
+        sensor.AddObservation(localVelocity); 
     }
+
 
     //--- REWARDS ---------------------------------------------------------------------
     private void RewardCar()
     {
         float reward = ConfigReward.TIME;
 
-        //miss turn
-        //Vector3 forward = transform.forward;
-        //forward.y = 0;
-        //forward.Normalize();
-        //float angle = Mathf.Abs(Vector3.Angle(forward, directionGPS));
-        //if (angle > ConfigAgent.DIRECTION_ANGLE)
-        //{
-        //    reward += ConfigReward.CHECKPOINT_PASS;
-        //    SetPath();
-        //}
-
-        //finish episode + checkpoints
-        if (index >= path.Count - 1)
+        // move + velocity
+        Vector3 velocity = rigid.velocity;
+        velocity.y = 0;
+        Vector3 localVelocity = transform.InverseTransformDirection(velocity);
+        var forwardSpeed = localVelocity.z;
+        if(Mathf.Abs(forwardSpeed) >= ConfigAgent.VELOCITY_MIN)
         {
-            reward += ConfigReward.GOAL;
+            reward += ConfigReward.VELOCITY_MIN;
+            if(forwardSpeed > 0)
+                reward += ConfigReward.VELOCITY_FORWARD;
         }
-        else if (isCheckPoint)
+
+        //float velocityAngle = Mathf.Abs(Vector3.Angle(this.transform.forward, velocity.normalized));
+        //if(velocityAngle < ConfigAgent.VELOCITY_ANGLE)
+        //    reward += ConfigReward.VELOCITY_ANGLE;
+
+        //checkpoints
+        if(isCheckPoint)
         {
             reward += ConfigReward.CHECKPOINT;
             isCheckPoint = false;
         }
+        float angle = Mathf.Abs(GetAngleDirection());
+        if (angle > ConfigAgent.DIRECTION_ANGLE)
+        {
+            reward += ConfigReward.CHECKPOINT_PASS;
+            SetPath();
+        }
 
-        //--
+        //finish episode
+        if (index >= path.Count - 1)
+        {
+            reward += ConfigReward.GOAL;
+        }
         SetReward(reward);
     }
 
@@ -187,31 +162,55 @@ public class CarAgent : Agent
 
 
     //--- PATH ---------------------------------------------------------------------
+    private Vector3 GetDirection(float offset = 0f)
+    {
+        if(index < path.Count)
+        {
+            Vector3 d = path[index] - (this.transform.position + this.transform.forward * offset);
+            d.y = 0;
+            return d;
+        }
+        return Vector3.zero;
+    }
+
     private void UpdatePath()
     {
         if(path == null) // check if path exists
             SetPath();
         if(path == null) // still doesn't exist => no direction
         {
-            directionGPS = Vector3.zero;
+            direction = Vector3.zero;
             return;
         }
-
-        //--
-        Vector3 checkpointVector = path[index] - (this.transform.position + transform.forward * ConfigAgent.CHECKPOINT_OFFSET);
-        checkpointVector.y = 0;
+            
+        Vector3 checkpointVector = GetDirection(ConfigAgent.CHECKPOINT_OFFSET); // get current direction
         if(checkpointVector.magnitude <= ConfigAgent.CHECKPOINT_RANGE)
         {
             index++;
             isCheckPoint = true;
             Debug.Log("Update path, index=" + index);
         }
+        direction = GetDirection();
+        direction = transform.InverseTransformDirection(direction).normalized;
     }
 
     private void SetPath()
     {
         path = pathfinding.FindPath(this.transform.position, target.position);
         index = ConfigAgent.INDEX_START;
+    }
+
+    private float GetAngleDirection()
+    {
+        Vector3 newDirection = GetDirection();
+        if(newDirection == Vector3.zero)
+            return 0;
+        newDirection.Normalize();
+
+        Vector3 forward = transform.forward;
+        forward.y = 0;
+        forward.Normalize();
+        return Vector3.Angle(forward, newDirection);
     }
 
 

@@ -874,7 +874,7 @@ GameObject:
   - component: {fileID: 8675558111074622156}
   - component: {fileID: 8675558111074622157}
   m_Layer: 6
-  m_Name: CarAgent2
+  m_Name: CarAgentCam2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
