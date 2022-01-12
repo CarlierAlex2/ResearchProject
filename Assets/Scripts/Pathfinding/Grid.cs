@@ -23,7 +23,7 @@ public class Grid<TGridObject>
 
 
     // --- INIT ------------------------------------------------------------------
-    public Grid(int width, int height, float cellSize, Vector3 originPosition = default(Vector3), System.Func<Grid<TGridObject>, int, int, TGridObject> createGridObject  =null)
+    public Grid(int width, int height, float cellSize, bool gridDebugActive = false, Vector3 originPosition = default(Vector3), System.Func<Grid<TGridObject>, int, int, TGridObject> createGridObject = null)
     {
         //public event EventHandler<OnGridValueChangedEventArgs> OnGridValueChanged;
         //public class OnGridValueChangedEventArgs : EventArgs
@@ -47,13 +47,13 @@ public class Grid<TGridObject>
             }
         }
 
-        CreateTextGrid();
+        CreateTextGrid(gridDebugActive);
         if (showDebug)
             ShowDebug();
 
     }
 
-    private void CreateTextGrid()
+    private void CreateTextGrid(bool setActive)
     {
         Debug.Log("Grid: " + width + " - "  + height);
         Color color = Color.white;
@@ -65,7 +65,7 @@ public class Grid<TGridObject>
                 Vector3 worldPos = GetWorldPosition(x, y);
                 Vector3 textPos = worldPos + new Vector3(cellSize, 0, cellSize) * 0.5f;
                 textArray[x,y] = Utils.CreateWorldText(gridArray[x,y].ToString(), null, textPos, fontSize, color, TextAnchor.MiddleCenter);
-                textArray[x,y].gameObject.SetActive(false);
+                textArray[x,y].gameObject.SetActive(setActive);
             }
         }
     }

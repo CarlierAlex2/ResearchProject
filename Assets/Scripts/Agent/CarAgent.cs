@@ -62,10 +62,11 @@ public class CarAgent : Agent
     {
         index = 0;
         path = null;
-        direction = Vector3.zero;
+        directionGPS = Vector3.zero;
 
         isEpisodeRunning = true;
         isCheckPoint = false;
+        Debug.Log("Reset Agent");
     }
 
     //--- OBSERVATION ---------------------------------------------------------------------
@@ -212,6 +213,7 @@ public class CarAgent : Agent
     {
         path = pathfinding.FindPath(this.transform.position, target.position);
         index = ConfigAgent.INDEX_START;
+        Debug.Log("Path calculated");
     }
 
 

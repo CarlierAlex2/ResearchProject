@@ -12,9 +12,9 @@ public class Pathfinding
     public List<PathNode> closedList;
 
 
-    public Pathfinding(int width, int height, float cellSize, Vector3 origin)
+    public Pathfinding(int width, int height, float cellSize, bool gridDebugActive, Vector3 origin)
     {
-        grid = new Grid<PathNode>(width, height, cellSize, origin, (Grid<PathNode> g, int x, int y) => new PathNode(g, x, y));
+        grid = new Grid<PathNode>(width, height, cellSize, gridDebugActive, origin, (Grid<PathNode> g, int x, int y) => new PathNode(g, x, y));
         Debug.Log("Grid created: " + grid.Width + " - "  + grid.Height);
     }
 

@@ -14,7 +14,7 @@ public class GPS : MonoBehaviour
 
     private void Start()
     {
-        pathfinding = new Pathfinding(width, height, cellSize, transform.position - new Vector3(cellSize/2f, 0, cellSize/2f));
+        pathfinding = new Pathfinding(width, height, cellSize, showDebug, transform.position - new Vector3(cellSize/2f, 0, cellSize/2f));
         if(!isGridChecked)
             CheckWalkable();
     }
