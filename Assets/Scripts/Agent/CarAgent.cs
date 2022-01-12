@@ -83,16 +83,16 @@ public class CarAgent : Agent
         // move + velocity
         Vector3 velocity = rigid.velocity;
         velocity.y = 0;
-        float velocityAngle = Mathf.Abs(Vector3.Angle(this.transform.forward, velocity.normalized));
-
-        if(rigid.velocity.magnitude < ConfigAgent.VELOCITY_MIN)
+        Vector3 localVelocity =transform.InverseTransformDirection(velocity);
+        var forwardSpeed = localVelocity.z;
+        if(Mathf.Abs(forwardSpeed) >= ConfigAgent.VELOCITY_MIN)
         {
-            float diff = ConfigAgent.VELOCITY_MIN - rigid.velocity.magnitude;
-            float r = ConfigReward.VELOCITY_MIN;
-            r = r * diff / ConfigAgent.VELOCITY_MIN;
-            reward += r;
+            reward += ConfigReward.VELOCITY_MIN;
+            if(forwardSpeed > 0)
+                reward += ConfigReward.VELOCITY_FORWARD;
         }
 
+        //float velocityAngle = Mathf.Abs(Vector3.Angle(this.transform.forward, velocity.normalized));
         //if(velocityAngle < ConfigAgent.VELOCITY_ANGLE)
         //    reward += ConfigReward.VELOCITY_ANGLE;
 
@@ -103,7 +103,7 @@ public class CarAgent : Agent
             isCheckPoint = false;
         }
         float angle = Mathf.Abs(GetAngleDirection());
-        if (angle > ConfigAgent.VELOCITY_ANGLE)
+        if (angle > ConfigAgent.DIRECTION_ANGLE)
         {
             reward += ConfigReward.CHECKPOINT_PASS;
             SetPath();
@@ -149,7 +149,7 @@ public class CarAgent : Agent
             float move = actions.ContinuousActions[0];
             float rotate = actions.ContinuousActions[1];
             bool isBraking = (actions.DiscreteActions[0] == 1);
-            
+
             if (isBraking)
                 AddReward(ConfigReward.BREAK);
 

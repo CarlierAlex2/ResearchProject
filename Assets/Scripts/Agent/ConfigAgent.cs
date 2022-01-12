@@ -8,6 +8,8 @@ public class ConfigAgent
     public static float CHECKPOINT_OFFSET { get { return 1f; } }
     public static float CHECKPOINT_RANGE { get { return 3f; } }
     public static float CHECKPOINT_ANGLE_MAX { get { return 140f; } }
-    public static float VELOCITY_MIN { get { return  0.4f; } }
-    public static float VELOCITY_ANGLE { get { return  60f; } }
+
+    public static float VELOCITY_MIN { get { return  0.2f; } }
+    
+    public static float DIRECTION_ANGLE { get { return  60f; } }
 }
