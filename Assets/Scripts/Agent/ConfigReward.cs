@@ -6,7 +6,6 @@ public class ConfigReward
 {
     public static float TIME { get { return -0.05f; } }
     public static float BREAK { get { return -1f; } }
-    public static float REVERSE { get { return -1f; } }
     public static float GOAL { get { return 100f; } }
 
 

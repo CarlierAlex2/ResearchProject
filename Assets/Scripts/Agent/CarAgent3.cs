@@ -178,8 +178,8 @@ public class CarAgent3 : Agent
         float rotate = Input.GetAxis("Horizontal");
         bool isBraking = Input.GetKey(KeyCode.Space);
 
-        int actionMove = Mathf.FloorToInt((move + 1f) * 4f); // [-1,+1] => [0,2] => [0,8]
-        int actionRotate = Mathf.FloorToInt((rotate + 1f) * 4f); // [-1,+1] => [0,2] => [0,8]
+        int actionMove = Mathf.FloorToInt((move + 1f) * 3f); // [-1,+1] => [0,2] => [0,6]
+        int actionRotate = Mathf.FloorToInt((rotate + 1f) * 3f); // [-1,+1] => [0,2] => [0,6]
         int actionBrake = (isBraking) ? 3 : 0;  // [-1,+1] => [0,3]
 
         // Continous
@@ -205,8 +205,8 @@ public class CarAgent3 : Agent
             float rotate = actions.DiscreteActions[1];
             float isBraking = actions.DiscreteActions[2]; //[0,3]
 
-            move = (move) / 4f - 1f; //[0,8] > [-1,+1]
-            rotate = (rotate) / 4f - 1f; //[0,8] > [-1,+1]
+            move = (move / 3f) - 1f; //[0,6] > [-1,+1]
+            rotate = (rotate / 3f) - 1f; //[0,6] > [-1,+1]
             isBraking = isBraking / 3f;
 
             // Debug
@@ -217,9 +217,6 @@ public class CarAgent3 : Agent
 
             if (isBraking > 0f) //discourage breaking
                 reward += ConfigReward.BREAK;
-
-            if ((move > 0f && velocity.z < 0f) || (move < 0f && velocity.z > 0f)) //discourage sudden move
-                reward += ConfigReward.REVERSE;
                 
         }
         else

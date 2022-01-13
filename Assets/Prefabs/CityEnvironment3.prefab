@@ -390,7 +390,7 @@ PrefabInstance:
     - target: {fileID: 9076623831157280697, guid: be3124982b1db7040b70a2b1fc3084f6, type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 5022602860645237092, guid: 5c796015bc162304f8242605593259fd, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 9076623831157280699, guid: be3124982b1db7040b70a2b1fc3084f6, type: 3}
       propertyPath: DecisionPeriod
       value: 2

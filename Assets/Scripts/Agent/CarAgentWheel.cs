@@ -91,7 +91,6 @@ public class CarAgentWheel : MonoBehaviour
     {
         // Steering -----------------------------------------
         currentTurnAngle = TURN_ANGLE * input;
-        //currentTurnAngle = (currentTurnAngle > MAX_TURN_ANGLE) ? MAX_TURN_ANGLE : currentTurnAngle;
 
         frontLeft.steerAngle = currentTurnAngle;
         frontRight.steerAngle = currentTurnAngle;
