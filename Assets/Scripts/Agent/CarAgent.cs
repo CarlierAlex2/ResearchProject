@@ -28,6 +28,7 @@ public class CarAgent : Agent
     private List<Vector3> path;
     private Vector3 directionGPS;
     private Vector3 velocity;
+    private Vector3 nextCheckpoint;
 
     //---
     private bool isEpisodeRunning = false;
@@ -66,6 +67,8 @@ public class CarAgent : Agent
         index = 0;
         path = null;
         directionGPS = Vector3.zero;
+        nextCheckpoint = Vector3.zero;
+        velocity = Vector3.zero;
 
         isEpisodeRunning = true;
         isCheckPoint = false;
@@ -82,15 +85,12 @@ public class CarAgent : Agent
             RewardCar();
         }
 
-
         Vector3 localDirectionGPS = transform.InverseTransformDirection(directionGPS);
         Vector3 localVelocity = transform.InverseTransformDirection(velocity);
+        Vector3 localNextCheckpoint = transform.InverseTransformDirection(nextCheckpoint);
 
-        sensor.AddObservation(localDirectionGPS.x); 
-        sensor.AddObservation(localDirectionGPS.z); 
-
-        sensor.AddObservation(localVelocity.x); 
-        sensor.AddObservation(localVelocity.z); 
+        sensor.AddObservation(localNextCheckpoint.x); 
+        sensor.AddObservation(localNextCheckpoint.z); 
 
         // Debug
         DebugObservation(localDirectionGPS, localVelocity);
@@ -242,6 +242,7 @@ public class CarAgent : Agent
         {
             index++;
             isCheckPoint = true;
+            nextCheckpoint = path[index];
             Debug.Log("Update path, index=" + index);
         }
     }
@@ -250,6 +251,7 @@ public class CarAgent : Agent
     {
         path = pathfinding.FindPath(this.transform.position, target.position);
         index = ConfigAgent.INDEX_START;
+        nextCheckpoint = path[index];
         Debug.Log("Path calculated");
     }
 

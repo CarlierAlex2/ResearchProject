@@ -11665,6 +11665,10 @@ PrefabInstance:
       propertyPath: m_Model
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 8597425624536801900, guid: 22fea813fa4ce2f48956772a06d5e925, type: 3}
+      propertyPath: m_BrainParameters.VectorObservationSize
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8597425624536801901, guid: 22fea813fa4ce2f48956772a06d5e925, type: 3}
       propertyPath: gpsObj
       value: 
@@ -11681,6 +11685,10 @@ PrefabInstance:
       propertyPath: debugTextMesh
       value: 
       objectReference: {fileID: 78162030}
+    - target: {fileID: 8597425624536801902, guid: 22fea813fa4ce2f48956772a06d5e925, type: 3}
+      propertyPath: DecisionPeriod
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22fea813fa4ce2f48956772a06d5e925, type: 3}
 --- !u!1 &3635980617271459814 stripped
