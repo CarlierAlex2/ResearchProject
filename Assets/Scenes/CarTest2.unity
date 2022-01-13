@@ -929,7 +929,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1289117781968927054, guid: a6f31b0d24e18b94bbce7dba20f89458, type: 3}
   m_PrefabInstance: {fileID: 1832510440}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &4888667142880475260
+--- !u!1001 &5480333812288152497
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -984,9 +984,5 @@ PrefabInstance:
       propertyPath: m_Name
       value: CityEnvironment2
       objectReference: {fileID: 0}
-    - target: {fileID: 7044710173462260489, guid: a6f31b0d24e18b94bbce7dba20f89458, type: 3}
-      propertyPath: m_Model
-      value: 
-      objectReference: {fileID: 5022602860645237092, guid: 5f2434b5b0541b94a901f509449154cf, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a6f31b0d24e18b94bbce7dba20f89458, type: 3}
