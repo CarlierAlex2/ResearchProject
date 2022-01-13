@@ -5,7 +5,7 @@ using UnityEngine;
 public class Pathfinding
 {
     private const int MOVE_STRAIGHT_COST = 10;
-    private const int MOVE_DIAGONAL_COST = 14;
+    private const int MOVE_DIAGONAL_COST = 15;
 
     public Grid<PathNode> grid;
     public List<PathNode> openList;
@@ -187,6 +187,28 @@ public class Pathfinding
     }
 
     private List<PathNode> GetNeighbours(PathNode node)
+    {
+        return GetNeighboursStraight(node);
+    }
+
+    private List<PathNode> GetNeighboursDiagonal(PathNode node)
+    {
+        List<PathNode> neighbourList = new List<PathNode>();
+
+        for(int x = node.x - 1; x <= node.x + 1; x++)
+        {
+            for(int y = node.y - 1; y <= node.y + 1; y++)
+            {
+                PathNode n = GetNode(x, y);
+                if (n != null)
+                    neighbourList.Add(n);
+            }
+        }
+
+        return neighbourList;
+    }
+
+    private List<PathNode> GetNeighboursStraight(PathNode node)
     {
         List<PathNode> neighbourList = new List<PathNode>();
 
