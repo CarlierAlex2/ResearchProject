@@ -302,7 +302,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 5000
+  MaxStep: 3000
   target: {fileID: 0}
   gpsObj: {fileID: 0}
   debugTextMesh: {fileID: 5295842390002236871}

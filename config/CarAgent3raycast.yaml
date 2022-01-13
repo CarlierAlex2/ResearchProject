@@ -2,7 +2,7 @@ behaviors:
   CarAgent3:
     trainer_type: ppo
     hyperparameters:
-      batch_size: 512
+      batch_size: 256
       buffer_size: 10240
       learning_rate: 0.0003
       beta: 0.0005
@@ -19,6 +19,6 @@ behaviors:
       extrinsic:
         gamma: 0.99
         strength: 1.0
-    max_steps: 1200000 #3000 * 400
+    max_steps: 1500000 #3000 * 400
     time_horizon: 64
     summary_freq: 30000
