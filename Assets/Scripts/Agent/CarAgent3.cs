@@ -158,7 +158,10 @@ public class CarAgent3 : Agent
         //}
 
         //finish episode + checkpoints
-        if (index >= path.Count - 1)
+        Vector3 toGoal = (target.position -this.transform.position);
+        toGoal.y = 0;
+
+        if (toGoal.magnitude <= ConfigAgent.CHECKPOINT_RANGE)
         {
             reward += ConfigReward.GOAL;
         }
@@ -185,7 +188,7 @@ public class CarAgent3 : Agent
         ActionSegment<float> actionsContinu = actionsOut.ContinuousActions;
         actionsContinu[0] = move;
         actionsContinu[1] = rotate;
-        actionsContinu[0] = (isBraking) ? 1f : 0f;
+        actionsContinu[2] = (isBraking) ? 1f : 0f;
     }
 
     public override void OnActionReceived(ActionBuffers actions)
