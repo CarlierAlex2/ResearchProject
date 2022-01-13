@@ -138,7 +138,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &77245387
 Transform:
   m_ObjectHideFlags: 0
@@ -984,5 +984,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: CityEnvironment2
       objectReference: {fileID: 0}
+    - target: {fileID: 7044710173462260489, guid: a6f31b0d24e18b94bbce7dba20f89458, type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 5022602860645237092, guid: 5f2434b5b0541b94a901f509449154cf, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a6f31b0d24e18b94bbce7dba20f89458, type: 3}
