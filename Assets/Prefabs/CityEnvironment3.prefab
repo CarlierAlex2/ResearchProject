@@ -399,6 +399,10 @@ PrefabInstance:
       propertyPath: TURN_ANGLE
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 9076623831157280702, guid: be3124982b1db7040b70a2b1fc3084f6, type: 3}
+      propertyPath: ACCELERATION
+      value: 35
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be3124982b1db7040b70a2b1fc3084f6, type: 3}
 --- !u!4 &2554681126594574544 stripped

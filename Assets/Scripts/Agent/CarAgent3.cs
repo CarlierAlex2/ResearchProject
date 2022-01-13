@@ -129,7 +129,7 @@ public class CarAgent3 : Agent
     private void RewardCar()
     {
         float reward = 0f;
-        //ConfigReward.TIME;
+        reward += ConfigReward.TIME;
 
         // move + velocity
         Vector3 localVelocity = transform.InverseTransformDirection(velocity);

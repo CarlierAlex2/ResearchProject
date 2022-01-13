@@ -12,7 +12,7 @@ public class ConfigAgent
 
 
     //--
-    public static float CHECKPOINT_RANGE { get { return 3f; } }
+    public static float CHECKPOINT_RANGE { get { return 2.5f; } }
     public static float CHECKPOINT_ANGLE_MAX { get { return 140f; } }
 
 
