@@ -12,6 +12,7 @@ public class CarAgent : Agent
     //mlagents-learn config/CarAgent2.yaml --run-id=CarAgent2 --env=builds/CarAgent2
     [SerializeField] private Transform target;
     [SerializeField] private Transform gpsObj;
+    [SerializeField] private TextMesh debugTextMesh;
 
     //---
     private Rigidbody rigid;
@@ -31,6 +32,8 @@ public class CarAgent : Agent
     //---
     private bool isEpisodeRunning = false;
     private bool isCheckPoint = false;
+
+    private float [] actionOutput = {0, 0, 0};
 
 
     //--- INITIALIZE ---------------------------------------------------------------------
@@ -88,6 +91,13 @@ public class CarAgent : Agent
 
         sensor.AddObservation(localVelocity.x); 
         sensor.AddObservation(localVelocity.z); 
+
+        // Debug
+        Vector3 c = transform.position + Vector3.up * 1f;
+        Debug.DrawLine(c, c + directionGPS, Color.red);
+        Debug.DrawLine(c, c + velocity, Color.blue);
+
+        debugTextMesh.text = localVelocity.x + "\n" + localVelocity.z + "\n-\n" + actionOutput[0] + "\n" + actionOutput[1] + "\n" + actionOutput[2];
     }
 
     //--- INFO ---------------------------------------------------------------------
@@ -187,11 +197,25 @@ public class CarAgent : Agent
             float rotate = actions.ContinuousActions[1];
             bool isBraking = (actions.DiscreteActions[0] == 1);
 
+            // Debug
+            actionOutput[0] = move;
+            actionOutput[1] = rotate;
+            actionOutput[2] = actions.DiscreteActions[0];
+
             if (isBraking)
                 AddReward(ConfigReward.BREAK);
 
             wheelController.SetActions(move, rotate, isBraking);
         }
+        else
+        {
+            // Debug
+            actionOutput[0] = 0;
+            actionOutput[1] = 0;
+            actionOutput[2] = 0;
+        }
+
+
     }
 
 
