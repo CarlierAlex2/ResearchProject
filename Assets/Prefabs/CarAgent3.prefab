@@ -302,7 +302,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 0
+  MaxStep: 3000
   target: {fileID: 0}
   gpsObj: {fileID: 0}
   debugTextMesh: {fileID: 5295842390002236871}
@@ -342,15 +342,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_SensorName: RayPerceptionSensor
-  m_DetectableTags:
-  - Wall
+  m_DetectableTags: []
   m_RaysPerDirection: 4
   m_MaxRayDegrees: 180
   m_SphereCastRadius: 0.2
   m_RayLength: 10
   m_RayLayerMask:
     serializedVersion: 2
-    m_Bits: 4294967291
+    m_Bits: 1536
   m_ObservationStacks: 1
   rayHitColor: {r: 1, g: 0, b: 0, a: 1}
   rayMissColor: {r: 1, g: 1, b: 1, a: 1}

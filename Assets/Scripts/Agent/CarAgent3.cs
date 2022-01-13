@@ -185,10 +185,7 @@ public class CarAgent3 : Agent
         ActionSegment<float> actionsContinu = actionsOut.ContinuousActions;
         actionsContinu[0] = move;
         actionsContinu[1] = rotate;
-
-        // Discrete
-        ActionSegment<int> actionsDiscrete = actionsOut.DiscreteActions;
-        actionsDiscrete[0] = (isBraking) ? 1 : 0;
+        actionsContinu[0] = (isBraking) ? 1f : 0f;
     }
 
     public override void OnActionReceived(ActionBuffers actions)
@@ -203,16 +200,12 @@ public class CarAgent3 : Agent
 
             float move = actions.ContinuousActions[0];
             float rotate = actions.ContinuousActions[1];
-            bool isBraking = (actions.DiscreteActions[0] == 1);
+            float isBraking = actions.ContinuousActions[2];
 
             // Debug
             actionOutput[0] = move;
             actionOutput[1] = rotate;
-            actionOutput[2] = actions.DiscreteActions[0];
-
-            if (isBraking)
-                AddReward(ConfigReward.BREAK);
-
+            actionOutput[2] = isBraking;
             wheelController.SetActions(move, rotate, isBraking);
         }
         else

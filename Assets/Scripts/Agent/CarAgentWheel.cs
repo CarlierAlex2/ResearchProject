@@ -26,7 +26,7 @@ public class CarAgentWheel : MonoBehaviour
 
     private float move = 0f;
     private float rotate = 0f;
-    private bool isBraking = false;
+    private float isBraking = 0f;
 
     // Start is called before the first frame update
     void Start()
@@ -36,6 +36,12 @@ public class CarAgentWheel : MonoBehaviour
     }
 
     public void SetActions(float actionMove, float actionRotate, bool actionBrake)
+    {
+        isBraking = (actionBrake) ? 1f : 0f;
+        SetActions(actionMove, actionRotate, isBraking);
+    }
+
+    public void SetActions(float actionMove, float actionRotate, float actionBrake)
     {
         move = actionMove;
         rotate = actionRotate;
@@ -65,16 +71,13 @@ public class CarAgentWheel : MonoBehaviour
         frontLeft.brakeTorque = Mathf.Infinity;
     }
 
-    private void Acceleration(float input, bool isBraking)
+    private void Acceleration(float input, float isBraking)
     {
         // Acceleration
         currentAcceleration = ACCELERATION * input;
 
         // Brake
-        if (isBraking)
-            currentBreakForce = BREAKING_FORCE;
-        else
-            currentBreakForce = 0f;
+        currentBreakForce = BREAKING_FORCE * isBraking;
 
         // Front 
         frontRight.motorTorque = currentAcceleration;
