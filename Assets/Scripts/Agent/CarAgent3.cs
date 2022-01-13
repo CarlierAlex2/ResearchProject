@@ -132,8 +132,6 @@ public class CarAgent3 : Agent
         //ConfigReward.TIME;
 
         // move + velocity
-        Vector3 velocity = rigid.velocity;
-        velocity.y = 0;
         Vector3 localVelocity = transform.InverseTransformDirection(velocity);
         //float forwardSpeedDiff = Mathf.Abs(localVelocity.z) - ConfigAgent.VELOCITY_MIN;
         float speedDiff = Mathf.Abs(localVelocity.magnitude) - ConfigAgent.VELOCITY_MIN;
@@ -193,6 +191,8 @@ public class CarAgent3 : Agent
 
     public override void OnActionReceived(ActionBuffers actions)
     {      
+        float reward = 0;
+
         if(!isEpisodeRunning || path == null)
             return;
 
@@ -215,8 +215,12 @@ public class CarAgent3 : Agent
             actionOutput[2] = isBraking;
             wheelController.SetActions(move, rotate, isBraking);
 
-            if (isBraking > 0f)
-                AddReward(ConfigReward.BREAK);
+            if (isBraking > 0f) //discourage breaking
+                reward += ConfigReward.BREAK;
+
+            if ((move > 0f && velocity.z < 0f) || (move < 0f && velocity.z > 0f)) //discourage sudden move
+                reward += ConfigReward.REVERSE;
+                
         }
         else
         {
@@ -226,7 +230,7 @@ public class CarAgent3 : Agent
             actionOutput[2] = 0;
         }
 
-
+        AddReward(reward);
     }
 
 
@@ -272,17 +276,17 @@ public class CarAgent3 : Agent
     //--- COLLISIONS ---------------------------------------------------------------------
     private void OnCollisionEnter(Collision collision) 
     {
-        if (collision.gameObject.tag == "Wall")
-        {
-            SetReward(ConfigReward.WALL_ENTER);
-            Debug.Log("Hit wall!");
-        }
+        //if (collision.gameObject.tag == "Wall")
+        //{
+        //   SetReward(ConfigReward.WALL_ENTER);
+        //    Debug.Log("Hit wall!");
+        //}
     }
 
     private void OnCollisionStay(Collision collision) 
     {
-        if (collision.gameObject.tag == "Wall")
-            SetReward(ConfigReward.WALL_STAY);
+        //if (collision.gameObject.tag == "Wall")
+        //    SetReward(ConfigReward.WALL_STAY);
     }
 
 

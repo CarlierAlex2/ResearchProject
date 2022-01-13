@@ -302,7 +302,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 3000
+  MaxStep: 5000
   target: {fileID: 0}
   gpsObj: {fileID: 0}
   debugTextMesh: {fileID: 5295842390002236871}
@@ -326,7 +326,7 @@ MonoBehaviour:
   frontLeftTransform: {fileID: 3332921868724342771}
   backRightTransform: {fileID: 3332921868530061918}
   backLeftTransform: {fileID: 3332921868844287363}
-  ACCELERATION: 100
+  ACCELERATION: 50
   BREAKING_FORCE: 200
   TURN_ANGLE: 25
 --- !u!114 &5295842389723600336
