@@ -5,7 +5,7 @@ using UnityEngine;
 public class ConfigReward
 {
     public static float TIME { get { return -0.05f; } }
-    public static float BREAK { get { return -0.5f; } }
+    public static float BREAK { get { return -0.01f; } }
     public static float GOAL { get { return 100f; } }
 
 

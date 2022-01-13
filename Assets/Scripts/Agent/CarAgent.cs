@@ -94,15 +94,7 @@ public class CarAgent : Agent
 
         // Debug
         DebugObservation(localDirectionGPS, localVelocity);
-    }
-
-    private void DebugObservation(Vector3 localDirectionGPS, Vector3 localVelocity)
-    {
-        Vector3 c = transform.position + Vector3.up * 1f;
-        Debug.DrawLine(c, c + directionGPS, Color.red);
-        Debug.DrawLine(c, c + velocity, Color.blue);
-
-        debugTextMesh.text = localVelocity.x + "\n" + localVelocity.z + "\n-\n" + actionOutput[0] + "\n" + actionOutput[1] + "\n" + actionOutput[2];
+        DebugPath();
     }
 
     //--- INFO ---------------------------------------------------------------------
@@ -285,5 +277,23 @@ public class CarAgent : Agent
         isEpisodeRunning = false;
         Debug.Log("End episode!");
         EndEpisode(); // calls CollectObservations => don't nest
+    }
+
+    //--- DEBUG ---------------------------------------------------------------------
+    private void DebugObservation(Vector3 localDirectionGPS, Vector3 localVelocity)
+    {
+        Vector3 c = transform.position + Vector3.up * 1f;
+        Debug.DrawLine(c, c + directionGPS, Color.red);
+        Debug.DrawLine(c, c + velocity, Color.blue);
+
+        debugTextMesh.text = localVelocity.x + "\n" + localVelocity.z + "\n-\n" + actionOutput[0] + "\n" + actionOutput[1] + "\n" + actionOutput[2];
+    }
+
+    private void DebugPath()
+    {
+        Vector3 c = Vector3.up * 1f;
+        for(int i = 0; i < path.Count-1; i++)
+
+        Debug.DrawLine(c + path[i], c + path[i+1], Color.green, 1f);
     }
 }

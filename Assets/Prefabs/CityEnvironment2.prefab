@@ -11655,7 +11655,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8597425624536801899, guid: 22fea813fa4ce2f48956772a06d5e925, type: 3}
       propertyPath: ACCELERATION
-      value: 200
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 8597425624536801899, guid: 22fea813fa4ce2f48956772a06d5e925, type: 3}
       propertyPath: BREAKING_FORCE
