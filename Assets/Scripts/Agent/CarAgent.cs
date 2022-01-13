@@ -139,15 +139,15 @@ public class CarAgent : Agent
         reward += ((rewardVelocity > 0) ? (rewardVelocity * ConfigReward.VELOCITY_MIN) : 0f);
 
         //miss turn
-        //Vector3 forward = transform.forward;
-        //forward.y = 0;
-        //forward.Normalize();
-        //float angle = Mathf.Abs(Vector3.Angle(forward, directionGPS));
-        //if (angle > ConfigAgent.DIRECTION_ANGLE)
-        //{
-        //    reward += ConfigReward.CHECKPOINT_PASS;
-        //    SetPath();
-        //}
+        Vector3 forward = transform.forward;
+        forward.y = 0;
+        forward.Normalize();
+        float angle = Mathf.Abs(Vector3.Angle(forward, directionGPS));
+        if (angle > ConfigAgent.DIRECTION_ANGLE)
+        {
+            reward += ConfigReward.CHECKPOINT_PASS;
+            //SetPath();
+        }
 
         //finish episode + checkpoints
         if (index >= path.Count - 1)
