@@ -102,11 +102,11 @@ public class CarAgent1 : Agent
         //checkpoints
         if(isCheckPoint)
         {
-            reward += ConfigReward.CHECKPOINT;
+            reward += ConfigReward.CHECKPOINT_RANGE;
             isCheckPoint = false;
         }
         float angle = Mathf.Abs(GetAngleDirection());
-        if (angle > ConfigAgent.DIRECTION_ANGLE)
+        if (angle > ConfigAgent.CHECKPOINT_ANGLE_MAX)
         {
             reward += ConfigReward.CHECKPOINT_PASS;
             SetPath();

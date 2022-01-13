@@ -93,6 +93,11 @@ public class CarAgent : Agent
         sensor.AddObservation(localVelocity.z); 
 
         // Debug
+        DebugObservation(localDirectionGPS, localVelocity);
+    }
+
+    private void DebugObservation(Vector3 localDirectionGPS, Vector3 localVelocity)
+    {
         Vector3 c = transform.position + Vector3.up * 1f;
         Debug.DrawLine(c, c + directionGPS, Color.red);
         Debug.DrawLine(c, c + velocity, Color.blue);
@@ -128,26 +133,34 @@ public class CarAgent : Agent
     //--- REWARDS ---------------------------------------------------------------------
     private void RewardCar()
     {
-        float reward = ConfigReward.TIME;
+        float reward = 0f;
+        //ConfigReward.TIME;
 
         // move + velocity
         Vector3 velocity = rigid.velocity;
         velocity.y = 0;
         Vector3 localVelocity = transform.InverseTransformDirection(velocity);
-        var forwardSpeedDiff = (1 - localVelocity.z);
-        var rewardVelocity = Mathf.Abs(forwardSpeedDiff) / ConfigAgent.VELOCITY_MIN;
-        reward += ((rewardVelocity > 0) ? (rewardVelocity * ConfigReward.VELOCITY_MIN) : 0f);
+        //float forwardSpeedDiff = Mathf.Abs(localVelocity.z) - ConfigAgent.VELOCITY_MIN;
+        float forwardSpeedDiff = localVelocity.magnitude - ConfigAgent.VELOCITY_MIN;
+        forwardSpeedDiff = forwardSpeedDiff / ConfigAgent.VELOCITY_MIN;
+
+        reward += ((forwardSpeedDiff < 0) ? (forwardSpeedDiff * ConfigReward.VELOCITY_MIN) : 0f);
+
+        //turning
+        //Vector3 forward = transform.forward;
+        //forward.y = 0;
+        //forward.Normalize();
+        //float angle = Vector3.Angle(forward, directionGPS);
+        //float angleABS = Mathf.Abs(angle);
+
+        //reward += (angleABS > ConfigAgent.STEERING_ANGLE) ? ConfigReward.STEERING_ANGLE : 0f;
 
         //miss turn
-        Vector3 forward = transform.forward;
-        forward.y = 0;
-        forward.Normalize();
-        float angle = Mathf.Abs(Vector3.Angle(forward, directionGPS));
-        if (angle > ConfigAgent.DIRECTION_ANGLE)
-        {
-            reward += ConfigReward.CHECKPOINT_PASS;
-            //SetPath();
-        }
+        //if (angleABS > ConfigAgent.CHECKPOINT_ANGLE_MAX)
+        //{
+        //    reward += ConfigReward.CHECKPOINT_PASS;
+        //    //SetPath();
+        //}
 
         //finish episode + checkpoints
         if (index >= path.Count - 1)
@@ -156,7 +169,7 @@ public class CarAgent : Agent
         }
         else if (isCheckPoint)
         {
-            reward += ConfigReward.CHECKPOINT;
+            reward += ConfigReward.CHECKPOINT_RANGE;
             isCheckPoint = false;
         }
 
