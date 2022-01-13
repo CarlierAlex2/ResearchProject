@@ -26,9 +26,8 @@ public class CarAgent3 : Agent
     //---
     private int index = 0;
     private List<Vector3> path;
-    private Vector3 directionGPS;
+    private Vector3 direction;
     private Vector3 velocity;
-    private Vector3 nextCheckpoint;
 
     //---
     private bool isEpisodeRunning = false;
@@ -46,7 +45,7 @@ public class CarAgent3 : Agent
         wheelController = GetComponent<CarAgentWheel>();
         pathfinding = gpsObj.GetComponent<GPS>();
 
-        startPos = transform.position;
+        startPos = transform.localPosition;
         startRot = transform.rotation;
     }
 
@@ -59,18 +58,17 @@ public class CarAgent3 : Agent
 
     private void ResetEnvironment()
     {
-        transform.position = startPos;
+        transform.localPosition = startPos;
         transform.rotation = startRot;
 
-        target.position = new Vector3(Random.Range(4f, 32f), 1, Random.Range(4f, 32f));
+        target.localPosition = new Vector3(Random.Range(-15f, 12f), 1, Random.Range(-28f, 0f));
     }
 
     private void ResetAgent()
     {
         index = 0;
         path = null;
-        directionGPS = Vector3.zero;
-        nextCheckpoint = Vector3.zero;
+        direction = Vector3.zero;
         velocity = Vector3.zero;
 
         isAtGoal = false;
@@ -89,18 +87,17 @@ public class CarAgent3 : Agent
             RewardCar();
         }
 
-        Vector3 localDirectionGPS = transform.InverseTransformDirection(directionGPS);
+        Vector3 localDirection = transform.InverseTransformDirection(direction);
         Vector3 localVelocity = transform.InverseTransformDirection(velocity);
-        Vector3 localNextCheckpoint = transform.InverseTransformDirection(nextCheckpoint);
 
-        sensor.AddObservation(localNextCheckpoint.x); 
-        sensor.AddObservation(localNextCheckpoint.z); 
+        sensor.AddObservation(localDirection.x); 
+        sensor.AddObservation(localDirection.z); 
 
         sensor.AddObservation(localVelocity.x); 
         sensor.AddObservation(localVelocity.z); 
 
         // Debug
-        DebugObservation(localDirectionGPS, localVelocity);
+        DebugObservation(direction, localVelocity);
         DebugPath();
     }
 
@@ -115,12 +112,11 @@ public class CarAgent3 : Agent
     {
         if(index < path.Count)
         {
-            directionGPS = path[index] - this.transform.position;
-            directionGPS.y = 0;
-            directionGPS.Normalize();
+            direction = path[index] - this.transform.position;
+            direction.y = 0;
         }
         else
-            directionGPS = Vector3.zero;
+            direction = Vector3.zero;
     }
 
     private void GetVelocity()
@@ -165,11 +161,7 @@ public class CarAgent3 : Agent
         Vector3 toGoal = (target.position - this.transform.position);
         toGoal.y = 0;
 
-        if (isAtGoal)
-        {
-            reward += ConfigReward.GOAL;
-        }
-        else if (isCheckPoint)
+        if (isCheckPoint)
         {
             reward += ConfigReward.CHECKPOINT_RANGE;
             isCheckPoint = false;
@@ -245,7 +237,7 @@ public class CarAgent3 : Agent
             SetPath();
         if(path == null) // still doesn't exist => no direction
         {
-            directionGPS = Vector3.zero;
+            direction = Vector3.zero;
             return;
         }
 
@@ -258,7 +250,6 @@ public class CarAgent3 : Agent
             index = (index > path.Count - 1) ? (path.Count - 1) : index;
 
             isCheckPoint = true;
-            nextCheckpoint = path[index];
             Debug.Log("Update path, index=" + index);
         }
 
@@ -274,7 +265,6 @@ public class CarAgent3 : Agent
     {
         path = pathfinding.FindPath(this.transform.position, target.position);
         index = ConfigAgent.INDEX_START;
-        nextCheckpoint = path[index];
         Debug.Log("Path calculated");
     }
 
@@ -308,7 +298,7 @@ public class CarAgent3 : Agent
     private void DebugObservation(Vector3 localDirectionGPS, Vector3 localVelocity)
     {
         Vector3 c = transform.position + Vector3.up * 1f;
-        Debug.DrawLine(c, c + directionGPS, Color.red);
+        Debug.DrawLine(c, c + direction, Color.red);
         Debug.DrawLine(c, c + velocity, Color.blue);
 
         debugTextMesh.text = localVelocity.x + "\n" + localVelocity.z + "\n-\n" + actionOutput[0] + "\n" + actionOutput[1] + "\n" + actionOutput[2];

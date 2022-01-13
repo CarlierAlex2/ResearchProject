@@ -45,7 +45,7 @@ public class CarAgent : Agent
         wheelController = GetComponent<CarAgentWheel>();
         pathfinding = gpsObj.GetComponent<GPS>();
 
-        startPos = transform.position;
+        startPos = transform.localPosition;
         startRot = transform.rotation;
     }
 
@@ -58,7 +58,7 @@ public class CarAgent : Agent
 
     private void ResetEnvironment()
     {
-        transform.position = startPos;
+        transform.localPosition = startPos;
         transform.rotation = startRot;
     }
 
