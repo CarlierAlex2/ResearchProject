@@ -591,7 +591,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2079224591
 Transform:
   m_ObjectHideFlags: 0
@@ -621,6 +621,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2711292732592256208, guid: eb8b9f6e08cadf04ba65b755663e6a2a, type: 3}
+      propertyPath: showDebug
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2711292733529948862, guid: eb8b9f6e08cadf04ba65b755663e6a2a, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -668,6 +672,62 @@ PrefabInstance:
     - target: {fileID: 2711292733529948863, guid: eb8b9f6e08cadf04ba65b755663e6a2a, type: 3}
       propertyPath: m_Name
       value: CityEnvironment3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6161057600274125049, guid: eb8b9f6e08cadf04ba65b755663e6a2a, type: 3}
+      propertyPath: m_BrainParameters.VectorActionSpaceType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6161057600274125049, guid: eb8b9f6e08cadf04ba65b755663e6a2a, type: 3}
+      propertyPath: m_BrainParameters.VectorActionSize.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6161057600274125049, guid: eb8b9f6e08cadf04ba65b755663e6a2a, type: 3}
+      propertyPath: m_BrainParameters.VectorActionSize.Array.data[0]
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6161057600274125049, guid: eb8b9f6e08cadf04ba65b755663e6a2a, type: 3}
+      propertyPath: m_BrainParameters.VectorActionSize.Array.data[1]
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6161057600274125049, guid: eb8b9f6e08cadf04ba65b755663e6a2a, type: 3}
+      propertyPath: m_BrainParameters.VectorActionSize.Array.data[2]
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6161057600274125049, guid: eb8b9f6e08cadf04ba65b755663e6a2a, type: 3}
+      propertyPath: m_BrainParameters.m_ActionSpec.BranchSizes.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6161057600274125049, guid: eb8b9f6e08cadf04ba65b755663e6a2a, type: 3}
+      propertyPath: m_BrainParameters.m_ActionSpec.m_NumContinuousActions
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6161057600274125049, guid: eb8b9f6e08cadf04ba65b755663e6a2a, type: 3}
+      propertyPath: m_BrainParameters.m_ActionSpec.BranchSizes.Array.data[0]
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6161057600274125049, guid: eb8b9f6e08cadf04ba65b755663e6a2a, type: 3}
+      propertyPath: m_BrainParameters.m_ActionSpec.BranchSizes.Array.data[1]
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6161057600274125049, guid: eb8b9f6e08cadf04ba65b755663e6a2a, type: 3}
+      propertyPath: m_BrainParameters.m_ActionSpec.BranchSizes.Array.data[2]
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6991909813229226640, guid: eb8b9f6e08cadf04ba65b755663e6a2a, type: 3}
+      propertyPath: m_RayLength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6991909813229226640, guid: eb8b9f6e08cadf04ba65b755663e6a2a, type: 3}
+      propertyPath: m_EndVerticalOffset
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6991909813229226640, guid: eb8b9f6e08cadf04ba65b755663e6a2a, type: 3}
+      propertyPath: m_StartVerticalOffset
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6991909813454054021, guid: eb8b9f6e08cadf04ba65b755663e6a2a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb8b9f6e08cadf04ba65b755663e6a2a, type: 3}

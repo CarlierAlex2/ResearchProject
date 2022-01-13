@@ -33,7 +33,8 @@ public class CarAgent3 : Agent
     //---
     private bool isEpisodeRunning = false;
     private bool isCheckPoint = false;
-
+    private bool isAtGoal = false;
+     
     private float [] actionOutput = {0, 0, 0};
 
 
@@ -60,6 +61,8 @@ public class CarAgent3 : Agent
     {
         transform.position = startPos;
         transform.rotation = startRot;
+
+        target.position = new Vector3(Random.Range(4f, 32f), 1, Random.Range(4f, 32f));
     }
 
     private void ResetAgent()
@@ -70,6 +73,7 @@ public class CarAgent3 : Agent
         nextCheckpoint = Vector3.zero;
         velocity = Vector3.zero;
 
+        isAtGoal = false;
         isEpisodeRunning = true;
         isCheckPoint = false;
         Debug.Log("Reset Agent");
@@ -136,10 +140,10 @@ public class CarAgent3 : Agent
         velocity.y = 0;
         Vector3 localVelocity = transform.InverseTransformDirection(velocity);
         //float forwardSpeedDiff = Mathf.Abs(localVelocity.z) - ConfigAgent.VELOCITY_MIN;
-        float forwardSpeedDiff = localVelocity.magnitude - ConfigAgent.VELOCITY_MIN;
-        forwardSpeedDiff = forwardSpeedDiff / ConfigAgent.VELOCITY_MIN;
+        float speedDiff = Mathf.Abs(localVelocity.magnitude) - ConfigAgent.VELOCITY_MIN;
+        speedDiff = speedDiff / ConfigAgent.VELOCITY_MIN;
 
-        reward += ((forwardSpeedDiff < 0) ? (forwardSpeedDiff * ConfigReward.VELOCITY_MIN) : 0f);
+        //reward += ((speedDiff < 0) ? (-speedDiff * ConfigReward.VELOCITY_MIN) : 0f);
 
         //turning
         //Vector3 forward = transform.forward;
@@ -158,10 +162,10 @@ public class CarAgent3 : Agent
         //}
 
         //finish episode + checkpoints
-        Vector3 toGoal = (target.position -this.transform.position);
+        Vector3 toGoal = (target.position - this.transform.position);
         toGoal.y = 0;
 
-        if (toGoal.magnitude <= ConfigAgent.CHECKPOINT_RANGE)
+        if (isAtGoal)
         {
             reward += ConfigReward.GOAL;
         }
@@ -172,7 +176,7 @@ public class CarAgent3 : Agent
         }
 
         //--
-        SetReward(reward);
+        AddReward(reward);
     }
 
 
@@ -184,11 +188,15 @@ public class CarAgent3 : Agent
         float rotate = Input.GetAxis("Horizontal");
         bool isBraking = Input.GetKey(KeyCode.Space);
 
+        int actionMove = Mathf.FloorToInt((move + 1f) * 4f); // [-1,+1] => [0,2] => [0,8]
+        int actionRotate = Mathf.FloorToInt((rotate + 1f) * 4f); // [-1,+1] => [0,2] => [0,8]
+        int actionBrake = (isBraking) ? 3 : 0;  // [-1,+1] => [0,3]
+
         // Continous
-        ActionSegment<float> actionsContinu = actionsOut.ContinuousActions;
-        actionsContinu[0] = move;
-        actionsContinu[1] = rotate;
-        actionsContinu[2] = (isBraking) ? 1f : 0f;
+        ActionSegment<int> actionArr = actionsOut.DiscreteActions;
+        actionArr[0] = actionMove;
+        actionArr[1] = actionRotate;
+        actionArr[2] = actionBrake;
     }
 
     public override void OnActionReceived(ActionBuffers actions)
@@ -198,18 +206,25 @@ public class CarAgent3 : Agent
 
         if (isEpisodeRunning)
         {
-            if (index >= (path.Count - 1)) //finish episode
+            if (isAtGoal) //finish episode
                 FinishEpisode();
 
-            float move = actions.ContinuousActions[0];
-            float rotate = actions.ContinuousActions[1];
-            float isBraking = actions.ContinuousActions[2];
+            float move = actions.DiscreteActions[0]; //[0,8]
+            float rotate = actions.DiscreteActions[1];
+            float isBraking = actions.DiscreteActions[2]; //[0,3]
+
+            move = (move) / 4f - 1f; //[0,8] > [-1,+1]
+            rotate = (rotate) / 4f - 1f; //[0,8] > [-1,+1]
+            isBraking = isBraking / 3f;
 
             // Debug
             actionOutput[0] = move;
             actionOutput[1] = rotate;
             actionOutput[2] = isBraking;
             wheelController.SetActions(move, rotate, isBraking);
+
+            if (isBraking > 0f)
+                AddReward(ConfigReward.BREAK);
         }
         else
         {
@@ -240,9 +255,18 @@ public class CarAgent3 : Agent
         if(checkpointVector.magnitude <= ConfigAgent.CHECKPOINT_RANGE)
         {
             index++;
+            index = (index > path.Count - 1) ? (path.Count - 1) : index;
+
             isCheckPoint = true;
             nextCheckpoint = path[index];
             Debug.Log("Update path, index=" + index);
+        }
+
+        //--
+        Vector3 toGoal = (path[path.Count - 1] -this.transform.position);
+        if (toGoal.magnitude < ConfigAgent.CHECKPOINT_RANGE)
+        {
+            isAtGoal = true;
         }
     }
 
@@ -294,7 +318,11 @@ public class CarAgent3 : Agent
     {
         Vector3 c = Vector3.up * 1f;
         for(int i = 0; i < path.Count-1; i++)
+            Debug.DrawLine(c + path[i], c + path[i+1], Color.green, 1f);
 
-        Debug.DrawLine(c + path[i], c + path[i+1], Color.green, 1f);
+        Vector3 toGoal = (path[path.Count - 1] -this.transform.position);
+        toGoal.y = 0;
+        c += transform.position;
+        Debug.DrawLine(c, c + toGoal, Color.magenta);
     }
 }

@@ -1,6 +1,6 @@
 default_settings: null
 behaviors:
-  CarAgent2:
+  CarAgent3:
     trainer_type: ppo
     hyperparameters:
       batch_size: 512
@@ -58,7 +58,7 @@ checkpoint_settings:
   initialize_from: null
   load_model: false
   resume: false
-  force: false
+  force: true
   train_model: false
   inference: false
   results_dir: results
