@@ -510,7 +510,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &839822256
 Transform:
   m_ObjectHideFlags: 0
@@ -1274,7 +1274,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2826585118282825848, guid: f3706bd405092724787dd2b06b3a3971, type: 3}
   m_PrefabInstance: {fileID: 1745466447}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &6670499546076366745
+--- !u!1001 &3162454377201778673
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1329,9 +1329,5 @@ PrefabInstance:
       propertyPath: m_Name
       value: Setup_Parking
       objectReference: {fileID: 0}
-    - target: {fileID: 3965500672015569328, guid: f3706bd405092724787dd2b06b3a3971, type: 3}
-      propertyPath: m_Model
-      value: 
-      objectReference: {fileID: 5022602860645237092, guid: 02cc56fb641b95644909ae4bdea1e2eb, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f3706bd405092724787dd2b06b3a3971, type: 3}
