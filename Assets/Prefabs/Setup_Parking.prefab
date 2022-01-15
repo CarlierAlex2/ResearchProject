@@ -95,6 +95,14 @@ PrefabInstance:
       propertyPath: height
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 2629213444523479704, guid: 5154ab7a7f72cb94796e225efda998ee, type: 3}
+      propertyPath: showDebug
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2629213444523479704, guid: 5154ab7a7f72cb94796e225efda998ee, type: 3}
+      propertyPath: raycastDuration
+      value: 0.01
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5154ab7a7f72cb94796e225efda998ee, type: 3}
 --- !u!4 &4126766162957317284 stripped
@@ -196,6 +204,10 @@ PrefabInstance:
       propertyPath: envController
       value: 
       objectReference: {fileID: 5876501147401306917}
+    - target: {fileID: 7457818154895249818, guid: c7c28752daac9c445843a1268baaa536, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7c28752daac9c445843a1268baaa536, type: 3}
 --- !u!4 &7259246618026198352 stripped

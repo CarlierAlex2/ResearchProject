@@ -300,9 +300,9 @@ MonoBehaviour:
   frontLeftTransform: {fileID: 18304974153212844}
   backRightTransform: {fileID: 18304974499479041}
   backLeftTransform: {fileID: 18304974050830812}
-  ACCELERATION: 40
+  ACCELERATION: 30
   BREAKING_FORCE: 150
-  TURN_ANGLE: 30
+  TURN_ANGLE: 25
 --- !u!114 &7457818155173951887
 MonoBehaviour:
   m_ObjectHideFlags: 0
