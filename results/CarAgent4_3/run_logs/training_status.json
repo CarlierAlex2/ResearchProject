@@ -2,58 +2,58 @@
     "CarAgent4": {
         "checkpoints": [
             {
-                "steps": 299973,
-                "file_path": "results\\CarAgent4_3\\CarAgent4\\CarAgent4-299973.onnx",
-                "reward": 424.9500620365143,
-                "creation_time": 1642268010.5603538,
+                "steps": 899989,
+                "file_path": "results\\CarAgent4_3\\CarAgent4\\CarAgent4-899989.onnx",
+                "reward": -461.8583603700002,
+                "creation_time": 1642270336.7169814,
                 "auxillary_file_paths": [
-                    "results\\CarAgent4_3\\CarAgent4\\CarAgent4-299973.pt"
+                    "results\\CarAgent4_3\\CarAgent4\\CarAgent4-899989.pt"
                 ]
             },
             {
-                "steps": 399944,
-                "file_path": "results\\CarAgent4_3\\CarAgent4\\CarAgent4-399944.onnx",
-                "reward": -40.491672813892365,
-                "creation_time": 1642268130.5261598,
+                "steps": 999985,
+                "file_path": "results\\CarAgent4_3\\CarAgent4\\CarAgent4-999985.onnx",
+                "reward": -457.61669301986694,
+                "creation_time": 1642270444.619438,
                 "auxillary_file_paths": [
-                    "results\\CarAgent4_3\\CarAgent4\\CarAgent4-399944.pt"
+                    "results\\CarAgent4_3\\CarAgent4\\CarAgent4-999985.pt"
                 ]
             },
             {
-                "steps": 499987,
-                "file_path": "results\\CarAgent4_3\\CarAgent4\\CarAgent4-499987.onnx",
-                "reward": -37.40000698566437,
-                "creation_time": 1642268250.9738202,
+                "steps": 1099950,
+                "file_path": "results\\CarAgent4_3\\CarAgent4\\CarAgent4-1099950.onnx",
+                "reward": -52.9500036239624,
+                "creation_time": 1642270553.135502,
                 "auxillary_file_paths": [
-                    "results\\CarAgent4_3\\CarAgent4\\CarAgent4-499987.pt"
+                    "results\\CarAgent4_3\\CarAgent4\\CarAgent4-1099950.pt"
                 ]
             },
             {
-                "steps": 599987,
-                "file_path": "results\\CarAgent4_3\\CarAgent4\\CarAgent4-599987.onnx",
-                "reward": -43.70000445842743,
-                "creation_time": 1642268370.9734018,
+                "steps": 1199960,
+                "file_path": "results\\CarAgent4_3\\CarAgent4\\CarAgent4-1199960.onnx",
+                "reward": -84.75358342272895,
+                "creation_time": 1642270657.413321,
                 "auxillary_file_paths": [
-                    "results\\CarAgent4_3\\CarAgent4\\CarAgent4-599987.pt"
+                    "results\\CarAgent4_3\\CarAgent4\\CarAgent4-1199960.pt"
                 ]
             },
             {
-                "steps": 600051,
-                "file_path": "results\\CarAgent4_3\\CarAgent4\\CarAgent4-600051.onnx",
-                "reward": -43.70000445842743,
-                "creation_time": 1642268371.0724182,
+                "steps": 1200024,
+                "file_path": "results\\CarAgent4_3\\CarAgent4\\CarAgent4-1200024.onnx",
+                "reward": -84.75358342272895,
+                "creation_time": 1642270657.4983363,
                 "auxillary_file_paths": [
-                    "results\\CarAgent4_3\\CarAgent4\\CarAgent4-600051.pt"
+                    "results\\CarAgent4_3\\CarAgent4\\CarAgent4-1200024.pt"
                 ]
             }
         ],
         "final_checkpoint": {
-            "steps": 600051,
+            "steps": 1200024,
             "file_path": "results\\CarAgent4_3\\CarAgent4.onnx",
-            "reward": -43.70000445842743,
-            "creation_time": 1642268371.0724182,
+            "reward": -84.75358342272895,
+            "creation_time": 1642270657.4983363,
             "auxillary_file_paths": [
-                "results\\CarAgent4_3\\CarAgent4\\CarAgent4-600051.pt"
+                "results\\CarAgent4_3\\CarAgent4\\CarAgent4-1200024.pt"
             ]
         }
     },
