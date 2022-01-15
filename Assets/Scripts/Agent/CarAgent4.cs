@@ -16,8 +16,8 @@ public class CarAgent4 : Agent
     [SerializeField] private TextMesh debugTextMesh;
 
     //---
-    private static AgentConfig_4_4 CONFIG = AgentConfig_4_4.Instance;
-    private static RewardConfig_4_4 REWARDS = RewardConfig_4_4.Instance;
+    private static AgentConfig_4_6 CONFIG = AgentConfig_4_6.Instance;
+    private static RewardConfig_4_6 REWARDS = RewardConfig_4_6.Instance;
 
     //---
     private Rigidbody rigid;
