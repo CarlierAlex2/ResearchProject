@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class GoalController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    private float [] rangeX = {7, 36};
+    private float [] rangeZ = {7, 36};
 
-    // Update is called once per frame
-    void Update()
+    public void ResetGoal()
     {
-        
+        float randomX = Random.Range(rangeX[0], rangeX[1] + 1);
+        float randomZ = Random.Range(rangeZ[0], rangeZ[1] + 1);
+        this.transform.localPosition = new Vector3(randomX, 1, randomZ);
     }
 }

@@ -17,7 +17,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/CarTest2.unity
     guid: 5845b96db13635f448395d6e1409b048
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/CarTest3_parking.unity
     guid: 57f5f126ae771c24fb27916d611168d6
+  - enabled: 1
+    path: Assets/Scenes/CarAgent4_parking.unity
+    guid: 9040b8ac19f838d49a1529cef19174ff
   m_configObjects: {}

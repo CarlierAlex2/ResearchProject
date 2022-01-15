@@ -4,15 +4,12 @@ using UnityEngine;
 
 public class EnvController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private StartController startController;
+    [SerializeField] private GoalController goalController;
 
-    // Update is called once per frame
-    void Update()
+    public void ResetEnvironment(Transform agentTransform)
     {
-        
+        startController.ResetStart(agentTransform);
+        goalController.ResetGoal();
     }
 }
