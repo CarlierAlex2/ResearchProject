@@ -1,0 +1,4415 @@
+Mono path[0] = 'C:/Users/alexc/Documents/Unity/Projects/ResearchProject/builds/CarAgent4_parking/ResearchProject_Data/Managed'
+Mono config path = 'C:/Users/alexc/Documents/Unity/Projects/ResearchProject/builds/CarAgent4_parking/MonoBleedingEdge/etc'
+Initialize engine version: 2020.3.25f1 (9b9180224418)
+[Subsystems] Discovering subsystems at path C:/Users/alexc/Documents/Unity/Projects/ResearchProject/builds/CarAgent4_parking/ResearchProject_Data/UnitySubsystems
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1060 3GB (ID=0x1c02)
+    Vendor:   
+    VRAM:     2988 MB
+    Driver:   30.0.14.9729
+Begin MonoManager ReloadAssembly
+- Completed reload, in  1.080 seconds
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 1.140600 ms
+Fallback handler could not load library C:/Users/alexc/Documents/Unity/Projects/ResearchProject/builds/CarAgent4_parking/ResearchProject_Data/Mono/libcoreclr.so
+Fallback handler could not load library C:/Users/alexc/Documents/Unity/Projects/ResearchProject/builds/CarAgent4_parking/ResearchProject_Data/Mono/libcoreclr.so.dll
+Fallback handler could not load library C:/Users/alexc/Documents/Unity/Projects/ResearchProject/builds/CarAgent4_parking/ResearchProject_Data/Mono/libcoreclr.so
+Fallback handler could not load library C:/Users/alexc/Documents/Unity/Projects/ResearchProject/builds/CarAgent4_parking/ResearchProject_Data/Mono/libdl.so
+Fallback handler could not load library C:/Users/alexc/Documents/Unity/Projects/ResearchProject/builds/CarAgent4_parking/ResearchProject_Data/Mono/libdl.so.dll
+Fallback handler could not load library C:/Users/alexc/Documents/Unity/Projects/ResearchProject/builds/CarAgent4_parking/ResearchProject_Data/Mono/libdl.so
+Fallback handler could not load library C:/Users/alexc/Documents/Unity/Projects/ResearchProject/builds/CarAgent4_parking/ResearchProject_Data/Mono/libSystem.dylib
+Fallback handler could not load library C:/Users/alexc/Documents/Unity/Projects/ResearchProject/builds/CarAgent4_parking/ResearchProject_Data/Mono/libSystem.dylib.dll
+Fallback handler could not load library C:/Users/alexc/Documents/Unity/Projects/ResearchProject/builds/CarAgent4_parking/ResearchProject_Data/Mono/libSystem.dylib
+Fallback handler could not load library C:/Users/alexc/Documents/Unity/Projects/ResearchProject/builds/CarAgent4_parking/ResearchProject_Data/Mono/libcoreclr.so
+Fallback handler could not load library C:/Users/alexc/Documents/Unity/Projects/ResearchProject/builds/CarAgent4_parking/ResearchProject_Data/Mono/libcoreclr.so.dll
+Fallback handler could not load library C:/Users/alexc/Documents/Unity/Projects/ResearchProject/builds/CarAgent4_parking/ResearchProject_Data/Mono/libcoreclr.so
+Fallback handler could not load library C:/Users/alexc/Documents/Unity/Projects/ResearchProject/builds/CarAgent4_parking/ResearchProject_Data/Mono/libdl.so
+Fallback handler could not load library C:/Users/alexc/Documents/Unity/Projects/ResearchProject/builds/CarAgent4_parking/ResearchProject_Data/Mono/libdl.so.dll
+Fallback handler could not load library C:/Users/alexc/Documents/Unity/Projects/ResearchProject/builds/CarAgent4_parking/ResearchProject_Data/Mono/libdl.so
+Fallback handler could not load library C:/Users/alexc/Documents/Unity/Projects/ResearchProject/builds/CarAgent4_parking/ResearchProject_Data/Mono/libSystem.dylib
+Fallback handler could not load library C:/Users/alexc/Documents/Unity/Projects/ResearchProject/builds/CarAgent4_parking/ResearchProject_Data/Mono/libSystem.dylib.dll
+Fallback handler could not load library C:/Users/alexc/Documents/Unity/Projects/ResearchProject/builds/CarAgent4_parking/ResearchProject_Data/Mono/libSystem.dylib
+failed to get 100ns ticks
+Initialize Agent
+Initialize Agent
+Initialize Agent
+Initialize Agent
+Initialize Agent
+Initialize Agent
+Initialize Agent
+Initialize Agent
+Initialize Agent
+Initialize Agent
+Initialize Agent
+Initialize Agent
+Initialize Agent
+Initialize Agent
+Initialize Agent
+Initialize Agent
+Grid: 11 - 12
+Grid created: 11 - 12
+Grid: 11 - 12
+Grid created: 11 - 12
+Grid: 11 - 12
+Grid created: 11 - 12
+Grid: 11 - 12
+Grid created: 11 - 12
+Grid: 11 - 12
+Grid created: 11 - 12
+Grid: 11 - 12
+Grid created: 11 - 12
+Grid: 11 - 12
+Grid created: 11 - 12
+Grid: 11 - 12
+Grid created: 11 - 12
+Grid: 11 - 12
+Grid created: 11 - 12
+Grid: 11 - 12
+Grid created: 11 - 12
+Grid: 11 - 12
+Grid created: 11 - 12
+Grid: 11 - 12
+Grid created: 11 - 12
+Grid: 11 - 12
+Grid created: 11 - 12
+Grid: 11 - 12
+Grid created: 11 - 12
+Grid: 11 - 12
+Grid created: 11 - 12
+Grid: 11 - 12
+Grid created: 11 - 12
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Hit wall!
+Hit wall!
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Hit wall!
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Hit wall!
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=3
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=3
+Update path, index=3
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=3
+Update path, index=2
+Update path, index=3
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=3
+Update path, index=3
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=3
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=3
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=3
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=3
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Update path, index=2
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=1
+Update path, index=2
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+End episode!
+Reset Agent
+Path calculated
+Update path, index=3
+Update path, index=2
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=4
+Update path, index=3
+Update path, index=4
+Update path, index=4
+Update path, index=3
+Update path, index=5
+Update path, index=4
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+End episode!
+Reset Agent
+Path calculated
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=1
+Update path, index=2
+Update path, index=1
+Update path, index=2
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=2
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=2
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=2
+Update path, index=1
+Update path, index=2
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=2
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=2
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=2
+Update path, index=1
+Update path, index=2
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=2
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+End episode!
+Reset Agent
+Path calculated
+Reset Agent
+Path calculated
+Update path, index=3
+Update path, index=2
+Update path, index=2
+Update path, index=3
+Update path, index=4
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Reset Agent
+Path calculated
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Reset Agent
+Path calculated
+Reset Agent
+Path calculated
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=3
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+End episode!
+Reset Agent
+Path calculated
+Update path, index=2
+Update path, index=3
+Reset Agent
+Path calculated
+Update path, index=3
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Reset Agent
+Path calculated
+Update path, index=2
+Reset Agent
+Path calculated
+Update path, index=2
+Update path, index=2
+Reset Agent
+Path calculated
+Update path, index=2
+Update path, index=3
+Update path, index=3
+Reset Agent
+Path calculated
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Reset Agent
+Path calculated
+Reset Agent
+Path calculated
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=2
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=2
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+End episode!
+Reset Agent
+Path calculated
+Update path, index=2
+Update path, index=2
+Update path, index=3
+Reset Agent
+Path calculated
+Hit wall!
+Hit wall!
+Hit wall!
+Update path, index=2
+Hit wall!
+Hit wall!
+Reset Agent
+Path calculated
+Update path, index=3
+Hit wall!
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Hit wall!
+Update path, index=2
+Hit wall!
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Hit wall!
+Update path, index=2
+Update path, index=2
+Hit wall!
+Update path, index=2
+Reset Agent
+Update path, index=2
+Path calculated
+Update path, index=2
+Reset Agent
+Path calculated
+Update path, index=2
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=2
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+End episode!
+Reset Agent
+Path calculated
+Update path, index=2
+Update path, index=2
+Reset Agent
+Path calculated
+Update path, index=2
+Update path, index=2
+Reset Agent
+Path calculated
+Update path, index=2
+Update path, index=3
+Reset Agent
+Path calculated
+Update path, index=3
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Reset Agent
+Path calculated
+Reset Agent
+Path calculated
+Update path, index=2
+Update path, index=2
+Update path, index=3
+Reset Agent
+Path calculated
+Update path, index=2
+Update path, index=3
+Reset Agent
+Path calculated
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=2
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Reset Agent
+Path calculated
+Update path, index=4
+Update path, index=2
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=4
+Reset Agent
+Path calculated
+Update path, index=3
+Update path, index=3
+Update path, index=5
+Update path, index=2
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=5
+Reset Agent
+Path calculated
+Reset Agent
+Path calculated
+Update path, index=3
+Update path, index=4
+Update path, index=2
+Update path, index=3
+Update path, index=2
+Update path, index=3
+Update path, index=3
+Reset Agent
+Path calculated
+Update path, index=2
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Reset Agent
+Path calculated
+Update path, index=3
+Update path, index=2
+Update path, index=4
+Update path, index=4
+Reset Agent
+Path calculated
+Update path, index=4
+Update path, index=2
+Update path, index=3
+Update path, index=4
+Update path, index=5
+Reset Agent
+Path calculated
+Update path, index=5
+Update path, index=2
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Update path, index=6
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=3
+Update path, index=2
+Reset Agent
+Path calculated
+Reset Agent
+Path calculated
+Update path, index=2
+Update path, index=3
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=3
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=3
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=3
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=3
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=4
+Update path, index=2
+Reset Agent
+Path calculated
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=3
+End episode!
+Reset Agent
+Path calculated
+Update path, index=3
+Update path, index=3
+Update path, index=4
+Update path, index=2
+Update path, index=2
+Reset Agent
+Path calculated
+Update path, index=4
+Update path, index=4
+Update path, index=2
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=3
+Update path, index=5
+Update path, index=4
+Update path, index=3
+Update path, index=5
+Update path, index=5
+Reset Agent
+Path calculated
+Update path, index=5
+Update path, index=5
+Update path, index=2
+Update path, index=4
+Update path, index=4
+Update path, index=6
+Update path, index=6
+Reset Agent
+Path calculated
+Update path, index=3
+Update path, index=5
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=2
+Update path, index=1
+Update path, index=2
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=2
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+End episode!
+Reset Agent
+Update path, index=1
+Path calculated
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=2
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=2
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=2
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=2
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+Update path, index=1
+End episode!
+Reset Agent
+Path calculated
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Reset Agent
+Path calculated
+Update path, index=3
+Update path, index=3
+Reset Agent
+Path calculated
+Update path, index=3
+Update path, index=3
+Update path, index=2
+Update path, index=3
+Update path, index=2
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Reset Agent
+Path calculated
+Reset Agent
+Path calculated
+Update path, index=4
+Update path, index=4
+Update path, index=2
+Update path, index=4
+Update path, index=2
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Reset Agent
+Path calculated
+Update path, index=3
+Update path, index=4
+Update path, index=2
+Update path, index=3
+Update path, index=5
+Update path, index=3
+Update path, index=5
+Update path, index=4
+Update path, index=5
+Update path, index=6
+Update path, index=3
+Reset Agent
+Path calculated
+Update path, index=6
+Update path, index=4
+Update path, index=2
+Update path, index=5
+Update path, index=7
+Update path, index=4
+Update path, index=5
+Update path, index=7
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Update path, index=3
+Update path, index=2
+Reset Agent
+Path calculated
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Reset Agent
+Path calculated
+Update path, index=2
+End episode!
+Reset Agent
+Reset Agent
+Path calculated
+Path calculated
+Update path, index=2
+Reset Agent
+Path calculated
+Update path, index=3
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Reset Agent
+Path calculated
+Reset Agent
+Path calculated
+Update path, index=3
+Update path, index=2
+Update path, index=4
+Update path, index=3
+Update path, index=3
+Update path, index=2
+Update path, index=5
+Update path, index=4
+Reset Agent
+Path calculated
+Update path, index=3
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=2
+Update path, index=6
+Update path, index=4
+Update path, index=5
+Update path, index=4
+Update path, index=5
+Update path, index=6
+End episode!
+Reset Agent
+Path calculated
+Update path, index=7
+Update path, index=2
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Update path, index=2
+Reset Agent
+Path calculated
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Reset Agent
+Path calculated
+Update path, index=2
+Update path, index=3
+Update path, index=2
+Reset Agent
+Path calculated
+Update path, index=3
+Reset Agent
+Path calculated
+Update path, index=2
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=2
+Update path, index=3
+Update path, index=3
+Update path, index=4
+Update path, index=3
+Reset Agent
+Path calculated
+Reset Agent
+Path calculated
+Update path, index=2
+Update path, index=3
+Update path, index=2
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Reset Agent
+Path calculated
+Update path, index=3
+Update path, index=4
+Update path, index=4
+Update path, index=2
+Update path, index=3
+Update path, index=4
+Update path, index=5
+Update path, index=3
+Update path, index=5
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=5
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=5
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=5
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+End episode!
+Reset Agent
+Path calculated
+Update path, index=5
+Update path, index=3
+Update path, index=6
+Update path, index=2
+Update path, index=6
+Update path, index=4
+Reset Agent
+Path calculated
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=6
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=6
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=2
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=3
+Update path, index=5
+Update path, index=5
+End episode!
+Reset Agent
+Path calculated
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=5
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=6
+Update path, index=4
+Update path, index=6
+Update path, index=4
+Update path, index=6
+Update path, index=4
+Update path, index=6
+Update path, index=4
+Update path, index=6
+Update path, index=4
+Update path, index=6
+Update path, index=4
+Update path, index=6
+Update path, index=4
+Update path, index=6
+Update path, index=4
+Update path, index=6
+Update path, index=4
+Update path, index=6
+Update path, index=4
+Update path, index=6
+Update path, index=4
+Update path, index=6
+Update path, index=4
+Update path, index=6
+Update path, index=4
+Update path, index=6
+Update path, index=4
+Update path, index=6
+Update path, index=4
+Update path, index=6
+Update path, index=4
+Update path, index=6
+Update path, index=4
+Update path, index=6
+Update path, index=2
+Update path, index=4
+Update path, index=6
+Update path, index=4
+Update path, index=6
+Update path, index=4
+Update path, index=6
+Update path, index=4
+Update path, index=6
+Update path, index=4
+Update path, index=6
+Update path, index=4
+Update path, index=6
+Update path, index=4
+Update path, index=6
+Update path, index=4
+Update path, index=6
+Update path, index=4
+Update path, index=6
+Update path, index=4
+Update path, index=6
+Update path, index=4
+Update path, index=6
+Update path, index=4
+Update path, index=6
+Update path, index=4
+Update path, index=6
+Update path, index=4
+Update path, index=6
+Update path, index=4
+Update path, index=6
+Update path, index=4
+Update path, index=6
+Update path, index=4
+Update path, index=6
+Update path, index=4
+Update path, index=6
+Update path, index=4
+Update path, index=6
+Update path, index=6
+Update path, index=4
+Update path, index=6
+End episode!
+Reset Agent
+Update path, index=4
+Path calculated
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Update path, index=4
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=7
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+End episode!
+Reset Agent
+Path calculated
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Reset Agent
+Path calculated
+Update path, index=7
+Update path, index=3
+Update path, index=2
+Update path, index=3
+Update path, index=3
+Update path, index=5
+Update path, index=3
+Update path, index=3
+Reset Agent
+Path calculated
+Update path, index=3
+Update path, index=2
+Update path, index=3
+Reset Agent
+Path calculated
+Update path, index=4
+Update path, index=4
+Reset Agent
+Path calculated
+Update path, index=4
+Update path, index=2
+Update path, index=2
+Reset Agent
+Path calculated
+Update path, index=5
+Update path, index=5
+Update path, index=4
+Update path, index=2
+Update path, index=4
+Update path, index=3
+Update path, index=5
+Reset Agent
+Path calculated
+Update path, index=6
+Update path, index=3
+Update path, index=5
+Update path, index=6
+Update path, index=2
+Update path, index=5
+Reset Agent
+Path calculated
+Update path, index=2
+Update path, index=6
+Reset Agent
+Path calculated
+Update path, index=4
+Update path, index=7
+Update path, index=2
+Reset Agent
+Path calculated
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Update path, index=3
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Reset Agent
+Path calculated
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Reset Agent
+Path calculated
+Update path, index=2
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=4
+Reset Agent
+Path calculated
+Update path, index=3
+Update path, index=2
+Update path, index=3
+Update path, index=4
+Reset Agent
+Path calculated
+Update path, index=3
+Reset Agent
+Path calculated
+Update path, index=2
+Update path, index=4
+Update path, index=2
+Update path, index=3
+Update path, index=4
+Reset Agent
+Path calculated
+Update path, index=4
+Update path, index=2
+Update path, index=5
+Update path, index=3
+Update path, index=4
+Reset Agent
+Path calculated
+Update path, index=2
+Update path, index=4
+Update path, index=6
+Reset Agent
+Path calculated
+Update path, index=3
+Reset Agent
+Path calculated
+Update path, index=2
+Update path, index=2
+Reset Agent
+Path calculated
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Reset Agent
+Path calculated
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=3
+Update path, index=4
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Reset Agent
+Path calculated
+Update path, index=2
+Update path, index=2
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Reset Agent
+Path calculated
+Update path, index=3
+Update path, index=5
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+End episode!
+Reset Agent
+Update path, index=2
+Path calculated
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Reset Agent
+Path calculated
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Reset Agent
+Path calculated
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=6
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+End episode!
+Reset Agent
+Path calculated
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=4
+Reset Agent
+Path calculated
+Update path, index=4
+Update path, index=4
+Update path, index=7
+Update path, index=3
+Update path, index=4
+Update path, index=5
+Update path, index=2
+Update path, index=3
+Update path, index=5
+Update path, index=3
+Reset Agent
+Path calculated
+Update path, index=6
+Update path, index=2
+Update path, index=4
+Update path, index=4
+Update path, index=3
+Update path, index=6
+Update path, index=4
+Reset Agent
+Path calculated
+Update path, index=3
+Update path, index=2
+Update path, index=5
+Reset Agent
+Path calculated
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Update path, index=5
+Reset Agent
+Path calculated
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Reset Agent
+Path calculated
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=3
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=3
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Reset Agent
+Path calculated
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=3
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=3
+Update path, index=2
+End episode!
+Reset Agent
+Path calculated
+Reset Agent
+Path calculated
+Update path, index=2
+Reset Agent
+Path calculated
+Update path, index=2
+Update path, index=3
+Update path, index=3
+Reset Agent
+Path calculated
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=4
+Reset Agent
+Path calculated
+Update path, index=4
+Update path, index=3
+Update path, index=3
+Update path, index=5
+Update path, index=4
+Update path, index=2
+Update path, index=3
+Reset Agent
+Path calculated
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=2
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+End episode!
+Reset Agent
+Path calculated
+Update path, index=4
+Update path, index=5
+Update path, index=4
+Reset Agent
+Path calculated
+Update path, index=3
+Update path, index=2
+Update path, index=2
+Reset Agent
+Path calculated
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Reset Agent
+Path calculated
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=5
+Update path, index=2
+Update path, index=2
+Update path, index=3
+Update path, index=3
+Update path, index=4
+Reset Agent
+Path calculated
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=2
+Update path, index=3
+Update path, index=3
+Update path, index=6
+Update path, index=4
+Update path, index=3
+Reset Agent
+Path calculated
+Reset Agent
+Path calculated
+Update path, index=3
+Reset Agent
+Path calculated
+Update path, index=2
+Reset Agent
+Path calculated
+Update path, index=2
+Update path, index=2
+Update path, index=5
+Update path, index=2
+Reset Agent
+Path calculated
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=4
+Update path, index=2
+Update path, index=3
+Update path, index=4
+Update path, index=5
+Update path, index=5
+Update path, index=3
+Reset Agent
+Path calculated
+Update path, index=3
+Update path, index=5
+Update path, index=6
+Update path, index=5
+Update path, index=2
+Update path, index=4
+Reset Agent
+Path calculated
+Update path, index=2
+Update path, index=5
+Update path, index=4
+Update path, index=4
+Reset Agent
+Path calculated
+Update path, index=6
+Update path, index=2
+Reset Agent
+Path calculated
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Update path, index=3
+Reset Agent
+Path calculated
+Update path, index=2
+Update path, index=2
+Update path, index=5
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=5
+Reset Agent
+Path calculated
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=6
+Update path, index=2
+Reset Agent
+Path calculated
+Reset Agent
+Path calculated
+Update path, index=4
+Reset Agent
+Path calculated
+Update path, index=4
+Update path, index=4
+Update path, index=2
+Reset Agent
+Path calculated
+Update path, index=4
+Update path, index=2
+Update path, index=4
+Update path, index=2
+Update path, index=4
+Update path, index=2
+Reset Agent
+Path calculated
+Update path, index=2
+Update path, index=5
+Update path, index=3
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=3
+Update path, index=3
+Update path, index=5
+Update path, index=5
+Update path, index=3
+Update path, index=3
+Reset Agent
+Path calculated
+Update path, index=6
+Update path, index=4
+Update path, index=2
+Update path, index=4
+Update path, index=6
+Update path, index=6
+Reset Agent
+Path calculated
+Update path, index=4
+Update path, index=2
+Update path, index=4
+Update path, index=6
+Update path, index=6
+Update path, index=4
+Update path, index=3
+Reset Agent
+Path calculated
+Update path, index=2
+Reset Agent
+Path calculated
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Update path, index=5
+Update path, index=3
+Reset Agent
+Path calculated
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=3
+Update path, index=4
+Reset Agent
+Path calculated
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=2
+Update path, index=3
+Update path, index=5
+Update path, index=3
+Reset Agent
+Path calculated
+Update path, index=6
+Reset Agent
+Path calculated
+Reset Agent
+Path calculated
+Update path, index=4
+Update path, index=2
+Update path, index=2
+Update path, index=4
+Reset Agent
+Path calculated
+Update path, index=2
+Update path, index=2
+Update path, index=4
+Reset Agent
+Path calculated
+Update path, index=4
+Update path, index=4
+Update path, index=6
+Update path, index=5
+Update path, index=2
+Update path, index=3
+Update path, index=5
+Update path, index=6
+Update path, index=5
+Reset Agent
+Path calculated
+Update path, index=3
+Update path, index=5
+Update path, index=6
+Update path, index=4
+Reset Agent
+Path calculated
+Update path, index=2
+Update path, index=6
+Update path, index=7
+Update path, index=2
+Update path, index=7
+Update path, index=6
+Update path, index=4
+Reset Agent
+Path calculated
+Update path, index=5
+Update path, index=2
+Update path, index=7
+Reset Agent
+Path calculated
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Update path, index=3
+Update path, index=3
+Update path, index=2
+Reset Agent
+Path calculated
+Update path, index=2
+Update path, index=2
+Update path, index=5
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=3
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=2
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+End episode!
+Reset Agent
+Path calculated
+Update path, index=6
+Update path, index=4
+Update path, index=4
+Update path, index=2
+Reset Agent
+Path calculated
+Update path, index=3
+Update path, index=4
+Update path, index=3
+Update path, index=2
+Update path, index=3
+Reset Agent
+Path calculated
+Update path, index=5
+Update path, index=5
+Reset Agent
+Path calculated
+Reset Agent
+Path calculated
+Update path, index=4
+Update path, index=5
+Update path, index=2
+Update path, index=7
+Update path, index=4
+Update path, index=2
+Update path, index=3
+Update path, index=2
+Reset Agent
+Path calculated
+Update path, index=4
+Update path, index=5
+Update path, index=6
+Update path, index=2
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=3
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=4
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=3
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+End episode!
+Reset Agent
+Path calculated
+Update path, index=7
+Update path, index=2
+Update path, index=3
+Reset Agent
+Path calculated
+Update path, index=4
+Update path, index=4
+Update path, index=6
+Update path, index=5
+Update path, index=2
+Update path, index=5
+Reset Agent
+Path calculated
+Update path, index=3
+Update path, index=2
+Update path, index=4
+Update path, index=6
+Update path, index=5
+Update path, index=6
+Update path, index=7
+Reset Agent
+Path calculated
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Path calculated
+Update path, index=6
+Update path, index=6
+Update path, index=6
+Update path, index=6
+Update path, index=6
+Update path, index=6
+Update path, index=6
+Update path, index=6
+Update path, index=6
+Update path, index=6
+Update path, index=6
+Update path, index=6
+Update path, index=6
+Update path, index=6
+Update path, index=6
+Update path, index=6
+Update path, index=6
+Update path, index=6
+Update path, index=6
+Update path, index=6
+Update path, index=6
+Update path, index=6
+Update path, index=6
+Update path, index=6
+Update path, index=6
+Update path, index=6
+Update path, index=6
+Update path, index=2
+Update path, index=6
+Update path, index=2
+Update path, index=6
+Update path, index=6
+Update path, index=6
+Update path, index=6
+Update path, index=6
+Update path, index=6
+Update path, index=6
+Update path, index=2
+Update path, index=6
+Reset Agent
+Path calculated
+Update path, index=6
+Update path, index=6
+Update path, index=6
+Update path, index=6
+Update path, index=6
+Update path, index=6
+Update path, index=6
+Update path, index=6
+Update path, index=6
+End episode!
+Reset Agent
+Path calculated
+Update path, index=2
+Update path, index=8
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Reset Agent
+Path calculated
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=2
+Update path, index=9
+Update path, index=3
+Reset Agent
+Path calculated
+Update path, index=3
+Update path, index=3
+Update path, index=2
+Update path, index=4
+Update path, index=3
+Update path, index=4
+Reset Agent
+Path calculated
+Update path, index=4
+Reset Agent
+Path calculated
+Update path, index=3
+Update path, index=4
+Update path, index=4
+Update path, index=2
+Update path, index=3
+Update path, index=5
+Update path, index=2
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Reset Agent
+Path calculated
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=2
+Update path, index=5
+Update path, index=5
+End episode!
+Reset Agent
+Path calculated
+Update path, index=4
+Update path, index=4
+Update path, index=6
+Update path, index=3
+Update path, index=2
+Update path, index=5
+Reset Agent
+Path calculated
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=2
+Update path, index=6
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+Update path, index=5
+End episode!
+Reset Agent
+Path calculated
+Reset Agent
+Path calculated
+Update path, index=4
+Update path, index=3
+Update path, index=2
+Update path, index=2
+Reset Agent
+Path calculated
+Update path, index=2
+Update path, index=3
+Update path, index=4
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=4
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Reset Agent
+Reset Agent
+Reset Agent
+Reset Agent
+Path calculated
+Path calculated
+Path calculated
+Update path, index=3
+Path calculated
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=2
+End episode!
+Reset Agent
+Path calculated
+Reset Agent
+Path calculated
+Update path, index=2
+Reset Agent
+Path calculated
+Update path, index=2
+Update path, index=2
+Update path, index=2
+Update path, index=5
+Update path, index=2
+Update path, index=2
+Reset Agent
+Path calculated
+Update path, index=2
+Update path, index=3
+Reset Agent
+Path calculated
+Update path, index=3
+Update path, index=6
+Update path, index=2
+Update path, index=3
+Reset Agent
+Path calculated
+Reset Agent
+Path calculated
+Update path, index=4
+Update path, index=2
+Update path, index=4
+Update path, index=2
+Update path, index=3
+Reset Agent
+Path calculated
+Update path, index=5
+Update path, index=5
+Reset Agent
+Path calculated
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Update path, index=3
+Setting up 3 worker threads for Enlighten.
+  Thread -> id: 3d2c -> priority: 1 
+  Thread -> id: 46f0 -> priority: 1 
+  Thread -> id: 2bc4 -> priority: 1 
