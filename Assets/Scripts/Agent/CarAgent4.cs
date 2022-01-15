@@ -6,7 +6,6 @@ using Unity.MLAgents.Actuators;
 using Unity.MLAgents.Sensors;
 
 
-
 public class CarAgent4 : Agent
 {
     //mlagents-learn config/CarAgent4.yaml --run-id=CarAgent4_1 --env=builds/CarAgent4_parking
@@ -14,6 +13,10 @@ public class CarAgent4 : Agent
     [SerializeField] private GPS pathfinding;
     [SerializeField] private EnvController envController;
     [SerializeField] private TextMesh debugTextMesh;
+
+    //---
+    private static AgentConfig_4_1 CONFIG = AgentConfig_4_1.Instance;
+    private static RewardConfig_4_1 REWARDS = RewardConfig_4_1.Instance;
 
     //---
     private Rigidbody rigid;
@@ -25,6 +28,7 @@ public class CarAgent4 : Agent
     private List<Vector3> path;
     private Vector3 direction;
     private Vector3 velocity;
+
 
     //---
     private bool isEpisodeRunning = false;
@@ -115,7 +119,7 @@ public class CarAgent4 : Agent
     {
         //time
         float reward = 0f;
-        reward += ConfigReward.TIME;
+        reward += REWARDS.TIME;
 
         //finish episode + checkpoints
         Vector3 toGoal = (target.position - this.transform.position);
@@ -123,7 +127,7 @@ public class CarAgent4 : Agent
 
         if (isCheckPoint)
         {
-            reward += ConfigReward.CHECKPOINT_RANGE;
+            reward += REWARDS.CHECKPOINT_RANGE;
             isCheckPoint = false;
         }
 
@@ -178,7 +182,7 @@ public class CarAgent4 : Agent
             wheelController.SetActions(move, rotate, isBraking);
 
             if (isBraking > 0f) //discourage breaking
-                reward += ConfigReward.BREAK;
+                reward += REWARDS.BREAK;
                 
         }
         else
@@ -205,9 +209,9 @@ public class CarAgent4 : Agent
         }
 
         //--
-        Vector3 checkpointVector = path[index] - (this.transform.position + transform.forward * ConfigAgent.CHECKPOINT_OFFSET);
+        Vector3 checkpointVector = path[index] - (this.transform.position + transform.forward * CONFIG.CHECKPOINT_OFFSET);
         checkpointVector.y = 0;
-        if(checkpointVector.magnitude <= ConfigAgent.CHECKPOINT_RANGE)
+        if(checkpointVector.magnitude <= CONFIG.CHECKPOINT_RANGE)
         {
             index++;
             index = (index > path.Count - 1) ? (path.Count - 1) : index;
@@ -218,7 +222,7 @@ public class CarAgent4 : Agent
 
         //--
         Vector3 toGoal = (path[path.Count - 1] -this.transform.position);
-        if (toGoal.magnitude < ConfigAgent.CHECKPOINT_RANGE)
+        if (toGoal.magnitude < CONFIG.CHECKPOINT_RANGE)
         {
             isAtGoal = true;
         }
@@ -227,7 +231,7 @@ public class CarAgent4 : Agent
     private void SetPath()
     {
         path = pathfinding.FindPath(this.transform.position, target.position);
-        index = ConfigAgent.INDEX_START;
+        index = CONFIG.INDEX_START;
         Debug.Log("Path calculated");
     }
 
@@ -237,7 +241,7 @@ public class CarAgent4 : Agent
     {
         //if (collision.gameObject.tag == "Wall")
         //{
-        //   SetReward(ConfigReward.WALL_ENTER);
+        //   SetReward(REWARDS.WALL_ENTER);
         //    Debug.Log("Hit wall!");
         //}
     }
@@ -245,7 +249,7 @@ public class CarAgent4 : Agent
     private void OnCollisionStay(Collision collision) 
     {
         //if (collision.gameObject.tag == "Wall")
-        //    SetReward(ConfigReward.WALL_STAY);
+        //    SetReward(REWARDS.WALL_STAY);
     }
 
 
