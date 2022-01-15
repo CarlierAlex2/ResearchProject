@@ -239,17 +239,17 @@ public class CarAgent4 : Agent
     //--- COLLISIONS ---------------------------------------------------------------------
     private void OnCollisionEnter(Collision collision) 
     {
-        //if (collision.gameObject.tag == "Wall")
-        //{
-        //   SetReward(REWARDS.WALL_ENTER);
-        //    Debug.Log("Hit wall!");
-        //}
+        if (collision.gameObject.tag == "Wall")
+        {
+           SetReward(REWARDS.WALL_ENTER);
+            Debug.Log("Hit wall!");
+        }
     }
 
     private void OnCollisionStay(Collision collision) 
     {
-        //if (collision.gameObject.tag == "Wall")
-        //    SetReward(REWARDS.WALL_STAY);
+        if (collision.gameObject.tag == "Wall")
+            SetReward(REWARDS.WALL_STAY);
     }
 
 
