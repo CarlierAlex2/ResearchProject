@@ -1,0 +1,42 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1642253177",
+        "python_version": "3.6.13 |Anaconda, Inc.| (default, Mar 16 2021, 11:37:27) [MSC v.1916 64 bit (AMD64)]",
+        "command_line_arguments": "C:\\Users\\alexc\\anaconda3\\envs\\unity_ml_full\\Scripts\\mlagents-learn config/CarAgent4.yaml --run-id=CarAgent4_1 --env=builds/CarAgent4_parking",
+        "mlagents_version": "0.27.0",
+        "mlagents_envs_version": "0.27.0",
+        "communication_protocol_version": "1.5.0",
+        "pytorch_version": "1.7.1+cu110",
+        "numpy_version": "1.19.5",
+        "end_time_seconds": "1642253185"
+    },
+    "total": 8.374213000000001,
+    "count": 1,
+    "self": 0.7238609000000009,
+    "children": {
+        "run_training.setup": {
+            "total": 0.3349048,
+            "count": 1,
+            "self": 0.3349048
+        },
+        "TrainerController.start_learning": {
+            "total": 7.3154473,
+            "count": 1,
+            "self": 0.00011789999999933798,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 7.3153185,
+                    "count": 1,
+                    "self": 7.3153185
+                },
+                "TrainerController._save_models": {
+                    "total": 1.0900000000368948e-05,
+                    "count": 1,
+                    "self": 1.0900000000368948e-05
+                }
+            }
+        }
+    }
+}
