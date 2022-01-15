@@ -5,15 +5,15 @@ using UnityEngine;
 public class AgentConfig_4_3
 {
     public static bool hasInstance = false;
-    private static AgentConfig_4_1 instance;
-    public static AgentConfig_4_1 Instance
+    private static AgentConfig_4_3 instance;
+    public static AgentConfig_4_3 Instance
     {
         get 
         {
             if (!hasInstance)
             {
                 hasInstance = true;
-                instance = new AgentConfig_4_1();
+                instance = new AgentConfig_4_3();
             }
             return instance;
         }
@@ -40,15 +40,15 @@ public class AgentConfig_4_3
 public class RewardConfig_4_3
 {
     public static bool hasInstance = false;
-    private static RewardConfig_4_1 instance;
-    public static RewardConfig_4_1 Instance
+    private static RewardConfig_4_3 instance;
+    public static RewardConfig_4_3 Instance
     {
         get 
         {
             if (!hasInstance)
             {
                 hasInstance = true;
-                instance = new RewardConfig_4_1();
+                instance = new RewardConfig_4_3();
             }
             return instance;
         }
