@@ -113,32 +113,9 @@ public class CarAgent4 : Agent
     //--- REWARDS ---------------------------------------------------------------------
     private void RewardCar()
     {
+        //time
         float reward = 0f;
         reward += ConfigReward.TIME;
-
-        // move + velocity
-        Vector3 localVelocity = transform.InverseTransformDirection(velocity);
-        //float forwardSpeedDiff = Mathf.Abs(localVelocity.z) - ConfigAgent.VELOCITY_MIN;
-        float speedDiff = Mathf.Abs(localVelocity.magnitude) - ConfigAgent.VELOCITY_MIN;
-        speedDiff = speedDiff / ConfigAgent.VELOCITY_MIN;
-
-        //reward += ((speedDiff < 0) ? (-speedDiff * ConfigReward.VELOCITY_MIN) : 0f);
-
-        //turning
-        //Vector3 forward = transform.forward;
-        //forward.y = 0;
-        //forward.Normalize();
-        //float angle = Vector3.Angle(forward, directionGPS);
-        //float angleABS = Mathf.Abs(angle);
-
-        //reward += (angleABS > ConfigAgent.STEERING_ANGLE) ? ConfigReward.STEERING_ANGLE : 0f;
-
-        //miss turn
-        //if (angleABS > ConfigAgent.CHECKPOINT_ANGLE_MAX)
-        //{
-        //    reward += ConfigReward.CHECKPOINT_PASS;
-        //    //SetPath();
-        //}
 
         //finish episode + checkpoints
         Vector3 toGoal = (target.position - this.transform.position);
