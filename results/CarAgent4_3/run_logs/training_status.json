@@ -2,58 +2,58 @@
     "CarAgent4": {
         "checkpoints": [
             {
-                "steps": 899989,
-                "file_path": "results\\CarAgent4_3\\CarAgent4\\CarAgent4-899989.onnx",
-                "reward": -461.8583603700002,
-                "creation_time": 1642270336.7169814,
+                "steps": 899996,
+                "file_path": "results\\CarAgent4_3\\CarAgent4\\CarAgent4-899996.onnx",
+                "reward": 306.05000858306886,
+                "creation_time": 1642273055.7535853,
                 "auxillary_file_paths": [
-                    "results\\CarAgent4_3\\CarAgent4\\CarAgent4-899989.pt"
+                    "results\\CarAgent4_3\\CarAgent4\\CarAgent4-899996.pt"
                 ]
             },
             {
-                "steps": 999985,
-                "file_path": "results\\CarAgent4_3\\CarAgent4\\CarAgent4-999985.onnx",
-                "reward": -457.61669301986694,
-                "creation_time": 1642270444.619438,
+                "steps": 999939,
+                "file_path": "results\\CarAgent4_3\\CarAgent4\\CarAgent4-999939.onnx",
+                "reward": null,
+                "creation_time": 1642273160.97157,
                 "auxillary_file_paths": [
-                    "results\\CarAgent4_3\\CarAgent4\\CarAgent4-999985.pt"
+                    "results\\CarAgent4_3\\CarAgent4\\CarAgent4-999939.pt"
                 ]
             },
             {
-                "steps": 1099950,
-                "file_path": "results\\CarAgent4_3\\CarAgent4\\CarAgent4-1099950.onnx",
-                "reward": -52.9500036239624,
-                "creation_time": 1642270553.135502,
+                "steps": 1099976,
+                "file_path": "results\\CarAgent4_3\\CarAgent4\\CarAgent4-1099976.onnx",
+                "reward": -23.491671800613403,
+                "creation_time": 1642273259.0097923,
                 "auxillary_file_paths": [
-                    "results\\CarAgent4_3\\CarAgent4\\CarAgent4-1099950.pt"
+                    "results\\CarAgent4_3\\CarAgent4\\CarAgent4-1099976.pt"
                 ]
             },
             {
-                "steps": 1199960,
-                "file_path": "results\\CarAgent4_3\\CarAgent4\\CarAgent4-1199960.onnx",
-                "reward": -84.75358342272895,
-                "creation_time": 1642270657.413321,
+                "steps": 1199972,
+                "file_path": "results\\CarAgent4_3\\CarAgent4\\CarAgent4-1199972.onnx",
+                "reward": -51.222732760689475,
+                "creation_time": 1642273365.0179157,
                 "auxillary_file_paths": [
-                    "results\\CarAgent4_3\\CarAgent4\\CarAgent4-1199960.pt"
+                    "results\\CarAgent4_3\\CarAgent4\\CarAgent4-1199972.pt"
                 ]
             },
             {
-                "steps": 1200024,
-                "file_path": "results\\CarAgent4_3\\CarAgent4\\CarAgent4-1200024.onnx",
-                "reward": -84.75358342272895,
-                "creation_time": 1642270657.4983363,
+                "steps": 1200100,
+                "file_path": "results\\CarAgent4_3\\CarAgent4\\CarAgent4-1200100.onnx",
+                "reward": -51.222732760689475,
+                "creation_time": 1642273365.1139328,
                 "auxillary_file_paths": [
-                    "results\\CarAgent4_3\\CarAgent4\\CarAgent4-1200024.pt"
+                    "results\\CarAgent4_3\\CarAgent4\\CarAgent4-1200100.pt"
                 ]
             }
         ],
         "final_checkpoint": {
-            "steps": 1200024,
+            "steps": 1200100,
             "file_path": "results\\CarAgent4_3\\CarAgent4.onnx",
-            "reward": -84.75358342272895,
-            "creation_time": 1642270657.4983363,
+            "reward": -51.222732760689475,
+            "creation_time": 1642273365.1139328,
             "auxillary_file_paths": [
-                "results\\CarAgent4_3\\CarAgent4\\CarAgent4-1200024.pt"
+                "results\\CarAgent4_3\\CarAgent4\\CarAgent4-1200100.pt"
             ]
         }
     },

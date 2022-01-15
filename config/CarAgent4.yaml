@@ -1,5 +1,5 @@
 behaviors:
-  CarAgent4:
+  CarAgent3:
     trainer_type: ppo
     hyperparameters:
       batch_size: 256
@@ -14,6 +14,7 @@ behaviors:
       normalize: false
       hidden_units: 128
       num_layers: 2
+      #vis_encode_type: simple
     reward_signals:
       extrinsic:
         gamma: 0.99
