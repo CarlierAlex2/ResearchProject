@@ -204,6 +204,10 @@ PrefabInstance:
       propertyPath: envController
       value: 
       objectReference: {fileID: 5876501147401306917}
+    - target: {fileID: 6050383556575618022, guid: c7c28752daac9c445843a1268baaa536, type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7c28752daac9c445843a1268baaa536, type: 3}
 --- !u!4 &7259246618026198352 stripped
