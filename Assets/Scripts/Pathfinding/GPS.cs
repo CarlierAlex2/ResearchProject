@@ -10,13 +10,21 @@ public class GPS : MonoBehaviour
     [SerializeField] private int height = 20;
     [SerializeField] private float raycastDuration = 1f;
     private Pathfinding pathfinding;
-    private bool isGridChecked = false;
+    private bool isObstaclesDone = false;
+    private bool isInit = false;
 
     private void Start()
     {
+        Init();
+    }
+
+    public void Init()
+    {
+        if(isInit)
+            return;
+        isInit = true;
         pathfinding = new Pathfinding(width, height, cellSize, showDebug, transform.position - new Vector3(cellSize/2f, 0, cellSize/2f));
-        if(!isGridChecked)
-            CheckWalkable();
+        //SetupObstacles();
     }
 
     public void Update() 
@@ -25,14 +33,22 @@ public class GPS : MonoBehaviour
             pathfinding.ShowDebug();
     }
 
+    public bool IsWalkable (Vector3 pos)
+    {
+        return pathfinding.IsWalkable(pos);
+    }
+
     public List<Vector3> FindPath(Vector3 startPos, Vector3 endPos) 
     {
         return pathfinding.FindPath(startPos, endPos);
     }
 
-    public void CheckWalkable()
+    public void SetupObstacles()
     {
-        isGridChecked = true;
+        if(isObstaclesDone)
+            return;
+
+        isObstaclesDone = true;
         int width = pathfinding.grid.Width;
         int height = pathfinding.grid.Height;
         int layer_mask = LayerMask.GetMask("Floor");

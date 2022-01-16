@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class GoalController : MonoBehaviour
 {
-    private float [] rangeX = {7, 36};
-    private float [] rangeZ = {7, 36};
+    [SerializeField] private float [] rangeX = {7, 36};
+    [SerializeField] private float [] rangeZ = {7, 36};
 
     public void ResetGoal()
     {

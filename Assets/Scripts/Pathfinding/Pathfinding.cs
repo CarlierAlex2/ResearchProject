@@ -67,6 +67,13 @@ public class Pathfinding
         Debug.DrawLine(grid.GetWorldPosition(width, 0), grid.GetWorldPosition(width, height), color);
     }
 
+    public bool IsWalkable (Vector3 pos)
+    {
+        grid.GetXY(pos, out int x, out int y);
+        PathNode node = grid.GetGridObject(x, y);
+        return node.isWalkable;
+    }
+
     public List<Vector3> FindPath (Vector3 startPos, Vector3 endPos)
     {
         grid.GetXY(startPos, out int startX, out int startY);

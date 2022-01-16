@@ -9,7 +9,7 @@ using Unity.MLAgents.Sensors;
 public class CarAgent4 : Agent
 {
     //mlagents-learn config/CarAgent4.yaml --run-id=CarAgent4_1 --env=builds/CarAgent4_parking
-    //mlagents-learn config/CarAgent4_5.yaml --run-id=CarAgent4_5 --env=builds/CarAgent4_parking          
+    //mlagents-learn config/CarAgent4_9.yaml --run-id=CarAgent4_9 --env=builds/CarAgent4_center         
     [SerializeField] private Transform target;
     [SerializeField] private GPS pathfinding;
     [SerializeField] private EnvController envController;
@@ -49,6 +49,7 @@ public class CarAgent4 : Agent
 
     public override void OnEpisodeBegin()
     {
+        envController.InitEnvironment(); //watch out for infinite loop, Initialize or OnEpisodeBegin first?
         envController.ResetEnvironment(this.transform);
         wheelController.ResetVelocity();
         ResetAgent();

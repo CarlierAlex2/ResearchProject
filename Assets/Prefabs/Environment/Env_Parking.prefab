@@ -95,6 +95,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b39e6eaf2dc6ea438f96190f339b397, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gpsController: {fileID: 2629213444523479704}
   startController: {fileID: 292583178144496802}
   goalController: {fileID: 1524026037954314962}
 --- !u!1 &2629213444523479705
@@ -193,8 +194,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   showDebug: 1
   cellSize: 4
-  width: 10
-  height: 11
+  width: 11
+  height: 12
   raycastDuration: 1
 --- !u!1 &2629213445325462392
 GameObject:
@@ -424,6 +425,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53802fa250ffd8746a5918997fe29cdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rangeX:
+  - 7
+  - 36
+  rangeZ:
+  - 7
+  - 36
 --- !u!1001 &132946150848071514
 PrefabInstance:
   m_ObjectHideFlags: 0
