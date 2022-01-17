@@ -16,8 +16,8 @@ public class CarAgent5 : Agent
     [SerializeField] private TextMesh debugTextMesh;
 
     //---
-    private static ConfigAgent CONFIG = new ConfigAgent_5_1();
-    private static ConfigReward REWARDS = new ConfigReward_5_1();
+    private static ConfigAgent CONFIG = new ConfigAgent_5_2();
+    private static ConfigReward REWARDS = new ConfigReward_5_2();
 
     //---
     private Rigidbody rigid;
@@ -123,6 +123,11 @@ public class CarAgent5 : Agent
         float reward = 0f;
         reward += REWARDS.TIME;
 
+        //steeering
+        float angle = Vector3.Angle(this.transform.forward, direction.normalized);
+        if(CONFIG.STEERING_ANGLE >= angle && angle >= -CONFIG.STEERING_ANGLE)
+            reward += REWARDS.STEERING_ANGLE;
+
         //finish episode + checkpoints
         Vector3 toGoal = (target.position - this.transform.position);
         toGoal.y = 0;
@@ -188,14 +193,6 @@ public class CarAgent5 : Agent
             //breaking
             if (isBraking > 0f) 
                 reward += REWARDS.BREAK;
-
-            //steeering
-            float angle = Vector3.Angle(this.transform.forward, direction.normalized);
-            if(angle > CONFIG.STEERING_ANGLE && rotate >= 0)
-                reward += REWARDS.STEERING_ANGLE;
-            else if(angle < -CONFIG.STEERING_ANGLE && rotate <= 0)
-                reward += REWARDS.STEERING_ANGLE;
-                
         }
         else
         {

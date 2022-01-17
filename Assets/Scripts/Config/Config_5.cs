@@ -45,12 +45,12 @@ public class ConfigAgent_5_2 : ConfigAgent
     {
         this.INDEX_START = 1;
         //--
-        this.CHECKPOINT_OFFSET = 1f;
-        this.CHECKPOINT_RANGE = 2.2f;
+        this.CHECKPOINT_OFFSET = 0.6f;
+        this.CHECKPOINT_RANGE = 2f;
         this.CHECKPOINT_ANGLE_MAX = 0;
         //--
         this.VELOCITY_MIN = 0;
-        this.STEERING_ANGLE = 30f;
+        this.STEERING_ANGLE = 20f;
     }
 }
 
@@ -70,6 +70,10 @@ public class ConfigReward_5_2 : ConfigReward
         //--
         this.VELOCITY_MIN = 0;
         this.VELOCITY_FORWARD = 0;
-        this.STEERING_ANGLE = -0.1f;
+        this.STEERING_ANGLE = 0.1f;
     }
 }
+
+//-------------------------------------------------------------------
+
+

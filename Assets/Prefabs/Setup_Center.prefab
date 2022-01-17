@@ -91,6 +91,10 @@ PrefabInstance:
       propertyPath: showDebug
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3068560201632420753, guid: 68a643207c02f8b4fada93e5a67f1a9d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 68a643207c02f8b4fada93e5a67f1a9d, type: 3}
 --- !u!4 &1085128628554664111 stripped
@@ -192,6 +196,10 @@ PrefabInstance:
       propertyPath: envController
       value: 
       objectReference: {fileID: 7478112696541413166}
+    - target: {fileID: 2173973433994280117, guid: 93bfd0ee5e8fc0c46baa56ed099fbbd9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.6
+      objectReference: {fileID: 0}
     - target: {fileID: 5254772421611928645, guid: 93bfd0ee5e8fc0c46baa56ed099fbbd9, type: 3}
       propertyPath: m_Model
       value: 
@@ -202,7 +210,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5254772421611928645, guid: 93bfd0ee5e8fc0c46baa56ed099fbbd9, type: 3}
       propertyPath: m_BrainParameters.NumStackedVectorObservations
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5254772421611928645, guid: 93bfd0ee5e8fc0c46baa56ed099fbbd9, type: 3}
       propertyPath: m_BrainParameters.VectorActionSize.Array.data[0]
@@ -242,7 +250,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8963441430729418284, guid: 93bfd0ee5e8fc0c46baa56ed099fbbd9, type: 3}
       propertyPath: m_ObservationStacks
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8963441430729418284, guid: 93bfd0ee5e8fc0c46baa56ed099fbbd9, type: 3}
       propertyPath: m_DetectableTags.Array.size

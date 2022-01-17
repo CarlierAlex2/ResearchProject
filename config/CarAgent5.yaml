@@ -43,6 +43,6 @@ behaviors:
         gamma: 0.99
         strength: 1.0
     checkpoint_interval: 200000
-    max_steps: 1500000 #3000 * 500
+    max_steps: 1500000 #3000 * 1000
     time_horizon: 64
     summary_freq: 60000 #every 10

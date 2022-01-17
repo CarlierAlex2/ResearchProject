@@ -5,7 +5,7 @@
                 "steps": 799936,
                 "file_path": "results\\CarAgent5_2\\CarAgent5_2\\CarAgent5_2-799936.onnx",
                 "reward": null,
-                "creation_time": 1642423986.8363392,
+                "creation_time": 1642427722.0699944,
                 "auxillary_file_paths": [
                     "results\\CarAgent5_2\\CarAgent5_2\\CarAgent5_2-799936.pt"
                 ]
@@ -14,7 +14,7 @@
                 "steps": 999936,
                 "file_path": "results\\CarAgent5_2\\CarAgent5_2\\CarAgent5_2-999936.onnx",
                 "reward": null,
-                "creation_time": 1642424160.1417851,
+                "creation_time": 1642427931.4552786,
                 "auxillary_file_paths": [
                     "results\\CarAgent5_2\\CarAgent5_2\\CarAgent5_2-999936.pt"
                 ]
@@ -22,8 +22,8 @@
             {
                 "steps": 1199972,
                 "file_path": "results\\CarAgent5_2\\CarAgent5_2\\CarAgent5_2-1199972.onnx",
-                "reward": -294.8000259399414,
-                "creation_time": 1642424335.729632,
+                "reward": -1213.946711730957,
+                "creation_time": 1642428171.5559592,
                 "auxillary_file_paths": [
                     "results\\CarAgent5_2\\CarAgent5_2\\CarAgent5_2-1199972.pt"
                 ]
@@ -32,7 +32,7 @@
                 "steps": 1399936,
                 "file_path": "results\\CarAgent5_2\\CarAgent5_2\\CarAgent5_2-1399936.onnx",
                 "reward": null,
-                "creation_time": 1642424508.9975715,
+                "creation_time": 1642428402.9826157,
                 "auxillary_file_paths": [
                     "results\\CarAgent5_2\\CarAgent5_2\\CarAgent5_2-1399936.pt"
                 ]
@@ -41,7 +41,7 @@
                 "steps": 1500288,
                 "file_path": "results\\CarAgent5_2\\CarAgent5_2\\CarAgent5_2-1500288.onnx",
                 "reward": null,
-                "creation_time": 1642424595.671798,
+                "creation_time": 1642428520.5649204,
                 "auxillary_file_paths": [
                     "results\\CarAgent5_2\\CarAgent5_2\\CarAgent5_2-1500288.pt"
                 ]
@@ -51,7 +51,7 @@
             "steps": 1500288,
             "file_path": "results\\CarAgent5_2\\CarAgent5_2.onnx",
             "reward": null,
-            "creation_time": 1642424595.671798,
+            "creation_time": 1642428520.5649204,
             "auxillary_file_paths": [
                 "results\\CarAgent5_2\\CarAgent5_2\\CarAgent5_2-1500288.pt"
             ]
