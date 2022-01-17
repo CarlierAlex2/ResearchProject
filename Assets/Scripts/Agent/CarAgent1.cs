@@ -14,6 +14,10 @@ public class CarAgent1 : Agent
     [SerializeField] private Transform gpsObj;
 
     //---
+    private ConfigAgent configAgent = new ConfigAgent();
+    private ConfigReward configReward = new ConfigReward();
+    
+    //---
     private Rigidbody rigid;
     private CarAgentWheel wheelController;
     private GPS pathfinding;
@@ -81,41 +85,41 @@ public class CarAgent1 : Agent
     //--- REWARDS ---------------------------------------------------------------------
     private void RewardCar()
     {
-        float reward = ConfigReward.TIME;
+        float reward = configReward.TIME;
 
         // move + velocity
         Vector3 velocity = rigid.velocity;
         velocity.y = 0;
         Vector3 localVelocity = transform.InverseTransformDirection(velocity);
         var forwardSpeed = localVelocity.z;
-        if(Mathf.Abs(forwardSpeed) >= ConfigAgent.VELOCITY_MIN)
+        if(Mathf.Abs(forwardSpeed) >= configAgent.VELOCITY_MIN)
         {
-            reward += ConfigReward.VELOCITY_MIN;
+            reward += configReward.VELOCITY_MIN;
             if(forwardSpeed > 0)
-                reward += ConfigReward.VELOCITY_FORWARD;
+                reward += configReward.VELOCITY_FORWARD;
         }
 
         //float velocityAngle = Mathf.Abs(Vector3.Angle(this.transform.forward, velocity.normalized));
-        //if(velocityAngle < ConfigAgent.VELOCITY_ANGLE)
-        //    reward += ConfigReward.VELOCITY_ANGLE;
+        //if(velocityAngle < configAgent.VELOCITY_ANGLE)
+        //    reward += configReward.VELOCITY_ANGLE;
 
         //checkpoints
         if(isCheckPoint)
         {
-            reward += ConfigReward.CHECKPOINT_RANGE;
+            reward += configReward.CHECKPOINT_RANGE;
             isCheckPoint = false;
         }
         float angle = Mathf.Abs(GetAngleDirection());
-        if (angle > ConfigAgent.CHECKPOINT_ANGLE_MAX)
+        if (angle > configAgent.CHECKPOINT_ANGLE_MAX)
         {
-            reward += ConfigReward.CHECKPOINT_PASS;
+            reward += configReward.CHECKPOINT_PASS;
             SetPath();
         }
 
         //finish episode
         if (index >= path.Count - 1)
         {
-            reward += ConfigReward.GOAL;
+            reward += configReward.GOAL;
         }
         SetReward(reward);
     }
@@ -154,7 +158,7 @@ public class CarAgent1 : Agent
             bool isBraking = (actions.DiscreteActions[0] == 1);
 
             if (isBraking)
-                AddReward(ConfigReward.BREAK);
+                AddReward(configReward.BREAK);
 
             wheelController.SetActions(move, rotate, isBraking);
         }
@@ -183,8 +187,8 @@ public class CarAgent1 : Agent
             return;
         }
             
-        Vector3 checkpointVector = GetDirection(ConfigAgent.CHECKPOINT_OFFSET); // get current direction
-        if(checkpointVector.magnitude <= ConfigAgent.CHECKPOINT_RANGE)
+        Vector3 checkpointVector = GetDirection(configAgent.CHECKPOINT_OFFSET); // get current direction
+        if(checkpointVector.magnitude <= configAgent.CHECKPOINT_RANGE)
         {
             index++;
             isCheckPoint = true;
@@ -197,7 +201,7 @@ public class CarAgent1 : Agent
     private void SetPath()
     {
         path = pathfinding.FindPath(this.transform.position, target.position);
-        index = ConfigAgent.INDEX_START;
+        index = configAgent.INDEX_START;
     }
 
     private float GetAngleDirection()
@@ -219,7 +223,7 @@ public class CarAgent1 : Agent
     {
         if (collision.gameObject.tag == "Wall")
         {
-            SetReward(ConfigReward.WALL_ENTER);
+            SetReward(configReward.WALL_ENTER);
             Debug.Log("Hit wall!");
         }
     }
@@ -227,7 +231,7 @@ public class CarAgent1 : Agent
     private void OnCollisionStay(Collision collision) 
     {
         if (collision.gameObject.tag == "Wall")
-            SetReward(ConfigReward.WALL_STAY);
+            SetReward(configReward.WALL_STAY);
     }
 
 

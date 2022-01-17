@@ -15,6 +15,10 @@ public class CarAgent : Agent
     [SerializeField] private TextMesh debugTextMesh;
 
     //---
+    private ConfigAgent configAgent = new ConfigAgent();
+    private ConfigReward configReward = new ConfigReward();
+
+    //---
     private Rigidbody rigid;
     private CarAgentWheel wheelController;
     private GPS pathfinding;
@@ -126,17 +130,17 @@ public class CarAgent : Agent
     private void RewardCar()
     {
         float reward = 0f;
-        //ConfigReward.TIME;
+        //configReward.TIME;
 
         // move + velocity
         Vector3 velocity = rigid.velocity;
         velocity.y = 0;
         Vector3 localVelocity = transform.InverseTransformDirection(velocity);
-        //float forwardSpeedDiff = Mathf.Abs(localVelocity.z) - ConfigAgent.VELOCITY_MIN;
-        float forwardSpeedDiff = localVelocity.magnitude - ConfigAgent.VELOCITY_MIN;
-        forwardSpeedDiff = forwardSpeedDiff / ConfigAgent.VELOCITY_MIN;
+        //float forwardSpeedDiff = Mathf.Abs(localVelocity.z) - configAgent.VELOCITY_MIN;
+        float forwardSpeedDiff = localVelocity.magnitude - configAgent.VELOCITY_MIN;
+        forwardSpeedDiff = forwardSpeedDiff / configAgent.VELOCITY_MIN;
 
-        reward += ((forwardSpeedDiff < 0) ? (forwardSpeedDiff * ConfigReward.VELOCITY_MIN) : 0f);
+        reward += ((forwardSpeedDiff < 0) ? (forwardSpeedDiff * configReward.VELOCITY_MIN) : 0f);
 
         //turning
         //Vector3 forward = transform.forward;
@@ -145,23 +149,23 @@ public class CarAgent : Agent
         //float angle = Vector3.Angle(forward, directionGPS);
         //float angleABS = Mathf.Abs(angle);
 
-        //reward += (angleABS > ConfigAgent.STEERING_ANGLE) ? ConfigReward.STEERING_ANGLE : 0f;
+        //reward += (angleABS > configAgent.STEERING_ANGLE) ? configReward.STEERING_ANGLE : 0f;
 
         //miss turn
-        //if (angleABS > ConfigAgent.CHECKPOINT_ANGLE_MAX)
+        //if (angleABS > configAgent.CHECKPOINT_ANGLE_MAX)
         //{
-        //    reward += ConfigReward.CHECKPOINT_PASS;
+        //    reward += configReward.CHECKPOINT_PASS;
         //    //SetPath();
         //}
 
         //finish episode + checkpoints
         if (index >= path.Count - 1)
         {
-            reward += ConfigReward.GOAL;
+            reward += configReward.GOAL;
         }
         else if (isCheckPoint)
         {
-            reward += ConfigReward.CHECKPOINT_RANGE;
+            reward += configReward.CHECKPOINT_RANGE;
             isCheckPoint = false;
         }
 
@@ -208,7 +212,7 @@ public class CarAgent : Agent
             actionOutput[2] = actions.DiscreteActions[0];
 
             if (isBraking)
-                AddReward(ConfigReward.BREAK);
+                AddReward(configReward.BREAK);
 
             wheelController.SetActions(move, rotate, isBraking);
         }
@@ -236,9 +240,9 @@ public class CarAgent : Agent
         }
 
         //--
-        Vector3 checkpointVector = path[index] - (this.transform.position + transform.forward * ConfigAgent.CHECKPOINT_OFFSET);
+        Vector3 checkpointVector = path[index] - (this.transform.position + transform.forward * configAgent.CHECKPOINT_OFFSET);
         checkpointVector.y = 0;
-        if(checkpointVector.magnitude <= ConfigAgent.CHECKPOINT_RANGE)
+        if(checkpointVector.magnitude <= configAgent.CHECKPOINT_RANGE)
         {
             index++;
             isCheckPoint = true;
@@ -250,7 +254,7 @@ public class CarAgent : Agent
     private void SetPath()
     {
         path = pathfinding.FindPath(this.transform.position, target.position);
-        index = ConfigAgent.INDEX_START;
+        index = configAgent.INDEX_START;
         nextCheckpoint = path[index];
         Debug.Log("Path calculated");
     }
@@ -261,7 +265,7 @@ public class CarAgent : Agent
     {
         if (collision.gameObject.tag == "Wall")
         {
-            SetReward(ConfigReward.WALL_ENTER);
+            SetReward(configReward.WALL_ENTER);
             Debug.Log("Hit wall!");
         }
     }
@@ -269,7 +273,7 @@ public class CarAgent : Agent
     private void OnCollisionStay(Collision collision) 
     {
         if (collision.gameObject.tag == "Wall")
-            SetReward(ConfigReward.WALL_STAY);
+            SetReward(configReward.WALL_STAY);
     }
 
 
