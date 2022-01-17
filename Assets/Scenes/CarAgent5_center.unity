@@ -531,7 +531,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &839822256
 Transform:
   m_ObjectHideFlags: 0
@@ -1412,10 +1412,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Setup_Center
       objectReference: {fileID: 0}
-    - target: {fileID: 2046601327832833997, guid: 15608b28a15dce54a9d44dfd0d770e4a, type: 3}
-      propertyPath: m_Model
-      value: 
-      objectReference: {fileID: 5022602860645237092, guid: 80641690f09e5d24b85af45a0ca0e622, type: 3}
     - target: {fileID: 3531873325773555350, guid: 15608b28a15dce54a9d44dfd0d770e4a, type: 3}
       propertyPath: showDebug
       value: 1
