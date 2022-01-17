@@ -13,7 +13,7 @@ public class ConfigAgent_5_1 : ConfigAgent
         this.CHECKPOINT_ANGLE_MAX = 140f;
         //--
         this.VELOCITY_MIN = 0.1f;
-        this.STEERING_ANGLE = 60f;
+        this.STEERING_ANGLE = 30f;
     }
 }
 
@@ -33,7 +33,7 @@ public class ConfigReward_5_1 : ConfigReward
         //--
         this.VELOCITY_MIN = -2f;
         this.VELOCITY_FORWARD = 0.1f;
-        this.STEERING_ANGLE = -0.1f;
+        this.STEERING_ANGLE = -0.5f;
     }
 }
 
