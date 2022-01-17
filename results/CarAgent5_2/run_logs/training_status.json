@@ -1,0 +1,65 @@
+{
+    "CarAgent5_2": {
+        "checkpoints": [
+            {
+                "steps": 799936,
+                "file_path": "results\\CarAgent5_2\\CarAgent5_2\\CarAgent5_2-799936.onnx",
+                "reward": null,
+                "creation_time": 1642423986.8363392,
+                "auxillary_file_paths": [
+                    "results\\CarAgent5_2\\CarAgent5_2\\CarAgent5_2-799936.pt"
+                ]
+            },
+            {
+                "steps": 999936,
+                "file_path": "results\\CarAgent5_2\\CarAgent5_2\\CarAgent5_2-999936.onnx",
+                "reward": null,
+                "creation_time": 1642424160.1417851,
+                "auxillary_file_paths": [
+                    "results\\CarAgent5_2\\CarAgent5_2\\CarAgent5_2-999936.pt"
+                ]
+            },
+            {
+                "steps": 1199972,
+                "file_path": "results\\CarAgent5_2\\CarAgent5_2\\CarAgent5_2-1199972.onnx",
+                "reward": -294.8000259399414,
+                "creation_time": 1642424335.729632,
+                "auxillary_file_paths": [
+                    "results\\CarAgent5_2\\CarAgent5_2\\CarAgent5_2-1199972.pt"
+                ]
+            },
+            {
+                "steps": 1399936,
+                "file_path": "results\\CarAgent5_2\\CarAgent5_2\\CarAgent5_2-1399936.onnx",
+                "reward": null,
+                "creation_time": 1642424508.9975715,
+                "auxillary_file_paths": [
+                    "results\\CarAgent5_2\\CarAgent5_2\\CarAgent5_2-1399936.pt"
+                ]
+            },
+            {
+                "steps": 1500288,
+                "file_path": "results\\CarAgent5_2\\CarAgent5_2\\CarAgent5_2-1500288.onnx",
+                "reward": null,
+                "creation_time": 1642424595.671798,
+                "auxillary_file_paths": [
+                    "results\\CarAgent5_2\\CarAgent5_2\\CarAgent5_2-1500288.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1500288,
+            "file_path": "results\\CarAgent5_2\\CarAgent5_2.onnx",
+            "reward": null,
+            "creation_time": 1642424595.671798,
+            "auxillary_file_paths": [
+                "results\\CarAgent5_2\\CarAgent5_2\\CarAgent5_2-1500288.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.27.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}
