@@ -206,7 +206,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5254772421611928645, guid: 93bfd0ee5e8fc0c46baa56ed099fbbd9, type: 3}
       propertyPath: m_BehaviorName
-      value: CarAgent5_2
+      value: CarAgent5_3
       objectReference: {fileID: 0}
     - target: {fileID: 5254772421611928645, guid: 93bfd0ee5e8fc0c46baa56ed099fbbd9, type: 3}
       propertyPath: m_BrainParameters.NumStackedVectorObservations

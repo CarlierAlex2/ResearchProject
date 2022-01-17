@@ -126,7 +126,9 @@ public class CarAgent5 : Agent
         //steeering
         float angle = Vector3.Angle(this.transform.forward, direction.normalized);
         if(CONFIG.STEERING_ANGLE >= angle && angle >= -CONFIG.STEERING_ANGLE)
+        {
             reward += REWARDS.STEERING_ANGLE;
+        }
 
         //finish episode + checkpoints
         Vector3 toGoal = (target.position - this.transform.position);
