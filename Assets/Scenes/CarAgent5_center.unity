@@ -531,7 +531,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &839822256
 Transform:
   m_ObjectHideFlags: 0
@@ -1357,7 +1357,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1679645423255818662, guid: 15608b28a15dce54a9d44dfd0d770e4a, type: 3}
   m_PrefabInstance: {fileID: 2055640862}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &9220340670782863824
+--- !u!1001 &4240373423903765164
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1412,9 +1412,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Setup_Center
       objectReference: {fileID: 0}
-    - target: {fileID: 3531873325773555350, guid: 15608b28a15dce54a9d44dfd0d770e4a, type: 3}
-      propertyPath: showDebug
-      value: 1
+    - target: {fileID: 2046601327832833997, guid: 15608b28a15dce54a9d44dfd0d770e4a, type: 3}
+      propertyPath: m_Model
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 15608b28a15dce54a9d44dfd0d770e4a, type: 3}

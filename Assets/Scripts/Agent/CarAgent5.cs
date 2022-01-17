@@ -23,7 +23,6 @@ public class CarAgent5 : Agent
     private Rigidbody rigid;
     private CarAgentWheel wheelController;
 
-
     //---
     private int index = 0;
     private List<Vector3> path;
@@ -37,7 +36,7 @@ public class CarAgent5 : Agent
     private bool isAtGoal = false;
      
     private float [] actionOutput = {0, 0, 0};
-
+    private int [] actionSpace = {9, 9, 2};
 
     //--- INITIALIZE ---------------------------------------------------------------------
     public override void Initialize()
@@ -83,6 +82,7 @@ public class CarAgent5 : Agent
 
         sensor.AddObservation(localDirection.x); 
         sensor.AddObservation(localDirection.z); 
+        sensor.AddObservation(transform.localEulerAngles.y); 
 
         sensor.AddObservation(localVelocity.x); 
         sensor.AddObservation(localVelocity.z); 
@@ -123,12 +123,12 @@ public class CarAgent5 : Agent
         float reward = 0f;
         reward += REWARDS.TIME;
 
-        //steeering
-        float angle = Vector3.Angle(this.transform.forward, direction.normalized);
-        if(CONFIG.STEERING_ANGLE >= angle && angle >= -CONFIG.STEERING_ANGLE)
-        {
-            reward += REWARDS.STEERING_ANGLE;
-        }
+        //steering
+        //float angle = Vector3.Angle(this.transform.forward, direction.normalized);
+        //if(CONFIG.STEERING_ANGLE >= angle && angle >= -CONFIG.STEERING_ANGLE)
+        //{
+        //    reward += REWARDS.STEERING_ANGLE;
+        //}
 
         //finish episode + checkpoints
         Vector3 toGoal = (target.position - this.transform.position);
@@ -153,9 +153,9 @@ public class CarAgent5 : Agent
         float rotate = Input.GetAxis("Horizontal");
         bool isBraking = Input.GetKey(KeyCode.Space);
 
-        int actionMove = Mathf.FloorToInt((move + 1f) * 3f); // [-1,+1] => [0,2] => [0,6]
-        int actionRotate = Mathf.FloorToInt((rotate + 1f) * 3f); // [-1,+1] => [0,2] => [0,6]
-        int actionBrake = (isBraking) ? 3 : 0;  // [-1,+1] => [0,3]
+        int actionMove = Mathf.FloorToInt((move + 1f) * (actionSpace[0] / 2)); // [-1,+1] => [0,2] => [0,6]
+        int actionRotate = Mathf.FloorToInt((rotate + 1f) * (actionSpace[1] / 2)); // [-1,+1] => [0,2] => [0,6]
+        int actionBrake = (isBraking) ? (actionSpace[2] - 1) : 0;  // [-1,+1] => [0,3]
 
         // Continous
         ActionSegment<int> actionArr = actionsOut.DiscreteActions;
@@ -182,9 +182,9 @@ public class CarAgent5 : Agent
             float rotate = actions.DiscreteActions[1];
             float isBraking = actions.DiscreteActions[2]; //[0,3]
 
-            move = (move / 3f) - 1f; //[0,6] > [-1,+1]
-            rotate = (rotate / 3f) - 1f; //[0,6] > [-1,+1]
-            isBraking = isBraking / 3f;
+            move = (move / (actionSpace[0] / 2)) - 1f; //[0,6] > [-1,+1]
+            rotate = (rotate / (actionSpace[1] / 2)) - 1f; //[0,6] > [-1,+1]
+            isBraking = isBraking / actionSpace[2];
 
             // Debug
             actionOutput[0] = move;
