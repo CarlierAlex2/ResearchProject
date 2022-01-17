@@ -1,5 +1,5 @@
 behaviors:
-  CarAgent4:
+  CarAgent5:
     trainer_type: ppo
     hyperparameters:
       batch_size: 512

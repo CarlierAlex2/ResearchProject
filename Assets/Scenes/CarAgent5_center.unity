@@ -1412,5 +1412,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Setup_Center
       objectReference: {fileID: 0}
+    - target: {fileID: 3531873325773555350, guid: 15608b28a15dce54a9d44dfd0d770e4a, type: 3}
+      propertyPath: showDebug
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 15608b28a15dce54a9d44dfd0d770e4a, type: 3}

@@ -9,7 +9,7 @@ using Unity.MLAgents.Sensors;
 public class CarAgent5 : Agent
 {
     //mlagents-learn config/CarAgent4.yaml --run-id=CarAgent4_1 --env=builds/CarAgent4_parking
-    //mlagents-learn config/CarAgent4_9.yaml --run-id=CarAgent4_9 --env=builds/CarAgent4_center         
+    //mlagents-learn config/CarAgent5_1.yaml --run-id=CarAgent5_1 --env=builds/CarAgent5_center         
     [SerializeField] private Transform target;
     [SerializeField] private GPS pathfinding;
     [SerializeField] private EnvController envController;
