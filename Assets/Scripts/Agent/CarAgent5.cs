@@ -16,8 +16,8 @@ public class CarAgent5 : Agent
     [SerializeField] private TextMesh debugTextMesh;
 
     //---
-    private static ConfigAgent CONFIG = new ConfigAgent_5_2();
-    private static ConfigReward REWARDS = new ConfigReward_5_2();
+    private static ConfigAgent CONFIG = new ConfigAgent_5_1();
+    private static ConfigReward REWARDS = new ConfigReward_5_1();
 
     //---
     private Rigidbody rigid;
@@ -36,7 +36,7 @@ public class CarAgent5 : Agent
     private bool isAtGoal = false;
      
     private float [] actionOutput = {0, 0, 0};
-    private int [] actionSpace = {9, 9, 2};
+    private int [] actionSpace = {5, 5, 2};
 
     //--- INITIALIZE ---------------------------------------------------------------------
     public override void Initialize()
@@ -77,7 +77,7 @@ public class CarAgent5 : Agent
             RewardCar();
         }
 
-        Vector3 localDirection = transform.InverseTransformDirection(direction);
+        Vector3 localDirection = transform.InverseTransformDirection(direction).normalized;
         Vector3 localVelocity = transform.InverseTransformDirection(velocity);
 
         sensor.AddObservation(localDirection.x); 
@@ -153,8 +153,8 @@ public class CarAgent5 : Agent
         float rotate = Input.GetAxis("Horizontal");
         bool isBraking = Input.GetKey(KeyCode.Space);
 
-        int actionMove = Mathf.FloorToInt((move + 1f) * (actionSpace[0] / 2)); // [-1,+1] => [0,2] => [0,6]
-        int actionRotate = Mathf.FloorToInt((rotate + 1f) * (actionSpace[1] / 2)); // [-1,+1] => [0,2] => [0,6]
+        int actionMove = (Mathf.FloorToInt(move) + 1) * (actionSpace[0] / 2) + 1; // [-1,+1] => [0,2] => [0,5]
+        int actionRotate = (Mathf.FloorToInt(move) + 1) * (actionSpace[1] / 2) + 1; // [-1,+1] => [0,2] => [0,5]
         int actionBrake = (isBraking) ? (actionSpace[2] - 1) : 0;  // [-1,+1] => [0,3]
 
         // Continous
@@ -182,8 +182,8 @@ public class CarAgent5 : Agent
             float rotate = actions.DiscreteActions[1];
             float isBraking = actions.DiscreteActions[2]; //[0,3]
 
-            move = (move / (actionSpace[0] / 2)) - 1f; //[0,6] > [-1,+1]
-            rotate = (rotate / (actionSpace[1] / 2)) - 1f; //[0,6] > [-1,+1]
+            move = ((move - 1) / (actionSpace[0] / 2)) - 1f; //[0,6] => [0,2] => [-1,+1]
+            rotate = ((rotate - 1) / (actionSpace[1] / 2)) - 1f; //[0,6] => [0,2] => [-1,+1]
             isBraking = isBraking / actionSpace[2];
 
             // Debug
