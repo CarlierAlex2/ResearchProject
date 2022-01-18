@@ -7,6 +7,7 @@ public class ConfigReward
     public ConfigReward()
     {
         this.TIME = -0.1f;
+        this.FORWARD = 0;
         this.BREAK = -0.5f;
         this.GOAL = 100f;
         //--
@@ -23,6 +24,7 @@ public class ConfigReward
 
     //--
     public float TIME { get; internal set; }
+    public float FORWARD { get; internal set; }
     public float BREAK { get; internal set; }
     public float GOAL { get; internal set; }
     //--

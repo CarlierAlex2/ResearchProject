@@ -13,7 +13,7 @@ public class ConfigAgent_5_1 : ConfigAgent
         this.CHECKPOINT_ANGLE_MAX = 0;
         //--
         this.VELOCITY_MIN = 0;
-        this.STEERING_ANGLE = 30f;
+        this.STEERING_ANGLE = 0;
     }
 }
 
@@ -22,10 +22,11 @@ public class ConfigReward_5_1 : ConfigReward
     public ConfigReward_5_1() : base()
     {
         this.TIME = -0.001f;
-        this.BREAK = -0.01f;
+        this.FORWARD = 0.01f;
+        this.BREAK = -0.005f;
         this.GOAL = 0;
         //--
-        this.WALL_ENTER = -1f;
+        this.WALL_ENTER = -5f;
         this.WALL_STAY = -0.1f;
         //--
         this.CHECKPOINT_RANGE = 2f;

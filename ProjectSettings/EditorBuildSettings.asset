@@ -26,7 +26,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/CarAgent4_center.unity
     guid: 9bad9dd2a88910e428289a6c279e40dd
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/CarAgent5_center.unity
     guid: f92a838da286ba24fbee6596edb6f32c
+  - enabled: 1
+    path: Assets/Scenes/CarAgent5.unity
+    guid: c7a70d3725d7ed64a8717d1c33c57b1e
   m_configObjects: {}
