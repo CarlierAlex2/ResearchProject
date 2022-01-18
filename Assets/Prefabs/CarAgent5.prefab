@@ -622,7 +622,7 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 0
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 0}
+  m_Model: {fileID: 5022602860645237092, guid: e755c6ad1450ec34a9aeac17d2a657ea, type: 3}
   m_InferenceDevice: 0
   m_BehaviorType: 0
   m_BehaviorName: CarAgent5_1
@@ -670,7 +670,7 @@ MonoBehaviour:
   frontLeftTransform: {fileID: 1971165010209618959}
   backRightTransform: {fileID: 1971165010014413218}
   backLeftTransform: {fileID: 1971165010337166975}
-  ACCELERATION: 40
+  ACCELERATION: 30
   BREAKING_FORCE: 100
   TURN_ANGLE: 35
 --- !u!114 &8963441430729418284

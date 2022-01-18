@@ -281,7 +281,7 @@ public class CarAgent5 : Agent
     {
         if (collision.gameObject.tag == "Wall")
         {
-            SetReward(REWARDS.WALL_ENTER);
+            AddReward(REWARDS.WALL_ENTER);
             Debug.Log("Hit wall!");
             FinishEpisode();
         }

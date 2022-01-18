@@ -21,12 +21,12 @@ public class ConfigReward_5_1 : ConfigReward
 {
     public ConfigReward_5_1() : base()
     {
-        this.TIME = -0.001f;
-        this.FORWARD = 0.01f;
+        this.TIME = -0.01f;
+        this.FORWARD = 0.002f;
         this.BREAK = -0.005f;
         this.GOAL = 0;
         //--
-        this.WALL_ENTER = -5f;
+        this.WALL_ENTER = -10f;
         this.WALL_STAY = -0.1f;
         //--
         this.CHECKPOINT_RANGE = 2f;
