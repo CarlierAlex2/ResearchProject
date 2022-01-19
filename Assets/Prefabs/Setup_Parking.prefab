@@ -39,6 +39,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2826585118282825848}
     m_Modifications:
+    - target: {fileID: 1524026037954314962, guid: 5154ab7a7f72cb94796e225efda998ee, type: 3}
+      propertyPath: rangeX.Array.data[0]
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1524026037954314962, guid: 5154ab7a7f72cb94796e225efda998ee, type: 3}
+      propertyPath: rangeX.Array.data[1]
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 1524026037954314962, guid: 5154ab7a7f72cb94796e225efda998ee, type: 3}
+      propertyPath: rangeZ.Array.data[0]
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1524026037954314962, guid: 5154ab7a7f72cb94796e225efda998ee, type: 3}
+      propertyPath: rangeZ.Array.data[1]
+      value: 35
+      objectReference: {fileID: 0}
     - target: {fileID: 1905107425593285792, guid: 5154ab7a7f72cb94796e225efda998ee, type: 3}
       propertyPath: m_Name
       value: Env_Parking
@@ -85,6 +101,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1905107425593285793, guid: 5154ab7a7f72cb94796e225efda998ee, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2629213444523479704, guid: 5154ab7a7f72cb94796e225efda998ee, type: 3}
+      propertyPath: showDebug
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -188,6 +208,10 @@ PrefabInstance:
       propertyPath: envController
       value: 
       objectReference: {fileID: 5876501147401306917}
+    - target: {fileID: 7219216277535961923, guid: 93bfd0ee5e8fc0c46baa56ed099fbbd9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 93bfd0ee5e8fc0c46baa56ed099fbbd9, type: 3}
 --- !u!4 &9198024112639253235 stripped

@@ -8,7 +8,7 @@ using Unity.MLAgents.Sensors;
 
 public class CarAgent5 : Agent
 {
-    //mlagents-learn config/CarAgent5.yaml --run-id=CarAgent5_1 --env=builds/CarAgent5         
+    //mlagents-learn config/CarAgent5.yaml --run-id=CarAgent5_test --env=builds/CarAgent5         
     [SerializeField] private Transform target;
     [SerializeField] private GPS pathfinding;
     [SerializeField] private EnvController envController;
@@ -35,7 +35,7 @@ public class CarAgent5 : Agent
     private bool isAtGoal = false;
      
     private float [] actionOutput = {0, 0, 0};
-    private int [] actionSpace = {3, 3, 2};
+    private int [] actionSpace = {7, 7, 3};
 
 
     //--- INITIALIZE ---------------------------------------------------------------------
@@ -77,18 +77,20 @@ public class CarAgent5 : Agent
             RewardCar();
         }
 
-        Vector3 localDirection = transform.InverseTransformDirection(direction).normalized;
-        Vector3 localVelocity = transform.InverseTransformDirection(velocity);
+        var localVelocity = transform.InverseTransformDirection(velocity);
+        var localDirection = transform.InverseTransformDirection(direction).normalized;
 
-        sensor.AddObservation(localDirection.x); 
-        sensor.AddObservation(localDirection.z); 
-        sensor.AddObservation(transform.localEulerAngles.y); 
+        //pass normalized
+        var obsVelocity = new Vector2(localVelocity.x, localVelocity.z) / float.MaxValue;
+        var obsDirection = new Vector2(localDirection.x, localDirection.z) / float.MaxValue;
+        var obsAngleDirection = (Vector3.Angle(transform.forward, direction.normalized)) / 360f;
 
-        sensor.AddObservation(localVelocity.x); 
-        sensor.AddObservation(localVelocity.z); 
+        sensor.AddObservation(obsAngleDirection); 
+        sensor.AddObservation(obsDirection); 
+        sensor.AddObservation(obsVelocity); 
 
         // Debug
-        DebugObservation(direction, localVelocity);
+        DebugObservation(direction, velocity);
         DebugPath();
     }
 
@@ -124,16 +126,19 @@ public class CarAgent5 : Agent
         reward += REWARDS.TIME;
 
         //speed
-        float velocityRounded = Mathf.Round(velocity.magnitude * 1000f) / 1000f; //3 decimals
-        if (velocityRounded > 0f) 
-            reward += REWARDS.FORWARD;
+        //var localVelocity = transform.InverseTransformDirection(velocity);
+        //float velocityRounded = Mathf.Round(localVelocity.magnitude * 1000f) / 1000f; //3 decimals
+        //if (velocityRounded > 0f) 
+        //    reward += REWARDS.FORWARD;
 
         //steering
         //float angle = Mathf.Abs(Vector3.Angle(this.transform.forward, direction.normalized));
-        //if(CONFIG.STEERING_ANGLE >= angle)
-        //{
-        //    reward += REWARDS.STEERING_ANGLE;
-        //}
+        //angle = (angle < CONFIG.STEERING_ANGLE_MIN) ? CONFIG.STEERING_ANGLE_MIN : angle;
+        //reward += (1 - (angle / CONFIG.STEERING_ANGLE)) * REWARDS.STEERING_ANGLE;
+
+        //distance checkpoint
+        float distance = direction.magnitude;
+        reward += (1 - (distance / CONFIG.CHECKPOINT_DIST)) * REWARDS.CHECKPOINT_DIST;
 
         //finish episode + checkpoints
         Vector3 toGoal = (target.position - this.transform.position);
@@ -157,29 +162,13 @@ public class CarAgent5 : Agent
         float actionMove, actionRotate;
         int actionBrake;
 
-        // speed
         float move = Input.GetAxisRaw("Vertical");
-        if(move > 0)
-            actionMove = 1f;
-        else if(move < 0)
-            actionMove = -1f;
-
-        // rotate
         float rotate = Input.GetAxisRaw("Horizontal");
-        if(rotate > 0)
-            actionRotate = 1f;
-        else if(rotate < 0)
-            actionRotate = -1f;
-
-        //break
         bool isBraking = Input.GetKey(KeyCode.Space);
 
-        // [-1, 0, +1] => [0, 1, 2] *3 => [0, 3, 6]
-        actionMove = move + 1f;                     
-        actionMove = actionMove * ((float)(actionSpace[0]-1) / 2f);    
-
-        actionRotate = rotate + 1f;
-        actionRotate = actionRotate * ((float)(actionSpace[1]-1) / 2f); 
+        // [-1, 0, +1] => [0, 1, 2] *3 => [0, 3, 6]                 
+        actionMove = (move + 1f) * ((float)(actionSpace[0]-1) / 2f);    
+        actionRotate = (rotate + 1f) * ((float)(actionSpace[1]-1) / 2f); 
 
         // [0, +1] => [0, 2]
         actionBrake = (isBraking) ? (actionSpace[2]-1) : 0;       
@@ -205,15 +194,15 @@ public class CarAgent5 : Agent
             if (isAtGoal) //finish episode
                 FinishEpisode();
 
-            float move = (float)actions.DiscreteActions[0]; //[0,3]
+            float move = (float)actions.DiscreteActions[0];
             float rotate = (float)actions.DiscreteActions[1];
-            float isBraking = (float)actions.DiscreteActions[2]; //[0,3]
+            float isBraking = (float)actions.DiscreteActions[2];
 
             move = move / ((float)(actionSpace[0]-1) / 2f);
             move -= 1f;         
             rotate = rotate / ((float)(actionSpace[1]-1) / 2f);    // [0, 3, 6] => [0, 1, 2] => [-1, 0, +1]
             rotate -= 1f;     
-            isBraking = isBraking / (actionSpace[2]-1f);    // [0, 2] => [0,1]
+            isBraking = isBraking / ((float)actionSpace[2]-1f);    // [0, 2] => [0, 1]
 
             // Debug
             actionOutput[0] = move;
@@ -277,9 +266,9 @@ public class CarAgent5 : Agent
 
 
     //--- COLLISIONS ---------------------------------------------------------------------
-    private void OnCollisionEnter(Collision collision) 
+    private void OnTriggerEnter(Collider other) 
     {
-        if (collision.gameObject.tag == "Wall")
+        if (other.tag == "Wall")
         {
             AddReward(REWARDS.WALL_ENTER);
             Debug.Log("Hit wall!");
@@ -287,10 +276,14 @@ public class CarAgent5 : Agent
         }
     }
 
+    private void OnCollisionEnter(Collision collision) 
+    {
+
+    }
+
     private void OnCollisionStay(Collision collision) 
     {
-        //if (collision.gameObject.tag == "Wall")
-        //    SetReward(REWARDS.WALL_STAY);
+
     }
 
 
