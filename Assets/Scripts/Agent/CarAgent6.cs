@@ -8,7 +8,7 @@ using Unity.MLAgents.Sensors;
 
 public class CarAgent6 : Agent
 {
-    //mlagents-learn config/CarAgent6.yaml --run-id=CarAgent6 --env=builds/CarAgent6      
+    //mlagents-learn config/SAC_CarAgent6.yaml --run-id=SAC_CarAgent6_1 --env=builds/CarAgent6      
     [SerializeField] private Transform target;
     [SerializeField] private GPS pathfinding;
     [SerializeField] private EnvController envController;
@@ -17,6 +17,7 @@ public class CarAgent6 : Agent
     //---
     private static ConfigAgent CONFIG = new ConfigAgent_6_1();
     private static ConfigReward REWARDS = new ConfigReward_6_1();
+    private static RewardFunctions REWARD_FUNCTIONS = new RewardFunctions(CONFIG, REWARDS);
 
     //---
     private Rigidbody rigid;
@@ -25,14 +26,20 @@ public class CarAgent6 : Agent
     //---
     private int index = 0;
     private List<Vector3> path;
-    private Vector3 direction;
-    private Vector3 velocity;
 
+    //---
+    private Vector3 positionOld;
+    private Vector3 positionNew;
+    private Vector3 forwardOld;
+    private Vector3 forwardNew;
+    private Vector3 checkpoint;
+    private Vector3 velocityOld;
+    private Vector3 velocityNew;
 
     //---
     private bool isEpisodeRunning = false;
     private bool isCheckPoint = false;
-    private bool isAtGoal = false;
+    private bool stopEpisode = false;
      
     private float [] actionOutput = {0, 0, 0};
     private int [] actionSpace = {7, 7, 3};
@@ -58,10 +65,16 @@ public class CarAgent6 : Agent
     {
         index = 0;
         path = null;
-        direction = Vector3.zero;
-        velocity = Vector3.zero;
 
-        isAtGoal = false;
+        positionOld = Vector3.zero;
+        positionNew = Vector3.zero;
+        forwardOld = Vector3.zero;
+        forwardNew = Vector3.zero;
+        velocityOld = Vector3.zero;
+        velocityNew = Vector3.zero;
+        checkpoint = Vector3.zero;
+
+        stopEpisode = false;
         isEpisodeRunning = true;
         isCheckPoint = false;
         Debug.Log("Reset Agent");
@@ -72,75 +85,41 @@ public class CarAgent6 : Agent
     {
         if(isEpisodeRunning)
         {
-            UpdatePath();
-            GetAgentInfo();
-            RewardCar();
+            UpdatePath();   //Pathfinding
+            GetAgentInfo(); //Data
+            RewardCar();    //Rewards
         }
 
-        var localVelocity = transform.InverseTransformDirection(velocity);
-        var localDirection = transform.InverseTransformDirection(direction).normalized;
+        Vector3 directionOld = checkpoint - positionOld;
+        Vector3 directionNew = checkpoint - positionNew;
+        directionOld.y = 0;
+        directionNew.y = 0;
 
-        //pass normalized
-        var obsVelocity = new Vector2(localVelocity.x, localVelocity.z) / float.MaxValue;
-        var obsDirection = new Vector2(localDirection.x, localDirection.z) / float.MaxValue;
-        var obsAngleDirection = (Vector3.Angle(transform.forward, direction.normalized)) / 360f;
+        sensor.AddObservation(directionOld); 
+        sensor.AddObservation(directionNew);
 
-        sensor.AddObservation(obsAngleDirection); 
-        sensor.AddObservation(obsDirection); 
-        sensor.AddObservation(obsVelocity); 
+        sensor.AddObservation(forwardOld); 
+        sensor.AddObservation(forwardNew); 
+
+        sensor.AddObservation(velocityOld); 
+        sensor.AddObservation(velocityNew); 
 
         // Debug
-        DebugObservation(direction, velocity);
+        DebugObservation();
         DebugPath();
     }
 
     //--- INFO ---------------------------------------------------------------------
     private void GetAgentInfo()
     {
-        GetDirectionGPS();
-        GetVelocity();
-    }
+        positionOld = positionNew;
+        positionNew = transform.position;
 
-    private void GetDirectionGPS(float offset = 0f)
-    {
-        if(index < path.Count)
-        {
-            direction = path[index] - this.transform.position;
-            direction.y = 0;
-        }
-        else
-            direction = Vector3.zero;
-    }
+        forwardOld = forwardNew;
+        forwardNew = transform.forward;
 
-    private void GetVelocity()
-    {
-        velocity = rigid.velocity;
-        velocity.y = 0;
-    }
-
-    //--- REWARDS ---------------------------------------------------------------------
-    private void RewardCar()
-    {
-        //time
-        float reward = 0f;
-        reward += REWARDS.TIME;
-
-        //distance checkpoint
-        //float distance = direction.magnitude;
-        //reward += (1 - (distance / CONFIG.CHECKPOINT_DIST)) * REWARDS.CHECKPOINT_DIST;
-
-        //finish episode + checkpoints
-        Vector3 toGoal = (target.position - this.transform.position);
-        toGoal.y = 0;
-
-        if (isCheckPoint)
-        {
-            reward += REWARDS.CHECKPOINT_RANGE;
-            isCheckPoint = false;
-        }
-
-        //--
-        AddReward(reward);
+        velocityOld = velocityNew;
+        velocityNew = rigid.velocity;
     }
 
 
@@ -171,8 +150,6 @@ public class CarAgent6 : Agent
 
     public override void OnActionReceived(ActionBuffers actions)
     {      
-        float reward = 0;
-
         //--
         if(!isEpisodeRunning || path == null)
             return;
@@ -180,9 +157,11 @@ public class CarAgent6 : Agent
         //--
         if (isEpisodeRunning)
         {
-            if (isAtGoal) //finish episode
+            //Finish
+            if (stopEpisode) 
                 FinishEpisode();
 
+            //Actions
             float move = (float)actions.DiscreteActions[0];
             float rotate = (float)actions.DiscreteActions[1];
             float isBraking = (float)actions.DiscreteActions[2];
@@ -193,15 +172,11 @@ public class CarAgent6 : Agent
             rotate -= 1f;     
             isBraking = isBraking / ((float)actionSpace[2]-1f);    // [0, 2] => [0, 1]
 
-            // Debug
+            //Debug
             actionOutput[0] = move;
             actionOutput[1] = rotate;
             actionOutput[2] = isBraking;
             wheelController.SetActions(move, rotate, isBraking);
-
-            //breaking
-            if (isBraking > 0f) 
-                reward += REWARDS.BREAK;
         }
         else
         {
@@ -210,8 +185,29 @@ public class CarAgent6 : Agent
             actionOutput[1] = 0;
             actionOutput[2] = 0;
         }
+    }
 
+
+    //--- REWARDS ---------------------------------------------------------------------
+    private void RewardCar()
+    {
+        float reward = 0f;
+
+        //--
+        Vector3 localVelocity = transform.InverseTransformDirection(velocityNew);
+
+        //reward += REWARDS.TIME; //time
+        reward += REWARD_FUNCTIONS.Movement(localVelocity.z, actionOutput);
+        reward += REWARD_FUNCTIONS.CheckpointDist(positionOld, positionNew, checkpoint);
+        reward += REWARD_FUNCTIONS.CheckpointAngle(positionOld, forwardOld, positionNew, forwardNew, checkpoint);
+
+        //--
         AddReward(reward);
+
+        //--
+        isCheckPoint = false;
+        float minReward = -10f;
+        stopEpisode = (reward <= minReward) ? true : stopEpisode;
     }
 
 
@@ -221,28 +217,22 @@ public class CarAgent6 : Agent
         if(path == null) // check if path exists
             SetPath();
         if(path == null) // still doesn't exist => no direction
-        {
-            direction = Vector3.zero;
             return;
-        }
+        checkpoint = path[index];
 
         //--
-        Vector3 checkpointVector = path[index] - (this.transform.position + transform.forward * CONFIG.CHECKPOINT_OFFSET);
+        Vector3 checkpointVector = checkpoint - (this.transform.position + transform.forward * CONFIG.CHECKPOINT_OFFSET);
         checkpointVector.y = 0;
         if(checkpointVector.magnitude <= CONFIG.CHECKPOINT_RANGE)
         {
             index++;
+            stopEpisode = (index >= path.Count) ? true : false;
+
             index = (index > path.Count - 1) ? (path.Count - 1) : index;
+            checkpoint = path[index];
 
             isCheckPoint = true;
             Debug.Log("Update path, index=" + index);
-        }
-
-        //--
-        Vector3 toGoal = (path[path.Count - 1] -this.transform.position);
-        if (toGoal.magnitude < CONFIG.CHECKPOINT_RANGE)
-        {
-            isAtGoal = true;
         }
     }
 
@@ -285,15 +275,16 @@ public class CarAgent6 : Agent
     }
 
     //--- DEBUG ---------------------------------------------------------------------
-    private void DebugObservation(Vector3 localDirectionGPS, Vector3 localVelocity)
+    private void DebugObservation()
     {
+        Vector3 directionNew = checkpoint - positionNew;
+        Vector3 velocity = rigid.velocity;
+
         Vector3 c = transform.position + Vector3.up * 1f;
-        Debug.DrawLine(c, c + direction, Color.red);
+        Debug.DrawLine(c, c + directionNew, Color.red);
         Debug.DrawLine(c, c + velocity, Color.blue);
 
-        float vel_x = Mathf.Round(localVelocity.x * 100f) / 100f;
-        float vel_z = Mathf.Round(localVelocity.z * 100f) / 100f;
-        debugTextMesh.text = vel_x + "\n" + vel_z + "\n-\n" + actionOutput[0] + "\n" + actionOutput[1] + "\n" + actionOutput[2];
+        debugTextMesh.text = actionOutput[0] + "\n" + actionOutput[1] + "\n" + actionOutput[2];
     }
 
     private void DebugPath()

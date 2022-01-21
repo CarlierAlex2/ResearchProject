@@ -2,17 +2,77 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Rewards : MonoBehaviour
+public class RewardFunctions
 {
-    // Start is called before the first frame update
-    void Start()
+    private ConfigAgent CONFIG;
+    private ConfigReward REWARDS;
+
+    public RewardFunctions(ConfigAgent config, ConfigReward rewards)
     {
-        
+        this.CONFIG = config;
+        this.REWARDS = rewards;
     }
 
-    // Update is called once per frame
-    void Update()
+    public float Movement(float velocityForward, float[] actionOutput)
     {
+        float absVelocity = Mathf.Abs(velocityForward);
+        float minVelocity = 0.01f;
+        float reward = 0;
+
+        // discourage standing still & not acting
+        reward += (absVelocity > minVelocity) ? 0.1f : 0;
+        reward += (actionOutput[2] > 0) ? REWARDS.BREAK : 0;
+
+        // discourage going the opposite direction 
+        reward += ((velocityForward > 0) && (actionOutput[0] < 0)) ? -0.03f : 0;
+        reward += ((velocityForward < 0) && (actionOutput[0] > 0)) ? -0.03f : 0;
+
+        //--
+        return reward;
+    }
+
+    public float CheckpointDist(Vector3 oldPos, Vector3 newPos, Vector3 checkpoint)
+    {
+        oldPos.y = 0;
+        newPos.y = 0;
+        checkpoint.y = 0;
+
+        Vector3 directionOld = checkpoint - oldPos;
+        Vector3 directionNew = checkpoint - newPos;
+
+        float reward = 0;
+
+        // discourage moving further
+        // encourage moving closer
+        reward += (directionOld.magnitude > directionNew.magnitude) ? 0.04f : -0.04f;
+
+        //--
+        return reward;
+    }
+
+    public float CheckpointAngle(Vector3 oldPos, Vector3 oldForward, Vector3 newPos, Vector3 newForward, Vector3 checkpoint)
+    {
+        oldPos.y = 0;
+        newPos.y = 0;
+        checkpoint.y = 0;
+
+        Vector3 directionOld = checkpoint - oldPos;
+        Vector3 directionNew = checkpoint - newPos;
+
+        float angleOld = Mathf.Abs(Vector3.Angle(oldForward, directionOld.normalized));
+        float angleNew = Mathf.Abs(Vector3.Angle(newForward, directionNew.normalized));
+        float angleDiff = angleNew - angleOld;
+
+        float reward = 0;
+        float maxAngle = 90f;
+
+        // encourage smaller angles = steering towards
+        reward += (angleDiff < 0) ? 0.01f : 0;
+
+        // discourage steering too far
+        reward = (angleNew > maxAngle) ? -10f : 0;
         
+        //--
+        return reward;
     }
 }

@@ -8,7 +8,7 @@ public class ConfigAgent_6_1 : ConfigAgent
     {
         this.INDEX_START = 1;
         //--
-        this.CHECKPOINT_OFFSET = 1f;
+        this.CHECKPOINT_OFFSET = 0;
         this.CHECKPOINT_RANGE = 2.3f;
         this.CHECKPOINT_ANGLE_MAX = 0;
         this.CHECKPOINT_DIST = 5f;
