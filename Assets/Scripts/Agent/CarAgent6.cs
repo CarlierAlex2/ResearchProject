@@ -199,7 +199,7 @@ public class CarAgent6 : Agent
         //reward += REWARDS.TIME; //time
         reward += REWARD_FUNCTIONS.Movement(localVelocity.z, actionOutput);
         reward += REWARD_FUNCTIONS.CheckpointDist(positionOld, positionNew, checkpoint);
-        reward += REWARD_FUNCTIONS.CheckpointAngle(positionOld, forwardOld, positionNew, forwardNew, checkpoint);
+        //reward += REWARD_FUNCTIONS.CheckpointAngle(positionOld, forwardOld, positionNew, forwardNew, checkpoint);
 
         //--
         AddReward(reward);

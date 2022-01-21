@@ -20,12 +20,12 @@ public class RewardFunctions
         float reward = 0;
 
         // discourage standing still & not acting
-        reward += (absVelocity > minVelocity) ? 0.1f : 0;
+        reward += (absVelocity > minVelocity) ? 1f : 0;
         reward += (actionOutput[2] > 0) ? REWARDS.BREAK : 0;
 
         // discourage going the opposite direction 
-        reward += ((velocityForward > 0) && (actionOutput[0] < 0)) ? -0.03f : 0;
-        reward += ((velocityForward < 0) && (actionOutput[0] > 0)) ? -0.03f : 0;
+        reward += ((velocityForward > 0) && (actionOutput[0] < 0)) ? -0.3f : 0;
+        reward += ((velocityForward < 0) && (actionOutput[0] > 0)) ? -0.3f : 0;
 
         //--
         return reward;
@@ -44,7 +44,7 @@ public class RewardFunctions
 
         // discourage moving further
         // encourage moving closer
-        reward += (directionOld.magnitude > directionNew.magnitude) ? 0.04f : -0.04f;
+        reward += (directionOld.magnitude > directionNew.magnitude) ? 0.1f : -0.05f;
 
         //--
         return reward;

@@ -101,7 +101,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5518616125825295124, guid: 6ec9c360c15acc0469810f4f57e1f06f, type: 3}
       propertyPath: m_BehaviorName
-      value: SAC_CarAgent6_1
+      value: SAC_CarAgent6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ec9c360c15acc0469810f4f57e1f06f, type: 3}
