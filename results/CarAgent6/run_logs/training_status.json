@@ -1,0 +1,87 @@
+{
+    "SAC_CarAgent6": {
+        "checkpoints": [
+            {
+                "steps": 599603,
+                "file_path": "results\\CarAgent6\\SAC_CarAgent6\\SAC_CarAgent6-599603.onnx",
+                "reward": null,
+                "creation_time": 1642766418.4037662,
+                "auxillary_file_paths": [
+                    "results\\CarAgent6\\SAC_CarAgent6\\SAC_CarAgent6-599603.pt"
+                ]
+            },
+            {
+                "steps": 649603,
+                "file_path": "results\\CarAgent6\\SAC_CarAgent6\\SAC_CarAgent6-649603.onnx",
+                "reward": -6.672122726837794,
+                "creation_time": 1642766487.839811,
+                "auxillary_file_paths": [
+                    "results\\CarAgent6\\SAC_CarAgent6\\SAC_CarAgent6-649603.pt"
+                ]
+            },
+            {
+                "steps": 699806,
+                "file_path": "results\\CarAgent6\\SAC_CarAgent6\\SAC_CarAgent6-699806.onnx",
+                "reward": -6.259767597668792,
+                "creation_time": 1642766561.8388178,
+                "auxillary_file_paths": [
+                    "results\\CarAgent6\\SAC_CarAgent6\\SAC_CarAgent6-699806.pt"
+                ]
+            },
+            {
+                "steps": 749501,
+                "file_path": "results\\CarAgent6\\SAC_CarAgent6\\SAC_CarAgent6-749501.onnx",
+                "reward": -6.1642911439744115,
+                "creation_time": 1642766641.2802112,
+                "auxillary_file_paths": [
+                    "results\\CarAgent6\\SAC_CarAgent6\\SAC_CarAgent6-749501.pt"
+                ]
+            },
+            {
+                "steps": 785501,
+                "file_path": "results\\CarAgent6\\SAC_CarAgent6\\SAC_CarAgent6-785501.onnx",
+                "reward": -6.268143253017018,
+                "creation_time": 1642766683.8399975,
+                "auxillary_file_paths": [
+                    "results\\CarAgent6\\SAC_CarAgent6\\SAC_CarAgent6-785501.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 785501,
+            "file_path": "results\\CarAgent6\\SAC_CarAgent6.onnx",
+            "reward": -6.268143253017018,
+            "creation_time": 1642766683.8399975,
+            "auxillary_file_paths": [
+                "results\\CarAgent6\\SAC_CarAgent6\\SAC_CarAgent6-785501.pt"
+            ]
+        }
+    },
+    "PPO_CarAgent6": {
+        "checkpoints": [
+            {
+                "steps": 98460,
+                "file_path": "results\\CarAgent6\\PPO_CarAgent6\\PPO_CarAgent6-98460.onnx",
+                "reward": -19.92490118741989,
+                "creation_time": 1642766683.924015,
+                "auxillary_file_paths": [
+                    "results\\CarAgent6\\PPO_CarAgent6\\PPO_CarAgent6-98460.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 98460,
+            "file_path": "results\\CarAgent6\\PPO_CarAgent6.onnx",
+            "reward": -19.92490118741989,
+            "creation_time": 1642766683.924015,
+            "auxillary_file_paths": [
+                "results\\CarAgent6\\PPO_CarAgent6\\PPO_CarAgent6-98460.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.27.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}
