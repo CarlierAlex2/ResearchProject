@@ -443,3 +443,64 @@ PrefabInstance:
       objectReference: {fileID: 5022602860645237092, guid: 54a6399b5372dab43b85187b08c3a73b, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6668188428d9dd44fb4570674858803f, type: 3}
+--- !u!1001 &1897811583
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3771691620327014034, guid: 6668188428d9dd44fb4570674858803f, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3771691620327014034, guid: 6668188428d9dd44fb4570674858803f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 3771691620327014034, guid: 6668188428d9dd44fb4570674858803f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3771691620327014034, guid: 6668188428d9dd44fb4570674858803f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3771691620327014034, guid: 6668188428d9dd44fb4570674858803f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3771691620327014034, guid: 6668188428d9dd44fb4570674858803f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3771691620327014034, guid: 6668188428d9dd44fb4570674858803f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3771691620327014034, guid: 6668188428d9dd44fb4570674858803f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3771691620327014034, guid: 6668188428d9dd44fb4570674858803f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3771691620327014034, guid: 6668188428d9dd44fb4570674858803f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3771691620327014034, guid: 6668188428d9dd44fb4570674858803f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3771691620327014035, guid: 6668188428d9dd44fb4570674858803f, type: 3}
+      propertyPath: m_Name
+      value: PPO_6_Parking (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4575107495264989433, guid: 6668188428d9dd44fb4570674858803f, type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 5022602860645237092, guid: cbfc4475e4abd7d4ca969832043b05cd, type: 3}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6668188428d9dd44fb4570674858803f, type: 3}

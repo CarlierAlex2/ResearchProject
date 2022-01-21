@@ -42,9 +42,13 @@ public class RewardFunctions
 
         float reward = 0;
 
-        // discourage moving further
-        // encourage moving closer
+        float MAXIMUM_DISTANCE = 6.5f;
+
+        // encourage moving closer & discourage moving further
         reward += (directionOld.magnitude > directionNew.magnitude) ? 0.1f : -0.05f;
+
+        // discourage MAX distance
+        reward += (directionNew.magnitude > MAXIMUM_DISTANCE) ? -10f : 0;
 
         //--
         return reward;
@@ -67,9 +71,9 @@ public class RewardFunctions
         float maxAngle = 90f;
 
         // encourage smaller angles = steering towards
-        reward += (angleDiff < 0) ? 0.01f : 0;
+        //reward += (angleDiff < 0) ? 0.01f : 0;
 
-        // discourage steering too far
+        // discourage MAX steering angle
         reward = (angleNew > maxAngle) ? -10f : 0;
         
         //--
