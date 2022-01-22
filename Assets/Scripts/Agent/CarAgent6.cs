@@ -8,7 +8,9 @@ using Unity.MLAgents.Sensors;
 
 public class CarAgent6 : Agent
 {
-    //mlagents-learn config/PPO_CarAgent6.yaml --run-id=PPO_CarAgent6_3 --env=builds/PPO_CarAgent6      
+    //mlagents-learn config/PPO_CarAgent6.yaml --run-id=PPO_CarAgent6_4_128 --env=builds/PPO_CarAgent6
+    //mlagents-learn config/PPO_CarAgent6_b256.yaml --run-id=PPO_CarAgent6_4_256 --env=builds/PPO_CarAgent6 
+    //mlagents-learn config/PPO_CarAgent6_b512.yaml --run-id=PPO_CarAgent6_4_512 --env=builds/PPO_CarAgent6 
     [SerializeField] private Transform target;
     [SerializeField] private GPS pathfinding;
     [SerializeField] private EnvController envController;

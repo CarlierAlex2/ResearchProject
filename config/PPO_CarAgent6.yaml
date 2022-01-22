@@ -19,7 +19,7 @@ behaviors:
       vis_encode_type: simple
 
     checkpoint_interval: 200000
-    max_steps: 1000000 #3000 * 400
+    max_steps: 1500000 #1500 * 1000
     time_horizon: 64
     summary_freq: 50000 #every 10
     keep_checkpoints: 5
