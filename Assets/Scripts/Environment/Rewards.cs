@@ -13,6 +13,11 @@ public class RewardFunctions
         this.REWARDS = rewards;
     }
 
+    public float Time()
+    {
+        return REWARDS.TIME;
+    }
+
     public float Movement(float velocityForward, float[] actionOutput)
     {
         float absVelocity = Mathf.Abs(velocityForward);

@@ -8,7 +8,7 @@ using Unity.MLAgents.Sensors;
 
 public class CarAgent6 : Agent
 {
-    //mlagents-learn config/SAC_CarAgent6.yaml --run-id=SAC_CarAgent6_1 --env=builds/CarAgent6      
+    //mlagents-learn config/PPO_CarAgent6.yaml --run-id=PPO_CarAgent6_3 --env=builds/PPO_CarAgent6      
     [SerializeField] private Transform target;
     [SerializeField] private GPS pathfinding;
     [SerializeField] private EnvController envController;
@@ -196,7 +196,7 @@ public class CarAgent6 : Agent
         //--
         Vector3 localVelocity = transform.InverseTransformDirection(velocityNew);
 
-        //reward += REWARDS.TIME; //time
+        reward += REWARD_FUNCTIONS.Time();
         reward += REWARD_FUNCTIONS.Movement(localVelocity.z, actionOutput);
         reward += REWARD_FUNCTIONS.CheckpointDist(positionOld, positionNew, checkpoint);
         reward += REWARD_FUNCTIONS.CheckpointAngle(positionOld, forwardOld, positionNew, forwardNew, checkpoint);
