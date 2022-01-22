@@ -23,7 +23,7 @@ public class ConfigReward_6_1 : ConfigReward
 {
     public ConfigReward_6_1() : base()
     {
-        this.TIME = -0.0001f;
+        this.TIME = -0.001f;
         this.FORWARD = 0.005f;
         this.BREAK = -0.05f;
         this.GOAL = 0;
