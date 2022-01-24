@@ -1,0 +1,65 @@
+{
+    "SAC_CarAgent6": {
+        "checkpoints": [
+            {
+                "steps": 349953,
+                "file_path": "results\\SAC_CarAgent6_test7\\SAC_CarAgent6\\SAC_CarAgent6-349953.onnx",
+                "reward": null,
+                "creation_time": 1643042204.6130898,
+                "auxillary_file_paths": [
+                    "results\\SAC_CarAgent6_test7\\SAC_CarAgent6\\SAC_CarAgent6-349953.pt"
+                ]
+            },
+            {
+                "steps": 399952,
+                "file_path": "results\\SAC_CarAgent6_test7\\SAC_CarAgent6\\SAC_CarAgent6-399952.onnx",
+                "reward": null,
+                "creation_time": 1643042412.5761638,
+                "auxillary_file_paths": [
+                    "results\\SAC_CarAgent6_test7\\SAC_CarAgent6\\SAC_CarAgent6-399952.pt"
+                ]
+            },
+            {
+                "steps": 449984,
+                "file_path": "results\\SAC_CarAgent6_test7\\SAC_CarAgent6\\SAC_CarAgent6-449984.onnx",
+                "reward": null,
+                "creation_time": 1643042638.5778663,
+                "auxillary_file_paths": [
+                    "results\\SAC_CarAgent6_test7\\SAC_CarAgent6\\SAC_CarAgent6-449984.pt"
+                ]
+            },
+            {
+                "steps": 499979,
+                "file_path": "results\\SAC_CarAgent6_test7\\SAC_CarAgent6\\SAC_CarAgent6-499979.onnx",
+                "reward": null,
+                "creation_time": 1643042875.5774775,
+                "auxillary_file_paths": [
+                    "results\\SAC_CarAgent6_test7\\SAC_CarAgent6\\SAC_CarAgent6-499979.pt"
+                ]
+            },
+            {
+                "steps": 500043,
+                "file_path": "results\\SAC_CarAgent6_test7\\SAC_CarAgent6\\SAC_CarAgent6-500043.onnx",
+                "reward": null,
+                "creation_time": 1643042875.6734934,
+                "auxillary_file_paths": [
+                    "results\\SAC_CarAgent6_test7\\SAC_CarAgent6\\SAC_CarAgent6-500043.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 500043,
+            "file_path": "results\\SAC_CarAgent6_test7\\SAC_CarAgent6.onnx",
+            "reward": null,
+            "creation_time": 1643042875.6734934,
+            "auxillary_file_paths": [
+                "results\\SAC_CarAgent6_test7\\SAC_CarAgent6\\SAC_CarAgent6-500043.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.27.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}

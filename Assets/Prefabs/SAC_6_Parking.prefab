@@ -59,5 +59,9 @@ PrefabInstance:
       propertyPath: m_BehaviorName
       value: SAC_CarAgent6
       objectReference: {fileID: 0}
+    - target: {fileID: 4575107495264989433, guid: 6668188428d9dd44fb4570674858803f, type: 3}
+      propertyPath: m_InferenceDevice
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6668188428d9dd44fb4570674858803f, type: 3}
