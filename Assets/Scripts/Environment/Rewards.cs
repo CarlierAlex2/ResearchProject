@@ -21,16 +21,15 @@ public class RewardFunctions
     public float Movement(float velocityForward, float[] actionOutput)
     {
         float absVelocity = Mathf.Abs(velocityForward);
-        float minVelocity = 0.01f;
         float reward = 0;
 
         // discourage standing still & not acting
-        reward += (absVelocity > minVelocity) ? 1f : 0;
+        reward += (absVelocity > CONFIG.VELOCITY_MIN) ? REWARDS.VELOCITY_MIN : 0;
         reward += (actionOutput[2] > 0) ? REWARDS.BREAK : 0;
 
         // discourage going the opposite direction 
-        reward += ((velocityForward > 0) && (actionOutput[0] < 0)) ? -0.3f : 0;
-        reward += ((velocityForward < 0) && (actionOutput[0] > 0)) ? -0.3f : 0;
+        reward += ((velocityForward > 0) && (actionOutput[0] < 0)) ? REWARDS.VELOCITY_FORWARD : 0;
+        reward += ((velocityForward < 0) && (actionOutput[0] > 0)) ? REWARDS.VELOCITY_FORWARD : 0;
 
         //--
         return reward;
@@ -47,13 +46,11 @@ public class RewardFunctions
 
         float reward = 0;
 
-        float MAXIMUM_DISTANCE = 6.5f;
-
         // encourage moving closer & discourage moving further
-        reward += (directionOld.magnitude > directionNew.magnitude) ? 0.1f : -0.05f;
+        reward += (directionOld.magnitude > directionNew.magnitude) ? REWARDS.CHECKPOINT_DIST : REWARDS.CHECKPOINT_DIST_NEG;
 
         // discourage MAX distance
-        reward += (directionNew.magnitude > MAXIMUM_DISTANCE) ? -10f : 0;
+        reward += (directionNew.magnitude > CONFIG.CHECKPOINT_DIST_MAX) ? REWARDS.CHECKPOINT_DIST_MAX : 0;
 
         //--
         return reward;
@@ -73,13 +70,12 @@ public class RewardFunctions
         float angleDiff = angleNew - angleOld;
 
         float reward = 0;
-        float maxAngle = 90f;
 
         // encourage smaller angles = steering towards
-        reward += (angleDiff < 0) ? 0f : -0.02f;
+        reward += (angleDiff <= 0) ? 0 : REWARDS.CHECKPOINT_ANGLE;
 
         // discourage MAX steering angle
-        reward = (angleNew > maxAngle) ? -10f : 0;
+        reward = (angleNew > CONFIG.CHECKPOINT_ANGLE_MAX) ? REWARDS.CHECKPOINT_ANGLE_MAX : 0;
         
         //--
         return reward;

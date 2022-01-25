@@ -17,6 +17,10 @@ public class ConfigReward
         this.CHECKPOINT_RANGE = 5f;
         this.CHECKPOINT_PASS = -5f;
         this.CHECKPOINT_DIST = 0;
+        this.CHECKPOINT_DIST_NEG = 0;
+        this.CHECKPOINT_DIST_MAX = 0;
+        this.CHECKPOINT_ANGLE = 0;
+        this.CHECKPOINT_ANGLE_MAX = 0;
         //--
         this.VELOCITY_MIN = -2f;
         this.VELOCITY_FORWARD = 0.1f;
@@ -35,6 +39,10 @@ public class ConfigReward
     public float CHECKPOINT_RANGE { get; internal set; }
     public float CHECKPOINT_PASS { get; internal set; }
     public float CHECKPOINT_DIST { get; internal set; }
+    public float CHECKPOINT_DIST_NEG { get; internal set; }
+    public float CHECKPOINT_DIST_MAX { get; internal set; }
+    public float CHECKPOINT_ANGLE { get; internal set; }
+    public float CHECKPOINT_ANGLE_MAX { get; internal set; }
     //--
     public float VELOCITY_MIN { get; internal set; }
     public float VELOCITY_FORWARD { get; internal set; }

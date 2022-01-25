@@ -10,10 +10,11 @@ public class ConfigAgent_6_1 : ConfigAgent
         //--
         this.CHECKPOINT_OFFSET = 0;
         this.CHECKPOINT_RANGE = 2.3f;
-        this.CHECKPOINT_ANGLE_MAX = 0;
+        this.CHECKPOINT_ANGLE_MAX = 90f;
         this.CHECKPOINT_DIST = 5f;
+        this.CHECKPOINT_DIST_MAX = 6.5f;
         //--
-        this.VELOCITY_MIN = 0;
+        this.VELOCITY_MIN = 0.01f;
         this.STEERING_ANGLE = 30f;
         this.STEERING_ANGLE_MIN = 15f;
     }
@@ -33,10 +34,14 @@ public class ConfigReward_6_1 : ConfigReward
         //--
         this.CHECKPOINT_RANGE = 0.5f;
         this.CHECKPOINT_PASS = 0;
-        this.CHECKPOINT_DIST = 0.05f;
+        this.CHECKPOINT_DIST = 0.1f;
+        this.CHECKPOINT_DIST_NEG = -0.05f;
+        this.CHECKPOINT_DIST_MAX = -10f;
+        this.CHECKPOINT_ANGLE = -0.01f;
+        this.CHECKPOINT_ANGLE_MAX = -10f;
         //--
-        this.VELOCITY_MIN = 0;
-        this.VELOCITY_FORWARD = 0;
+        this.VELOCITY_MIN = 1f;
+        this.VELOCITY_FORWARD = -0.3f;
         this.STEERING_ANGLE = 0.01f;
     }
 }
