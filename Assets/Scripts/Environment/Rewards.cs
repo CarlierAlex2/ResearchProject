@@ -72,7 +72,7 @@ public class RewardFunctions
         float reward = 0;
 
         // encourage smaller angles = steering towards
-        reward += (angleDiff <= 0) ? 0 : REWARDS.CHECKPOINT_ANGLE;
+        reward += (angleDiff < 0) ? 0 : REWARDS.CHECKPOINT_ANGLE;
 
         // discourage MAX steering angle
         reward = (angleNew > CONFIG.CHECKPOINT_ANGLE_MAX) ? REWARDS.CHECKPOINT_ANGLE_MAX : 0;
