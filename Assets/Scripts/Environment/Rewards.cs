@@ -76,7 +76,7 @@ public class RewardFunctions
         float maxAngle = 90f;
 
         // encourage smaller angles = steering towards
-        //reward += (angleDiff < 0) ? 0.01f : 0;
+        reward += (angleDiff < 0) ? 0.01f : 0;
 
         // discourage MAX steering angle
         reward = (angleNew > maxAngle) ? -10f : 0;
