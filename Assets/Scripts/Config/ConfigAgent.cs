@@ -10,6 +10,7 @@ public class ConfigAgent
 
         this.CHECKPOINT_OFFSET = 1f;
         this.CHECKPOINT_RANGE = 2.5f;
+        this.CHECKPOINT_ANGLE = 0;
         this.CHECKPOINT_ANGLE_MAX = 140f;
         this.CHECKPOINT_DIST = 0;
         this.CHECKPOINT_DIST_MAX = 0;
@@ -25,6 +26,7 @@ public class ConfigAgent
     public float CHECKPOINT_OFFSET { get; internal set; }
     //--
     public float CHECKPOINT_RANGE { get; internal set; }
+    public float CHECKPOINT_ANGLE { get; internal set; }
     public float CHECKPOINT_ANGLE_MAX { get; internal set; }
     public float CHECKPOINT_DIST { get; internal set; }
     public float CHECKPOINT_DIST_MAX { get; internal set; }

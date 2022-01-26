@@ -27,8 +27,8 @@ public class CarAgent6 : Agent
 
     //mlagents-learn config/PPO/PPO_CarAgent6_5_buff5120.yaml --run-id=PPO_CarAgent6_5_buff5120_noAngle --env=builds/PPO_CarAgent6
 
-    //mlagents-learn config/PPO/PPO_CarAgent6_5_buffersize.yaml --run-id=PPO_6_5_angle_120_none --env=builds/PPO_CarAgent6_multi
-    
+    //mlagents-learn config/PPO/PPO_CarAgent6_batchsize.yaml --run-id=PPO_6_5_angle_120_none --env=builds/PPO_CarAgent6_multi
+    //mlagents-learn config/PPO/PPO_CarAgent6_batchsize.yaml --run-id=PPO_6_5_angle_120_neg --env=builds/PPO_CarAgent6_multi_2
 
     [SerializeField] private Transform target;
     [SerializeField] private GPS pathfinding;

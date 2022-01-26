@@ -1,5 +1,5 @@
 behaviors:
-  PPO_CarAgent6_1:
+  PPO_CarAgent6_5_1:
     trainer_type: ppo
     hyperparameters:
       batch_size: 128
@@ -29,7 +29,7 @@ behaviors:
         gamma: 0.99
         strength: 1.0
 
-  PPO_CarAgent6_2:
+  PPO_CarAgent6_5_2:
     trainer_type: ppo
     hyperparameters:
       batch_size: 256
@@ -59,7 +59,7 @@ behaviors:
         gamma: 0.99
         strength: 1.0
 
-  PPO_CarAgent6_3:
+  PPO_CarAgent6_5_3:
     trainer_type: ppo
     hyperparameters:
       batch_size: 512
