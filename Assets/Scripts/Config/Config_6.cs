@@ -10,7 +10,7 @@ public class ConfigAgent_6_1 : ConfigAgent
         //--
         this.CHECKPOINT_OFFSET = 0;
         this.CHECKPOINT_RANGE = 2.3f;
-        this.CHECKPOINT_ANGLE_MAX = 90f;
+        this.CHECKPOINT_ANGLE_MAX = 120f;
         this.CHECKPOINT_DIST = 5f;
         this.CHECKPOINT_DIST_MAX = 6.5f;
         //--
