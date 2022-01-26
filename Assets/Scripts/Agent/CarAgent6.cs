@@ -36,8 +36,8 @@ public class CarAgent6 : Agent
     [SerializeField] private TextMesh debugTextMesh;
 
     //---
-    private static ConfigAgent CONFIG = new ConfigAgent_6_1();
-    private static ConfigReward REWARDS = new ConfigReward_6_1();
+    private static ConfigAgent CONFIG = new ConfigAgent_6_2();
+    private static ConfigReward REWARDS = new ConfigReward_6_2();
     private static RewardFunctions REWARD_FUNCTIONS = new RewardFunctions(CONFIG, REWARDS);
 
     //---

@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AgentConfig_4_1 : ConfigAgent
+public class ConfigAgent_4_1 : ConfigAgent
 {
-    public AgentConfig_4_1() : base()
+    public ConfigAgent_4_1() : base()
     {
         this.INDEX_START = 1;
         //--
@@ -17,9 +17,9 @@ public class AgentConfig_4_1 : ConfigAgent
     }
 }
 
-public class RewardConfig_4_1 : ConfigReward
+public class ConfigReward_4_1 : ConfigReward
 {
-    public RewardConfig_4_1() : base()
+    public ConfigReward_4_1() : base()
     {
         this.TIME = -0.05f;
         this.BREAK = -0.5f;
@@ -39,9 +39,9 @@ public class RewardConfig_4_1 : ConfigReward
 
 //-------------------------------------------------------------------
 
-public class AgentConfig_4_2 : ConfigAgent
+public class ConfigAgent_4_2 : ConfigAgent
 {
-    public AgentConfig_4_2() : base()
+    public ConfigAgent_4_2() : base()
     {
         this.INDEX_START = 1;
         //--
@@ -54,9 +54,9 @@ public class AgentConfig_4_2 : ConfigAgent
     }
 }
 
-public class RewardConfig_4_2 : ConfigReward
+public class ConfigReward_4_2 : ConfigReward
 {
-    public RewardConfig_4_2() : base()
+    public ConfigReward_4_2() : base()
     {
         this.TIME = -0.05f;
         this.BREAK = -0.5f;
@@ -76,9 +76,9 @@ public class RewardConfig_4_2 : ConfigReward
 
 //-------------------------------------------------------------------
 
-public class AgentConfig_4_3 : ConfigAgent
+public class ConfigAgent_4_3 : ConfigAgent
 {
-    public AgentConfig_4_3() : base()
+    public ConfigAgent_4_3() : base()
     {
         this.INDEX_START = 1;
         //--
@@ -91,9 +91,9 @@ public class AgentConfig_4_3 : ConfigAgent
     }
 }
 
-public class RewardConfig_4_3 : ConfigReward
+public class ConfigReward_4_3 : ConfigReward
 {
-    public RewardConfig_4_3() : base()
+    public ConfigReward_4_3() : base()
     {
         this.TIME = -0.05f;
         this.BREAK = -0.5f;
@@ -113,9 +113,9 @@ public class RewardConfig_4_3 : ConfigReward
 
 //-------------------------------------------------------------------
 
-public class AgentConfig_4_4 : ConfigAgent
+public class ConfigAgent_4_4 : ConfigAgent
 {
-    public AgentConfig_4_4() : base()
+    public ConfigAgent_4_4() : base()
     {
         this.INDEX_START = 1;
         //--
@@ -128,9 +128,9 @@ public class AgentConfig_4_4 : ConfigAgent
     }
 }
 
-public class RewardConfig_4_4 : ConfigReward
+public class ConfigReward_4_4 : ConfigReward
 {
-    public RewardConfig_4_4() : base()
+    public ConfigReward_4_4() : base()
     {
         this.TIME = -0.05f;
         this.BREAK = -0.5f;
@@ -150,9 +150,9 @@ public class RewardConfig_4_4 : ConfigReward
 
 //-------------------------------------------------------------------
 
-public class AgentConfig_4_6 : ConfigAgent
+public class ConfigAgent_4_6 : ConfigAgent
 {
-    public AgentConfig_4_6() : base()
+    public ConfigAgent_4_6() : base()
     {
         this.INDEX_START = 1;
         //--
@@ -165,9 +165,9 @@ public class AgentConfig_4_6 : ConfigAgent
     }
 }
 
-public class RewardConfig_4_6 : ConfigReward
+public class ConfigReward_4_6 : ConfigReward
 {
-    public RewardConfig_4_6() : base()
+    public ConfigReward_4_6() : base()
     {
         this.TIME = -0.2f;
         this.BREAK = -0.5f;
@@ -187,9 +187,9 @@ public class RewardConfig_4_6 : ConfigReward
 
 //-------------------------------------------------------------------
 
-public class AgentConfig_4_9 : ConfigAgent
+public class ConfigAgent_4_9 : ConfigAgent
 {
-    public AgentConfig_4_9() : base()
+    public ConfigAgent_4_9() : base()
     {
         this.INDEX_START = 1;
         //--
@@ -202,9 +202,9 @@ public class AgentConfig_4_9 : ConfigAgent
     }
 }
 
-public class RewardConfig_4_9 : ConfigReward
+public class ConfigReward_4_9 : ConfigReward
 {
-    public RewardConfig_4_9() : base()
+    public ConfigReward_4_9() : base()
     {
         this.TIME = -0.1f;
         this.BREAK = -0.5f;
