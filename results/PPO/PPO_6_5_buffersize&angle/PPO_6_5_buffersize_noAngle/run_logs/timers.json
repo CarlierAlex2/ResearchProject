@@ -1,0 +1,615 @@
+{
+    "name": "root",
+    "gauges": {
+        "PPO_CarAgent6_2.Policy.Entropy.mean": {
+            "value": 3.0393218994140625,
+            "min": 3.021488904953003,
+            "max": 4.865116119384766,
+            "count": 30
+        },
+        "PPO_CarAgent6_2.Policy.Entropy.sum": {
+            "value": 152443.265625,
+            "min": 151113.71875,
+            "max": 243888.265625,
+            "count": 30
+        },
+        "PPO_CarAgent6_2.Step.mean": {
+            "value": 1499999.0,
+            "min": 49938.0,
+            "max": 1499999.0,
+            "count": 30
+        },
+        "PPO_CarAgent6_2.Step.sum": {
+            "value": 1499999.0,
+            "min": 49938.0,
+            "max": 1499999.0,
+            "count": 30
+        },
+        "PPO_CarAgent6_2.Policy.ExtrinsicValueEstimate.mean": {
+            "value": 103.64354705810547,
+            "min": 6.608367443084717,
+            "max": 107.67695617675781,
+            "count": 30
+        },
+        "PPO_CarAgent6_2.Policy.ExtrinsicValueEstimate.sum": {
+            "value": 83225.765625,
+            "min": 5273.47705078125,
+            "max": 86249.2421875,
+            "count": 30
+        },
+        "PPO_CarAgent6_2.Environment.EpisodeLength.mean": {
+            "value": 734.0281690140845,
+            "min": 695.027027027027,
+            "max": 749.0,
+            "count": 30
+        },
+        "PPO_CarAgent6_2.Environment.EpisodeLength.sum": {
+            "value": 52116.0,
+            "min": 47187.0,
+            "max": 52116.0,
+            "count": 30
+        },
+        "PPO_CarAgent6_2.Environment.CumulativeReward.mean": {
+            "value": 790.2835531402642,
+            "min": 265.5509925607651,
+            "max": 801.8085565711513,
+            "count": 30
+        },
+        "PPO_CarAgent6_2.Environment.CumulativeReward.sum": {
+            "value": 56110.132272958755,
+            "min": 16729.7125313282,
+            "max": 56116.51195907593,
+            "count": 30
+        },
+        "PPO_CarAgent6_2.Policy.ExtrinsicReward.mean": {
+            "value": 790.2835531402642,
+            "min": 265.5509925607651,
+            "max": 801.8085565711513,
+            "count": 30
+        },
+        "PPO_CarAgent6_2.Policy.ExtrinsicReward.sum": {
+            "value": 56110.132272958755,
+            "min": 16729.7125313282,
+            "max": 56116.51195907593,
+            "count": 30
+        },
+        "PPO_CarAgent6_2.Losses.PolicyLoss.mean": {
+            "value": 0.051790727755951595,
+            "min": 0.04643102788998779,
+            "max": 0.051790727755951595,
+            "count": 30
+        },
+        "PPO_CarAgent6_2.Losses.PolicyLoss.sum": {
+            "value": 0.25895363877975797,
+            "min": 0.18572411155995117,
+            "max": 0.25895363877975797,
+            "count": 30
+        },
+        "PPO_CarAgent6_2.Losses.ValueLoss.mean": {
+            "value": 29.547040321032206,
+            "min": 5.5552666589958095,
+            "max": 248.11572510571986,
+            "count": 30
+        },
+        "PPO_CarAgent6_2.Losses.ValueLoss.sum": {
+            "value": 147.73520160516102,
+            "min": 22.221066635983238,
+            "max": 1240.5786255285993,
+            "count": 30
+        },
+        "PPO_CarAgent6_2.Policy.LearningRate.mean": {
+            "value": 5.22773825745334e-06,
+            "min": 5.22773825745334e-06,
+            "max": 0.0002946414017862,
+            "count": 30
+        },
+        "PPO_CarAgent6_2.Policy.LearningRate.sum": {
+            "value": 2.6138691287266697e-05,
+            "min": 2.6138691287266697e-05,
+            "max": 0.0014251092249635998,
+            "count": 30
+        },
+        "PPO_CarAgent6_2.Policy.Epsilon.mean": {
+            "value": 0.10174254666666668,
+            "min": 0.10174254666666668,
+            "max": 0.19821380000000005,
+            "count": 30
+        },
+        "PPO_CarAgent6_2.Policy.Epsilon.sum": {
+            "value": 0.5087127333333334,
+            "min": 0.4467227999999999,
+            "max": 0.9750363999999999,
+            "count": 30
+        },
+        "PPO_CarAgent6_2.Policy.Beta.mean": {
+            "value": 9.695307866666679e-05,
+            "min": 9.695307866666679e-05,
+            "max": 0.00491086862,
+            "count": 30
+        },
+        "PPO_CarAgent6_2.Policy.Beta.sum": {
+            "value": 0.00048476539333333396,
+            "min": 0.00048476539333333396,
+            "max": 0.023754316360000003,
+            "count": 30
+        },
+        "PPO_CarAgent6_2.IsTraining.mean": {
+            "value": 1.0,
+            "min": 1.0,
+            "max": 1.0,
+            "count": 30
+        },
+        "PPO_CarAgent6_2.IsTraining.sum": {
+            "value": 1.0,
+            "min": 1.0,
+            "max": 1.0,
+            "count": 30
+        },
+        "PPO_CarAgent6_1.Policy.Entropy.mean": {
+            "value": 2.94012188911438,
+            "min": 2.94012188911438,
+            "max": 4.961623668670654,
+            "count": 30
+        },
+        "PPO_CarAgent6_1.Policy.Entropy.sum": {
+            "value": 146620.9375,
+            "min": 146620.9375,
+            "max": 248726.1875,
+            "count": 30
+        },
+        "PPO_CarAgent6_1.Step.mean": {
+            "value": 1499980.0,
+            "min": 49938.0,
+            "max": 1499980.0,
+            "count": 30
+        },
+        "PPO_CarAgent6_1.Step.sum": {
+            "value": 1499980.0,
+            "min": 49938.0,
+            "max": 1499980.0,
+            "count": 30
+        },
+        "PPO_CarAgent6_1.Policy.ExtrinsicValueEstimate.mean": {
+            "value": 106.04617309570312,
+            "min": 2.0101797580718994,
+            "max": 106.04617309570312,
+            "count": 30
+        },
+        "PPO_CarAgent6_1.Policy.ExtrinsicValueEstimate.sum": {
+            "value": 84836.9375,
+            "min": 1604.12353515625,
+            "max": 84836.9375,
+            "count": 30
+        },
+        "PPO_CarAgent6_1.Environment.EpisodeLength.mean": {
+            "value": 749.0,
+            "min": 698.1571428571428,
+            "max": 749.0,
+            "count": 30
+        },
+        "PPO_CarAgent6_1.Environment.EpisodeLength.sum": {
+            "value": 50183.0,
+            "min": 46368.0,
+            "max": 53928.0,
+            "count": 30
+        },
+        "PPO_CarAgent6_1.Environment.CumulativeReward.mean": {
+            "value": 816.284557655676,
+            "min": 196.73908924299573,
+            "max": 816.284557655676,
+            "count": 30
+        },
+        "PPO_CarAgent6_1.Environment.CumulativeReward.sum": {
+            "value": 54691.0653629303,
+            "min": 12394.562622308731,
+            "max": 55684.41779136658,
+            "count": 30
+        },
+        "PPO_CarAgent6_1.Policy.ExtrinsicReward.mean": {
+            "value": 816.284557655676,
+            "min": 196.73908924299573,
+            "max": 816.284557655676,
+            "count": 30
+        },
+        "PPO_CarAgent6_1.Policy.ExtrinsicReward.sum": {
+            "value": 54691.0653629303,
+            "min": 12394.562622308731,
+            "max": 55684.41779136658,
+            "count": 30
+        },
+        "PPO_CarAgent6_1.Losses.PolicyLoss.mean": {
+            "value": 0.049703542898320546,
+            "min": 0.04487687137718315,
+            "max": 0.053236558783716977,
+            "count": 30
+        },
+        "PPO_CarAgent6_1.Losses.PolicyLoss.sum": {
+            "value": 0.09940708579664109,
+            "min": 0.0897537427543663,
+            "max": 0.1510509655265196,
+            "count": 30
+        },
+        "PPO_CarAgent6_1.Losses.ValueLoss.mean": {
+            "value": 8.044866435602307,
+            "min": 4.174307779520136,
+            "max": 244.55865798393887,
+            "count": 30
+        },
+        "PPO_CarAgent6_1.Losses.ValueLoss.sum": {
+            "value": 16.089732871204614,
+            "min": 8.348615559040272,
+            "max": 489.11731596787774,
+            "count": 30
+        },
+        "PPO_CarAgent6_1.Policy.LearningRate.mean": {
+            "value": 6.111097962999999e-06,
+            "min": 6.111097962999999e-06,
+            "max": 0.00029375220208260005,
+            "count": 30
+        },
+        "PPO_CarAgent6_1.Policy.LearningRate.sum": {
+            "value": 1.2222195925999999e-05,
+            "min": 1.2222195925999999e-05,
+            "max": 0.0008250264249912,
+            "count": 30
+        },
+        "PPO_CarAgent6_1.Policy.Epsilon.mean": {
+            "value": 0.10203700000000002,
+            "min": 0.10203700000000002,
+            "max": 0.19791739999999997,
+            "count": 30
+        },
+        "PPO_CarAgent6_1.Policy.Epsilon.sum": {
+            "value": 0.20407400000000003,
+            "min": 0.20407400000000003,
+            "max": 0.5750088,
+            "count": 30
+        },
+        "PPO_CarAgent6_1.Policy.Beta.mean": {
+            "value": 0.0001116463,
+            "min": 0.0001116463,
+            "max": 0.00489607826,
+            "count": 30
+        },
+        "PPO_CarAgent6_1.Policy.Beta.sum": {
+            "value": 0.0002232926,
+            "min": 0.0002232926,
+            "max": 0.013752939119999997,
+            "count": 30
+        },
+        "PPO_CarAgent6_1.IsTraining.mean": {
+            "value": 1.0,
+            "min": 1.0,
+            "max": 1.0,
+            "count": 30
+        },
+        "PPO_CarAgent6_1.IsTraining.sum": {
+            "value": 1.0,
+            "min": 1.0,
+            "max": 1.0,
+            "count": 30
+        },
+        "PPO_CarAgent6_3.Policy.Entropy.mean": {
+            "value": 2.8993749618530273,
+            "min": 2.884380578994751,
+            "max": 4.565707206726074,
+            "count": 30
+        },
+        "PPO_CarAgent6_3.Policy.Entropy.sum": {
+            "value": 145136.90625,
+            "min": 144126.734375,
+            "max": 228878.890625,
+            "count": 30
+        },
+        "PPO_CarAgent6_3.Step.mean": {
+            "value": 1499992.0,
+            "min": 49938.0,
+            "max": 1499992.0,
+            "count": 30
+        },
+        "PPO_CarAgent6_3.Step.sum": {
+            "value": 1499992.0,
+            "min": 49938.0,
+            "max": 1499992.0,
+            "count": 30
+        },
+        "PPO_CarAgent6_3.Policy.ExtrinsicValueEstimate.mean": {
+            "value": 107.74412536621094,
+            "min": 15.051178932189941,
+            "max": 109.83506774902344,
+            "count": 30
+        },
+        "PPO_CarAgent6_3.Policy.ExtrinsicValueEstimate.sum": {
+            "value": 86303.046875,
+            "min": 12010.8408203125,
+            "max": 87868.0546875,
+            "count": 30
+        },
+        "PPO_CarAgent6_3.Losses.PolicyLoss.mean": {
+            "value": 0.05028048625140097,
+            "min": 0.046767735214258824,
+            "max": 0.05404853565923986,
+            "count": 30
+        },
+        "PPO_CarAgent6_3.Losses.PolicyLoss.sum": {
+            "value": 0.5028048625140097,
+            "min": 0.4260464071177921,
+            "max": 0.5404853565923986,
+            "count": 30
+        },
+        "PPO_CarAgent6_3.Losses.ValueLoss.mean": {
+            "value": 3.945734386543433,
+            "min": 0.5933391086012125,
+            "max": 477.5551647064337,
+            "count": 30
+        },
+        "PPO_CarAgent6_3.Losses.ValueLoss.sum": {
+            "value": 39.45734386543433,
+            "min": 5.933391086012125,
+            "max": 4464.091153494517,
+            "count": 30
+        },
+        "PPO_CarAgent6_3.Policy.LearningRate.mean": {
+            "value": 5.050218316626667e-06,
+            "min": 5.050218316626667e-06,
+            "max": 0.0002945216018261333,
+            "count": 30
+        },
+        "PPO_CarAgent6_3.Policy.LearningRate.sum": {
+            "value": 5.0502183166266665e-05,
+            "min": 5.0502183166266665e-05,
+            "max": 0.002750170083276666,
+            "count": 30
+        },
+        "PPO_CarAgent6_3.Policy.Epsilon.mean": {
+            "value": 0.10168337333333333,
+            "min": 0.10168337333333333,
+            "max": 0.1981738666666667,
+            "count": 30
+        },
+        "PPO_CarAgent6_3.Policy.Epsilon.sum": {
+            "value": 1.0168337333333333,
+            "min": 0.9445601333333334,
+            "max": 1.9167233333333333,
+            "count": 30
+        },
+        "PPO_CarAgent6_3.Policy.Beta.mean": {
+            "value": 9.400032933333336e-05,
+            "min": 9.400032933333336e-05,
+            "max": 0.004908875946666666,
+            "count": 30
+        },
+        "PPO_CarAgent6_3.Policy.Beta.sum": {
+            "value": 0.0009400032933333336,
+            "min": 0.0009400032933333336,
+            "max": 0.04584449433333333,
+            "count": 30
+        },
+        "PPO_CarAgent6_3.Environment.EpisodeLength.mean": {
+            "value": 749.0,
+            "min": 655.16,
+            "max": 749.0,
+            "count": 30
+        },
+        "PPO_CarAgent6_3.Environment.EpisodeLength.sum": {
+            "value": 50932.0,
+            "min": 47187.0,
+            "max": 51681.0,
+            "count": 30
+        },
+        "PPO_CarAgent6_3.Environment.CumulativeReward.mean": {
+            "value": 820.2965646070593,
+            "min": 355.2014237579547,
+            "max": 821.6332842900202,
+            "count": 30
+        },
+        "PPO_CarAgent6_3.Environment.CumulativeReward.sum": {
+            "value": 55780.16639328003,
+            "min": 24208.26223361492,
+            "max": 56676.46742630005,
+            "count": 30
+        },
+        "PPO_CarAgent6_3.Policy.ExtrinsicReward.mean": {
+            "value": 820.2965646070593,
+            "min": 355.2014237579547,
+            "max": 821.6332842900202,
+            "count": 30
+        },
+        "PPO_CarAgent6_3.Policy.ExtrinsicReward.sum": {
+            "value": 55780.16639328003,
+            "min": 24208.26223361492,
+            "max": 56676.46742630005,
+            "count": 30
+        },
+        "PPO_CarAgent6_3.IsTraining.mean": {
+            "value": 1.0,
+            "min": 1.0,
+            "max": 1.0,
+            "count": 30
+        },
+        "PPO_CarAgent6_3.IsTraining.sum": {
+            "value": 1.0,
+            "min": 1.0,
+            "max": 1.0,
+            "count": 30
+        }
+    },
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1643188119",
+        "python_version": "3.6.13 |Anaconda, Inc.| (default, Mar 16 2021, 11:37:27) [MSC v.1916 64 bit (AMD64)]",
+        "command_line_arguments": "C:\\Users\\alexc\\anaconda3\\envs\\mlagent_release_18\\Scripts\\mlagents-learn config/PPO/PPO_CarAgent6_5_buffersize.yaml --run-id=PPO_CarAgent6_5_buffersize_noAngle --env=builds/PPO_CarAgent6_multi",
+        "mlagents_version": "0.27.0",
+        "mlagents_envs_version": "0.27.0",
+        "communication_protocol_version": "1.5.0",
+        "pytorch_version": "1.7.1+cu110",
+        "numpy_version": "1.19.5",
+        "end_time_seconds": "1643193006"
+    },
+    "total": 4887.3175366000005,
+    "count": 1,
+    "self": 0.9764076000010391,
+    "children": {
+        "run_training.setup": {
+            "total": 0.0817214,
+            "count": 1,
+            "self": 0.0817214
+        },
+        "TrainerController.start_learning": {
+            "total": 4886.2594076,
+            "count": 1,
+            "self": 3.4264433000853387,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 7.4776403,
+                    "count": 1,
+                    "self": 7.4776403
+                },
+                "TrainerController.advance": {
+                    "total": 4875.0962220999145,
+                    "count": 172180,
+                    "self": 4.203364499743657,
+                    "children": {
+                        "env_step": {
+                            "total": 3085.1134899000363,
+                            "count": 172180,
+                            "self": 1372.43197990015,
+                            "children": {
+                                "SubprocessEnvManager._take_step": {
+                                    "total": 1710.6306967998603,
+                                    "count": 172180,
+                                    "self": 24.344086400036986,
+                                    "children": {
+                                        "TorchPolicy.evaluate": {
+                                            "total": 1686.2866103998233,
+                                            "count": 500127,
+                                            "self": 444.6726224996862,
+                                            "children": {
+                                                "TorchPolicy.sample_actions": {
+                                                    "total": 1241.613987900137,
+                                                    "count": 500127,
+                                                    "self": 1241.613987900137
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "workers": {
+                                    "total": 2.0508132000259893,
+                                    "count": 172180,
+                                    "self": 0.0,
+                                    "children": {
+                                        "worker_root": {
+                                            "total": 4874.4518749999515,
+                                            "count": 172180,
+                                            "is_parallel": true,
+                                            "self": 3842.49474610005,
+                                            "children": {
+                                                "steps_from_proto": {
+                                                    "total": 0.0012233,
+                                                    "count": 3,
+                                                    "is_parallel": true,
+                                                    "self": 0.00046190000000000033,
+                                                    "children": {
+                                                        "_process_rank_one_or_two_observation": {
+                                                            "total": 0.0007613999999999998,
+                                                            "count": 12,
+                                                            "is_parallel": true,
+                                                            "self": 0.0007613999999999998
+                                                        }
+                                                    }
+                                                },
+                                                "UnityEnvironment.step": {
+                                                    "total": 1031.9559055999016,
+                                                    "count": 172180,
+                                                    "is_parallel": true,
+                                                    "self": 46.97904419966767,
+                                                    "children": {
+                                                        "UnityEnvironment._generate_step_input": {
+                                                            "total": 59.69695560005734,
+                                                            "count": 172180,
+                                                            "is_parallel": true,
+                                                            "self": 59.69695560005734
+                                                        },
+                                                        "communicator.exchange": {
+                                                            "total": 744.8746559000418,
+                                                            "count": 172180,
+                                                            "is_parallel": true,
+                                                            "self": 744.8746559000418
+                                                        },
+                                                        "steps_from_proto": {
+                                                            "total": 180.40524990013483,
+                                                            "count": 516540,
+                                                            "is_parallel": true,
+                                                            "self": 63.26964120039017,
+                                                            "children": {
+                                                                "_process_rank_one_or_two_observation": {
+                                                                    "total": 117.13560869974467,
+                                                                    "count": 2066160,
+                                                                    "is_parallel": true,
+                                                                    "self": 117.13560869974467
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "trainer_advance": {
+                            "total": 1785.7793677001348,
+                            "count": 516540,
+                            "self": 12.499905199969817,
+                            "children": {
+                                "process_trajectory": {
+                                    "total": 354.6658877001609,
+                                    "count": 516540,
+                                    "self": 352.9007623001615,
+                                    "children": {
+                                        "RLTrainer._checkpoint": {
+                                            "total": 1.7651253999994196,
+                                            "count": 21,
+                                            "self": 1.7651253999994196
+                                        }
+                                    }
+                                },
+                                "_update_policy": {
+                                    "total": 1418.613574800004,
+                                    "count": 507,
+                                    "self": 815.2669238000899,
+                                    "children": {
+                                        "TorchPPOOptimizer.update": {
+                                            "total": 603.3466509999141,
+                                            "count": 52173,
+                                            "self": 603.3466509999141
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "trainer_threads": {
+                    "total": 6.999998731771484e-07,
+                    "count": 1,
+                    "self": 6.999998731771484e-07
+                },
+                "TrainerController._save_models": {
+                    "total": 0.25910120000025927,
+                    "count": 1,
+                    "self": 0.01973479999924166,
+                    "children": {
+                        "RLTrainer._checkpoint": {
+                            "total": 0.2393664000010176,
+                            "count": 3,
+                            "self": 0.2393664000010176
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

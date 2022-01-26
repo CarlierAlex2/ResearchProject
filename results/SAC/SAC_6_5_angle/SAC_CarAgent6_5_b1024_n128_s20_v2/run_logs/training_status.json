@@ -1,0 +1,65 @@
+{
+    "SAC_CarAgent6": {
+        "checkpoints": [
+            {
+                "steps": 349946,
+                "file_path": "results\\SAC_CarAgent6_5_b1024_n128_s20_v2\\SAC_CarAgent6\\SAC_CarAgent6-349946.onnx",
+                "reward": null,
+                "creation_time": 1643142251.5174859,
+                "auxillary_file_paths": [
+                    "results\\SAC_CarAgent6_5_b1024_n128_s20_v2\\SAC_CarAgent6\\SAC_CarAgent6-349946.pt"
+                ]
+            },
+            {
+                "steps": 399975,
+                "file_path": "results\\SAC_CarAgent6_5_b1024_n128_s20_v2\\SAC_CarAgent6\\SAC_CarAgent6-399975.onnx",
+                "reward": null,
+                "creation_time": 1643142485.0469937,
+                "auxillary_file_paths": [
+                    "results\\SAC_CarAgent6_5_b1024_n128_s20_v2\\SAC_CarAgent6\\SAC_CarAgent6-399975.pt"
+                ]
+            },
+            {
+                "steps": 449971,
+                "file_path": "results\\SAC_CarAgent6_5_b1024_n128_s20_v2\\SAC_CarAgent6\\SAC_CarAgent6-449971.onnx",
+                "reward": null,
+                "creation_time": 1643142715.715507,
+                "auxillary_file_paths": [
+                    "results\\SAC_CarAgent6_5_b1024_n128_s20_v2\\SAC_CarAgent6\\SAC_CarAgent6-449971.pt"
+                ]
+            },
+            {
+                "steps": 499949,
+                "file_path": "results\\SAC_CarAgent6_5_b1024_n128_s20_v2\\SAC_CarAgent6\\SAC_CarAgent6-499949.onnx",
+                "reward": null,
+                "creation_time": 1643142952.1970289,
+                "auxillary_file_paths": [
+                    "results\\SAC_CarAgent6_5_b1024_n128_s20_v2\\SAC_CarAgent6\\SAC_CarAgent6-499949.pt"
+                ]
+            },
+            {
+                "steps": 500077,
+                "file_path": "results\\SAC_CarAgent6_5_b1024_n128_s20_v2\\SAC_CarAgent6\\SAC_CarAgent6-500077.onnx",
+                "reward": null,
+                "creation_time": 1643142952.3040462,
+                "auxillary_file_paths": [
+                    "results\\SAC_CarAgent6_5_b1024_n128_s20_v2\\SAC_CarAgent6\\SAC_CarAgent6-500077.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 500077,
+            "file_path": "results\\SAC_CarAgent6_5_b1024_n128_s20_v2\\SAC_CarAgent6.onnx",
+            "reward": null,
+            "creation_time": 1643142952.3040462,
+            "auxillary_file_paths": [
+                "results\\SAC_CarAgent6_5_b1024_n128_s20_v2\\SAC_CarAgent6\\SAC_CarAgent6-500077.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.27.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}

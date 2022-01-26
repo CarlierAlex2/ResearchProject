@@ -1,0 +1,65 @@
+{
+    "PPO_CarAgent6": {
+        "checkpoints": [
+            {
+                "steps": 799977,
+                "file_path": "results\\PPO_CarAgent6_4_n64\\PPO_CarAgent6\\PPO_CarAgent6-799977.onnx",
+                "reward": 810.8295489719936,
+                "creation_time": 1642873924.16111,
+                "auxillary_file_paths": [
+                    "results\\PPO_CarAgent6_4_n64\\PPO_CarAgent6\\PPO_CarAgent6-799977.pt"
+                ]
+            },
+            {
+                "steps": 999950,
+                "file_path": "results\\PPO_CarAgent6_4_n64\\PPO_CarAgent6\\PPO_CarAgent6-999950.onnx",
+                "reward": 808.1873073577881,
+                "creation_time": 1642874168.8200498,
+                "auxillary_file_paths": [
+                    "results\\PPO_CarAgent6_4_n64\\PPO_CarAgent6\\PPO_CarAgent6-999950.pt"
+                ]
+            },
+            {
+                "steps": 1199956,
+                "file_path": "results\\PPO_CarAgent6_4_n64\\PPO_CarAgent6\\PPO_CarAgent6-1199956.onnx",
+                "reward": 612.863586807251,
+                "creation_time": 1642874415.4393287,
+                "auxillary_file_paths": [
+                    "results\\PPO_CarAgent6_4_n64\\PPO_CarAgent6\\PPO_CarAgent6-1199956.pt"
+                ]
+            },
+            {
+                "steps": 1399995,
+                "file_path": "results\\PPO_CarAgent6_4_n64\\PPO_CarAgent6\\PPO_CarAgent6-1399995.onnx",
+                "reward": 786.1604177686903,
+                "creation_time": 1642874659.1961112,
+                "auxillary_file_paths": [
+                    "results\\PPO_CarAgent6_4_n64\\PPO_CarAgent6\\PPO_CarAgent6-1399995.pt"
+                ]
+            },
+            {
+                "steps": 1500012,
+                "file_path": "results\\PPO_CarAgent6_4_n64\\PPO_CarAgent6\\PPO_CarAgent6-1500012.onnx",
+                "reward": 819.9134740829468,
+                "creation_time": 1642874780.9922385,
+                "auxillary_file_paths": [
+                    "results\\PPO_CarAgent6_4_n64\\PPO_CarAgent6\\PPO_CarAgent6-1500012.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1500012,
+            "file_path": "results\\PPO_CarAgent6_4_n64\\PPO_CarAgent6.onnx",
+            "reward": 819.9134740829468,
+            "creation_time": 1642874780.9922385,
+            "auxillary_file_paths": [
+                "results\\PPO_CarAgent6_4_n64\\PPO_CarAgent6\\PPO_CarAgent6-1500012.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.27.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}
