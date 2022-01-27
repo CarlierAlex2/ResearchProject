@@ -57,7 +57,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8830341575452298310, guid: 49e6d05107ea7b24489dc7d21723d2c4, type: 3}
       propertyPath: m_BehaviorName
-      value: PPO_CarAgent6
+      value: PPO_6_5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 49e6d05107ea7b24489dc7d21723d2c4, type: 3}
