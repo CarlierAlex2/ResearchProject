@@ -137,10 +137,10 @@ PrefabInstance:
     - target: {fileID: 676578737743110059, guid: 6668188428d9dd44fb4570674858803f, type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 5022602860645237092, guid: e7c76aa17ff65e94a9ca42995930143a, type: 3}
+      objectReference: {fileID: 5022602860645237092, guid: 34a156d2c51b5e74bb75fbd82e0aeb2d, type: 3}
     - target: {fileID: 4543149105852234465, guid: 6668188428d9dd44fb4570674858803f, type: 3}
       propertyPath: m_Text
-      value: "config \nVELOCITY_MIN = 0.02f;"
+      value: "config \nVELOCITY_MIN = 0.01f;"
       objectReference: {fileID: 0}
     - target: {fileID: 5904651479330654864, guid: 6668188428d9dd44fb4570674858803f, type: 3}
       propertyPath: m_RootOrder
@@ -148,7 +148,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5904651479330654864, guid: 6668188428d9dd44fb4570674858803f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 50
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5904651479330654864, guid: 6668188428d9dd44fb4570674858803f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -653,6 +653,80 @@ Transform:
   m_Father: {fileID: 1673118079}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &110614397
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1153256738}
+    m_Modifications:
+    - target: {fileID: 27206038554833452, guid: 6668188428d9dd44fb4570674858803f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 676578737743110059, guid: 6668188428d9dd44fb4570674858803f, type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 5022602860645237092, guid: 010cd46ea4a84c64895bdf4f36418e26, type: 3}
+    - target: {fileID: 4543149105852234465, guid: 6668188428d9dd44fb4570674858803f, type: 3}
+      propertyPath: m_Text
+      value: "config \nVELOCITY_MIN = 0.1f;"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5904651479330654864, guid: 6668188428d9dd44fb4570674858803f, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5904651479330654864, guid: 6668188428d9dd44fb4570674858803f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 5904651479330654864, guid: 6668188428d9dd44fb4570674858803f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5904651479330654864, guid: 6668188428d9dd44fb4570674858803f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 5904651479330654864, guid: 6668188428d9dd44fb4570674858803f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5904651479330654864, guid: 6668188428d9dd44fb4570674858803f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5904651479330654864, guid: 6668188428d9dd44fb4570674858803f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5904651479330654864, guid: 6668188428d9dd44fb4570674858803f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5904651479330654864, guid: 6668188428d9dd44fb4570674858803f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5904651479330654864, guid: 6668188428d9dd44fb4570674858803f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5904651479330654864, guid: 6668188428d9dd44fb4570674858803f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5904651479330654865, guid: 6668188428d9dd44fb4570674858803f, type: 3}
+      propertyPath: m_Name
+      value: PPO_6_Parking (6)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6668188428d9dd44fb4570674858803f, type: 3}
+--- !u!4 &110614398 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5904651479330654864, guid: 6668188428d9dd44fb4570674858803f, type: 3}
+  m_PrefabInstance: {fileID: 110614397}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &123074998
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4486,10 +4560,10 @@ PrefabInstance:
     - target: {fileID: 676578737743110059, guid: 6668188428d9dd44fb4570674858803f, type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 5022602860645237092, guid: 3106e65b6ac3bc94ca84e253a447791a, type: 3}
+      objectReference: {fileID: 5022602860645237092, guid: c2a0ce2834f54e1449afbf143ea3f374, type: 3}
     - target: {fileID: 4543149105852234465, guid: 6668188428d9dd44fb4570674858803f, type: 3}
       propertyPath: m_Text
-      value: "config \nVELOCITY_MIN = 0.01f;"
+      value: "config \nVELOCITY_MIN = 0.02f;"
       objectReference: {fileID: 0}
     - target: {fileID: 5904651479330654864, guid: 6668188428d9dd44fb4570674858803f, type: 3}
       propertyPath: m_RootOrder
@@ -4497,7 +4571,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5904651479330654864, guid: 6668188428d9dd44fb4570674858803f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 5904651479330654864, guid: 6668188428d9dd44fb4570674858803f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5144,6 +5218,7 @@ Transform:
   - {fileID: 16266375}
   - {fileID: 980461390}
   - {fileID: 1362023963}
+  - {fileID: 110614398}
   m_Father: {fileID: 853965925}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6174,10 +6249,10 @@ PrefabInstance:
     - target: {fileID: 676578737743110059, guid: 6668188428d9dd44fb4570674858803f, type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 5022602860645237092, guid: 07a82ae7d9b40d249b1f40022f219318, type: 3}
+      objectReference: {fileID: 5022602860645237092, guid: 872ac7102f6e37046a41c0bd42be90da, type: 3}
     - target: {fileID: 4543149105852234465, guid: 6668188428d9dd44fb4570674858803f, type: 3}
       propertyPath: m_Text
-      value: "config \nVELOCITY_MIN = 0.1f;"
+      value: "config \nVELOCITY_MIN = 0.05f;"
       objectReference: {fileID: 0}
     - target: {fileID: 5904651479330654864, guid: 6668188428d9dd44fb4570674858803f, type: 3}
       propertyPath: m_RootOrder
