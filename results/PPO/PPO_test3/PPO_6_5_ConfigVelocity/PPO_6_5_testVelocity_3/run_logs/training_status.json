@@ -1,0 +1,65 @@
+{
+    "PPO_6_5": {
+        "checkpoints": [
+            {
+                "steps": 799951,
+                "file_path": "results\\PPO_6_5_test4\\PPO_6_5\\PPO_6_5-799951.onnx",
+                "reward": 709.520036969866,
+                "creation_time": 1643240232.2618492,
+                "auxillary_file_paths": [
+                    "results\\PPO_6_5_test4\\PPO_6_5\\PPO_6_5-799951.pt"
+                ]
+            },
+            {
+                "steps": 999941,
+                "file_path": "results\\PPO_6_5_test4\\PPO_6_5\\PPO_6_5-999941.onnx",
+                "reward": 718.4820377985636,
+                "creation_time": 1643240504.0655942,
+                "auxillary_file_paths": [
+                    "results\\PPO_6_5_test4\\PPO_6_5\\PPO_6_5-999941.pt"
+                ]
+            },
+            {
+                "steps": 1199939,
+                "file_path": "results\\PPO_6_5_test4\\PPO_6_5\\PPO_6_5-1199939.onnx",
+                "reward": 787.7900416056315,
+                "creation_time": 1643240772.8897247,
+                "auxillary_file_paths": [
+                    "results\\PPO_6_5_test4\\PPO_6_5\\PPO_6_5-1199939.pt"
+                ]
+            },
+            {
+                "steps": 1399965,
+                "file_path": "results\\PPO_6_5_test4\\PPO_6_5\\PPO_6_5-1399965.onnx",
+                "reward": 618.9275349378586,
+                "creation_time": 1643241035.3947601,
+                "auxillary_file_paths": [
+                    "results\\PPO_6_5_test4\\PPO_6_5\\PPO_6_5-1399965.pt"
+                ]
+            },
+            {
+                "steps": 1500056,
+                "file_path": "results\\PPO_6_5_test4\\PPO_6_5\\PPO_6_5-1500056.onnx",
+                "reward": 615.7627559141679,
+                "creation_time": 1643241169.6075408,
+                "auxillary_file_paths": [
+                    "results\\PPO_6_5_test4\\PPO_6_5\\PPO_6_5-1500056.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1500056,
+            "file_path": "results\\PPO_6_5_test4\\PPO_6_5.onnx",
+            "reward": 615.7627559141679,
+            "creation_time": 1643241169.6075408,
+            "auxillary_file_paths": [
+                "results\\PPO_6_5_test4\\PPO_6_5\\PPO_6_5-1500056.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.27.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}
