@@ -7,7 +7,7 @@ using Unity.MLAgents.Sensors;
 
 
 
-public class CarAgent_0_0 : Agent
+public class CarAgent0 : Agent
 {
     //mlagents-learn config/CarAgent2.yaml --run-id=CarAgent2 --env=builds/CarAgent2
     [SerializeField] private Transform target;
