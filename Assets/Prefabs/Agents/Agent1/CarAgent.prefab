@@ -617,6 +617,7 @@ MonoBehaviour:
   MaxStep: 5000
   target: {fileID: 0}
   gpsObj: {fileID: 0}
+  debugTextMesh: {fileID: 0}
 --- !u!114 &8903566928104377479
 MonoBehaviour:
   m_ObjectHideFlags: 0

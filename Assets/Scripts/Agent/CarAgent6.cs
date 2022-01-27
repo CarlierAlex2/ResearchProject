@@ -38,8 +38,8 @@ public class CarAgent6 : Agent
     [SerializeField] private TextMesh debugTextMesh;
 
     //---
-    private static ConfigAgent CONFIG = new ConfigAgent_6_3();
-    private static ConfigReward REWARDS = new ConfigReward_6_3();
+    private static ConfigAgent CONFIG = new ConfigAgent_6_4();
+    private static ConfigReward REWARDS = new ConfigReward_6_4();
     private static RewardFunctions REWARD_FUNCTIONS = new RewardFunctions(CONFIG, REWARDS);
 
     //---
@@ -221,6 +221,7 @@ public class CarAgent6 : Agent
 
         reward += REWARD_FUNCTIONS.Time();
         reward += REWARD_FUNCTIONS.Movement(localVelocity.z, actionOutput);
+        reward += REWARD_FUNCTIONS.Checkpoint(isCheckPoint);
         reward += REWARD_FUNCTIONS.CheckpointDist(positionOld, positionNew, checkpoint);
         reward += REWARD_FUNCTIONS.CheckpointAngle(positionOld, forwardOld, positionNew, forwardNew, checkpoint);
 

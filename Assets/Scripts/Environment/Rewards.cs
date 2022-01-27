@@ -35,6 +35,11 @@ public class RewardFunctions
         return reward;
     }
 
+    public float Checkpoint(bool isCheckPoint)
+    {
+        return (isCheckPoint) ? REWARDS.CHECKPOINT_PASS : 0;
+    }
+
     public float CheckpointDist(Vector3 oldPos, Vector3 newPos, Vector3 checkpoint)
     {
         oldPos.y = 0;

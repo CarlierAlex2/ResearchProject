@@ -11,10 +11,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SAC_CarAgent6.unity
     guid: aa6cb0ef690c61249889304f1b988eac
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/PPO_CarAgent6_multi.unity
     guid: 439e58a5457efbb4eaf23858492d8886
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/PPO_CarAgent6_step3000.unity
     guid: f3e8df3310353fd43b20fcd931546cf5
   m_configObjects: {}
