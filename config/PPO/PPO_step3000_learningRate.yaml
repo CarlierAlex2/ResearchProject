@@ -4,7 +4,7 @@ behaviors:
     hyperparameters:
       batch_size: 256
       buffer_size: 10240
-      learning_rate: 2.0e-4
+      learning_rate: 1.0e-4
       learning_rate_schedule: linear
 
       beta: 5.0e-3
@@ -66,7 +66,7 @@ behaviors:
     hyperparameters:
       batch_size: 256
       buffer_size: 10240
-      learning_rate: 4.0e-4
+      learning_rate: 5.0e-4
       learning_rate_schedule: linear
 
       beta: 5.0e-3

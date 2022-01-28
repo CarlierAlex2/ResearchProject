@@ -32,6 +32,9 @@ public class CarAgent6 : Agent
 
     //mlagents-learn config/PPO/PPO_CarAgent6_default.yaml --run-id=PPO_6_5_testVelocity_2 --env=builds/PPO_CarAgent6
 
+    //mlagents-learn config/SAC/SAC_stepsUpdateBatch3.yaml --run-id=SAC_stepsUpdateBatch3 --env=builds/SAC_CarAgent6_multi --resume
+    
+
     [SerializeField] private Transform target;
     [SerializeField] private GPS pathfinding;
     [SerializeField] private EnvController envController;
