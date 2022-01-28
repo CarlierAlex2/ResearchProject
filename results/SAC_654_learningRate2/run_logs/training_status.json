@@ -1,0 +1,181 @@
+{
+    "SAC_6_5_2": {
+        "checkpoints": [
+            {
+                "steps": 499991,
+                "file_path": "results\\SAC_batch1024_n64_lr\\SAC_6_5_2\\SAC_6_5_2-499991.onnx",
+                "reward": null,
+                "creation_time": 1643374110.3202376,
+                "auxillary_file_paths": [
+                    "results\\SAC_batch1024_n64_lr\\SAC_6_5_2\\SAC_6_5_2-499991.pt"
+                ]
+            },
+            {
+                "steps": 500155,
+                "file_path": "results\\SAC_batch1024_n64_lr\\SAC_6_5_2\\SAC_6_5_2-500155.onnx",
+                "reward": 94.56999778747559,
+                "creation_time": 1643374110.829326,
+                "auxillary_file_paths": [
+                    "results\\SAC_batch1024_n64_lr\\SAC_6_5_2\\SAC_6_5_2-500155.pt"
+                ]
+            },
+            {
+                "steps": 549937,
+                "file_path": "results\\SAC_654_learningRate2\\SAC_6_5_2\\SAC_6_5_2-549937.onnx",
+                "reward": null,
+                "creation_time": 1643378620.4274683,
+                "auxillary_file_paths": [
+                    "results\\SAC_654_learningRate2\\SAC_6_5_2\\SAC_6_5_2-549937.pt"
+                ]
+            },
+            {
+                "steps": 599953,
+                "file_path": "results\\SAC_654_learningRate2\\SAC_6_5_2\\SAC_6_5_2-599953.onnx",
+                "reward": null,
+                "creation_time": 1643379281.4158175,
+                "auxillary_file_paths": [
+                    "results\\SAC_654_learningRate2\\SAC_6_5_2\\SAC_6_5_2-599953.pt"
+                ]
+            },
+            {
+                "steps": 600273,
+                "file_path": "results\\SAC_654_learningRate2\\SAC_6_5_2\\SAC_6_5_2-600273.onnx",
+                "reward": null,
+                "creation_time": 1643379283.2648196,
+                "auxillary_file_paths": [
+                    "results\\SAC_654_learningRate2\\SAC_6_5_2\\SAC_6_5_2-600273.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 600273,
+            "file_path": "results\\SAC_654_learningRate2\\SAC_6_5_2.onnx",
+            "reward": null,
+            "creation_time": 1643379283.2648196,
+            "auxillary_file_paths": [
+                "results\\SAC_654_learningRate2\\SAC_6_5_2\\SAC_6_5_2-600273.pt"
+            ]
+        }
+    },
+    "SAC_6_5": {
+        "checkpoints": [
+            {
+                "steps": 499937,
+                "file_path": "results\\SAC_batch1024_n64_lr\\SAC_6_5\\SAC_6_5-499937.onnx",
+                "reward": null,
+                "creation_time": 1643374109.7021298,
+                "auxillary_file_paths": [
+                    "results\\SAC_batch1024_n64_lr\\SAC_6_5\\SAC_6_5-499937.pt"
+                ]
+            },
+            {
+                "steps": 500065,
+                "file_path": "results\\SAC_batch1024_n64_lr\\SAC_6_5\\SAC_6_5-500065.onnx",
+                "reward": null,
+                "creation_time": 1643374110.9866898,
+                "auxillary_file_paths": [
+                    "results\\SAC_batch1024_n64_lr\\SAC_6_5\\SAC_6_5-500065.pt"
+                ]
+            },
+            {
+                "steps": 549999,
+                "file_path": "results\\SAC_654_learningRate2\\SAC_6_5\\SAC_6_5-549999.onnx",
+                "reward": null,
+                "creation_time": 1643378619.083967,
+                "auxillary_file_paths": [
+                    "results\\SAC_654_learningRate2\\SAC_6_5\\SAC_6_5-549999.pt"
+                ]
+            },
+            {
+                "steps": 599975,
+                "file_path": "results\\SAC_654_learningRate2\\SAC_6_5\\SAC_6_5-599975.onnx",
+                "reward": null,
+                "creation_time": 1643379282.5471954,
+                "auxillary_file_paths": [
+                    "results\\SAC_654_learningRate2\\SAC_6_5\\SAC_6_5-599975.pt"
+                ]
+            },
+            {
+                "steps": 600231,
+                "file_path": "results\\SAC_654_learningRate2\\SAC_6_5\\SAC_6_5-600231.onnx",
+                "reward": null,
+                "creation_time": 1643379282.9977734,
+                "auxillary_file_paths": [
+                    "results\\SAC_654_learningRate2\\SAC_6_5\\SAC_6_5-600231.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 600231,
+            "file_path": "results\\SAC_654_learningRate2\\SAC_6_5.onnx",
+            "reward": null,
+            "creation_time": 1643379282.9977734,
+            "auxillary_file_paths": [
+                "results\\SAC_654_learningRate2\\SAC_6_5\\SAC_6_5-600231.pt"
+            ]
+        }
+    },
+    "SAC_6_5_3": {
+        "checkpoints": [
+            {
+                "steps": 499980,
+                "file_path": "results\\SAC_batch1024_n64_lr\\SAC_6_5_3\\SAC_6_5_3-499980.onnx",
+                "reward": null,
+                "creation_time": 1643374110.7198074,
+                "auxillary_file_paths": [
+                    "results\\SAC_batch1024_n64_lr\\SAC_6_5_3\\SAC_6_5_3-499980.pt"
+                ]
+            },
+            {
+                "steps": 500044,
+                "file_path": "results\\SAC_batch1024_n64_lr\\SAC_6_5_3\\SAC_6_5_3-500044.onnx",
+                "reward": null,
+                "creation_time": 1643374111.1196704,
+                "auxillary_file_paths": [
+                    "results\\SAC_batch1024_n64_lr\\SAC_6_5_3\\SAC_6_5_3-500044.pt"
+                ]
+            },
+            {
+                "steps": 549953,
+                "file_path": "results\\SAC_654_learningRate2\\SAC_6_5_3\\SAC_6_5_3-549953.onnx",
+                "reward": null,
+                "creation_time": 1643378621.8257105,
+                "auxillary_file_paths": [
+                    "results\\SAC_654_learningRate2\\SAC_6_5_3\\SAC_6_5_3-549953.pt"
+                ]
+            },
+            {
+                "steps": 599955,
+                "file_path": "results\\SAC_654_learningRate2\\SAC_6_5_3\\SAC_6_5_3-599955.onnx",
+                "reward": null,
+                "creation_time": 1643379282.8637507,
+                "auxillary_file_paths": [
+                    "results\\SAC_654_learningRate2\\SAC_6_5_3\\SAC_6_5_3-599955.pt"
+                ]
+            },
+            {
+                "steps": 600083,
+                "file_path": "results\\SAC_654_learningRate2\\SAC_6_5_3\\SAC_6_5_3-600083.onnx",
+                "reward": null,
+                "creation_time": 1643379283.1477997,
+                "auxillary_file_paths": [
+                    "results\\SAC_654_learningRate2\\SAC_6_5_3\\SAC_6_5_3-600083.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 600083,
+            "file_path": "results\\SAC_654_learningRate2\\SAC_6_5_3.onnx",
+            "reward": null,
+            "creation_time": 1643379283.1477997,
+            "auxillary_file_paths": [
+                "results\\SAC_654_learningRate2\\SAC_6_5_3\\SAC_6_5_3-600083.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.27.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}

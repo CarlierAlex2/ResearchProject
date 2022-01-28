@@ -1,0 +1,181 @@
+{
+    "SAC_6_5": {
+        "checkpoints": [
+            {
+                "steps": 354796,
+                "file_path": "results\\SAC_stepsUpdateBatch3\\SAC_6_5\\SAC_6_5-354796.onnx",
+                "reward": null,
+                "creation_time": 1643332110.8958418,
+                "auxillary_file_paths": [
+                    "results\\SAC_stepsUpdateBatch3\\SAC_6_5\\SAC_6_5-354796.pt"
+                ]
+            },
+            {
+                "steps": 399988,
+                "file_path": "results\\SAC_stepsUpdateBatch3\\SAC_6_5\\SAC_6_5-399988.onnx",
+                "reward": null,
+                "creation_time": 1643354948.248087,
+                "auxillary_file_paths": [
+                    "results\\SAC_stepsUpdateBatch3\\SAC_6_5\\SAC_6_5-399988.pt"
+                ]
+            },
+            {
+                "steps": 449954,
+                "file_path": "results\\SAC_stepsUpdateBatch3\\SAC_6_5\\SAC_6_5-449954.onnx",
+                "reward": null,
+                "creation_time": 1643355660.4913707,
+                "auxillary_file_paths": [
+                    "results\\SAC_stepsUpdateBatch3\\SAC_6_5\\SAC_6_5-449954.pt"
+                ]
+            },
+            {
+                "steps": 499995,
+                "file_path": "results\\SAC_stepsUpdateBatch3\\SAC_6_5\\SAC_6_5-499995.onnx",
+                "reward": null,
+                "creation_time": 1643356379.845831,
+                "auxillary_file_paths": [
+                    "results\\SAC_stepsUpdateBatch3\\SAC_6_5\\SAC_6_5-499995.pt"
+                ]
+            },
+            {
+                "steps": 500123,
+                "file_path": "results\\SAC_stepsUpdateBatch3\\SAC_6_5\\SAC_6_5-500123.onnx",
+                "reward": null,
+                "creation_time": 1643356380.0703757,
+                "auxillary_file_paths": [
+                    "results\\SAC_stepsUpdateBatch3\\SAC_6_5\\SAC_6_5-500123.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 500123,
+            "file_path": "results\\SAC_stepsUpdateBatch3\\SAC_6_5.onnx",
+            "reward": null,
+            "creation_time": 1643356380.0703757,
+            "auxillary_file_paths": [
+                "results\\SAC_stepsUpdateBatch3\\SAC_6_5\\SAC_6_5-500123.pt"
+            ]
+        }
+    },
+    "SAC_6_5_2": {
+        "checkpoints": [
+            {
+                "steps": 354797,
+                "file_path": "results\\SAC_stepsUpdateBatch3\\SAC_6_5_2\\SAC_6_5_2-354797.onnx",
+                "reward": null,
+                "creation_time": 1643332110.7908235,
+                "auxillary_file_paths": [
+                    "results\\SAC_stepsUpdateBatch3\\SAC_6_5_2\\SAC_6_5_2-354797.pt"
+                ]
+            },
+            {
+                "steps": 399987,
+                "file_path": "results\\SAC_stepsUpdateBatch3\\SAC_6_5_2\\SAC_6_5_2-399987.onnx",
+                "reward": null,
+                "creation_time": 1643354948.492129,
+                "auxillary_file_paths": [
+                    "results\\SAC_stepsUpdateBatch3\\SAC_6_5_2\\SAC_6_5_2-399987.pt"
+                ]
+            },
+            {
+                "steps": 449965,
+                "file_path": "results\\SAC_stepsUpdateBatch3\\SAC_6_5_2\\SAC_6_5_2-449965.onnx",
+                "reward": null,
+                "creation_time": 1643355660.0223753,
+                "auxillary_file_paths": [
+                    "results\\SAC_stepsUpdateBatch3\\SAC_6_5_2\\SAC_6_5_2-449965.pt"
+                ]
+            },
+            {
+                "steps": 499961,
+                "file_path": "results\\SAC_stepsUpdateBatch3\\SAC_6_5_2\\SAC_6_5_2-499961.onnx",
+                "reward": null,
+                "creation_time": 1643356379.51051,
+                "auxillary_file_paths": [
+                    "results\\SAC_stepsUpdateBatch3\\SAC_6_5_2\\SAC_6_5_2-499961.pt"
+                ]
+            },
+            {
+                "steps": 500089,
+                "file_path": "results\\SAC_stepsUpdateBatch3\\SAC_6_5_2\\SAC_6_5_2-500089.onnx",
+                "reward": null,
+                "creation_time": 1643356379.9668572,
+                "auxillary_file_paths": [
+                    "results\\SAC_stepsUpdateBatch3\\SAC_6_5_2\\SAC_6_5_2-500089.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 500089,
+            "file_path": "results\\SAC_stepsUpdateBatch3\\SAC_6_5_2.onnx",
+            "reward": null,
+            "creation_time": 1643356379.9668572,
+            "auxillary_file_paths": [
+                "results\\SAC_stepsUpdateBatch3\\SAC_6_5_2\\SAC_6_5_2-500089.pt"
+            ]
+        }
+    },
+    "SAC_6_5_3": {
+        "checkpoints": [
+            {
+                "steps": 354922,
+                "file_path": "results\\SAC_stepsUpdateBatch3\\SAC_6_5_3\\SAC_6_5_3-354922.onnx",
+                "reward": null,
+                "creation_time": 1643332110.9958603,
+                "auxillary_file_paths": [
+                    "results\\SAC_stepsUpdateBatch3\\SAC_6_5_3\\SAC_6_5_3-354922.pt"
+                ]
+            },
+            {
+                "steps": 399948,
+                "file_path": "results\\SAC_stepsUpdateBatch3\\SAC_6_5_3\\SAC_6_5_3-399948.onnx",
+                "reward": null,
+                "creation_time": 1643354944.8578944,
+                "auxillary_file_paths": [
+                    "results\\SAC_stepsUpdateBatch3\\SAC_6_5_3\\SAC_6_5_3-399948.pt"
+                ]
+            },
+            {
+                "steps": 449941,
+                "file_path": "results\\SAC_stepsUpdateBatch3\\SAC_6_5_3\\SAC_6_5_3-449941.onnx",
+                "reward": null,
+                "creation_time": 1643355657.762162,
+                "auxillary_file_paths": [
+                    "results\\SAC_stepsUpdateBatch3\\SAC_6_5_3\\SAC_6_5_3-449941.pt"
+                ]
+            },
+            {
+                "steps": 499992,
+                "file_path": "results\\SAC_stepsUpdateBatch3\\SAC_6_5_3\\SAC_6_5_3-499992.onnx",
+                "reward": null,
+                "creation_time": 1643356379.079222,
+                "auxillary_file_paths": [
+                    "results\\SAC_stepsUpdateBatch3\\SAC_6_5_3\\SAC_6_5_3-499992.pt"
+                ]
+            },
+            {
+                "steps": 500230,
+                "file_path": "results\\SAC_stepsUpdateBatch3\\SAC_6_5_3\\SAC_6_5_3-500230.onnx",
+                "reward": 776.2600145339966,
+                "creation_time": 1643356380.1827037,
+                "auxillary_file_paths": [
+                    "results\\SAC_stepsUpdateBatch3\\SAC_6_5_3\\SAC_6_5_3-500230.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 500230,
+            "file_path": "results\\SAC_stepsUpdateBatch3\\SAC_6_5_3.onnx",
+            "reward": 776.2600145339966,
+            "creation_time": 1643356380.1827037,
+            "auxillary_file_paths": [
+                "results\\SAC_stepsUpdateBatch3\\SAC_6_5_3\\SAC_6_5_3-500230.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.27.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}
