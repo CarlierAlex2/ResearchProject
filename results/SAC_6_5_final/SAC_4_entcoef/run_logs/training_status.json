@@ -1,0 +1,181 @@
+{
+    "SAC_6_5_3": {
+        "checkpoints": [
+            {
+                "steps": 349955,
+                "file_path": "results\\SAC_04_entcoef\\SAC_6_5_3\\SAC_6_5_3-349955.onnx",
+                "reward": null,
+                "creation_time": 1643409152.0747561,
+                "auxillary_file_paths": [
+                    "results\\SAC_04_entcoef\\SAC_6_5_3\\SAC_6_5_3-349955.pt"
+                ]
+            },
+            {
+                "steps": 399991,
+                "file_path": "results\\SAC_04_entcoef\\SAC_6_5_3\\SAC_6_5_3-399991.onnx",
+                "reward": null,
+                "creation_time": 1643409763.9206853,
+                "auxillary_file_paths": [
+                    "results\\SAC_04_entcoef\\SAC_6_5_3\\SAC_6_5_3-399991.pt"
+                ]
+            },
+            {
+                "steps": 449938,
+                "file_path": "results\\SAC_04_entcoef\\SAC_6_5_3\\SAC_6_5_3-449938.onnx",
+                "reward": null,
+                "creation_time": 1643410397.4856987,
+                "auxillary_file_paths": [
+                    "results\\SAC_04_entcoef\\SAC_6_5_3\\SAC_6_5_3-449938.pt"
+                ]
+            },
+            {
+                "steps": 499971,
+                "file_path": "results\\SAC_04_entcoef\\SAC_6_5_3\\SAC_6_5_3-499971.onnx",
+                "reward": null,
+                "creation_time": 1643411047.7009687,
+                "auxillary_file_paths": [
+                    "results\\SAC_04_entcoef\\SAC_6_5_3\\SAC_6_5_3-499971.pt"
+                ]
+            },
+            {
+                "steps": 500035,
+                "file_path": "results\\SAC_04_entcoef\\SAC_6_5_3\\SAC_6_5_3-500035.onnx",
+                "reward": null,
+                "creation_time": 1643411048.0438812,
+                "auxillary_file_paths": [
+                    "results\\SAC_04_entcoef\\SAC_6_5_3\\SAC_6_5_3-500035.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 500035,
+            "file_path": "results\\SAC_04_entcoef\\SAC_6_5_3.onnx",
+            "reward": null,
+            "creation_time": 1643411048.0438812,
+            "auxillary_file_paths": [
+                "results\\SAC_04_entcoef\\SAC_6_5_3\\SAC_6_5_3-500035.pt"
+            ]
+        }
+    },
+    "SAC_6_5_2": {
+        "checkpoints": [
+            {
+                "steps": 349945,
+                "file_path": "results\\SAC_04_entcoef\\SAC_6_5_2\\SAC_6_5_2-349945.onnx",
+                "reward": null,
+                "creation_time": 1643409151.4241426,
+                "auxillary_file_paths": [
+                    "results\\SAC_04_entcoef\\SAC_6_5_2\\SAC_6_5_2-349945.pt"
+                ]
+            },
+            {
+                "steps": 399946,
+                "file_path": "results\\SAC_04_entcoef\\SAC_6_5_2\\SAC_6_5_2-399946.onnx",
+                "reward": null,
+                "creation_time": 1643409762.4899364,
+                "auxillary_file_paths": [
+                    "results\\SAC_04_entcoef\\SAC_6_5_2\\SAC_6_5_2-399946.pt"
+                ]
+            },
+            {
+                "steps": 449972,
+                "file_path": "results\\SAC_04_entcoef\\SAC_6_5_2\\SAC_6_5_2-449972.onnx",
+                "reward": null,
+                "creation_time": 1643410397.1365924,
+                "auxillary_file_paths": [
+                    "results\\SAC_04_entcoef\\SAC_6_5_2\\SAC_6_5_2-449972.pt"
+                ]
+            },
+            {
+                "steps": 499947,
+                "file_path": "results\\SAC_04_entcoef\\SAC_6_5_2\\SAC_6_5_2-499947.onnx",
+                "reward": null,
+                "creation_time": 1643411047.5239553,
+                "auxillary_file_paths": [
+                    "results\\SAC_04_entcoef\\SAC_6_5_2\\SAC_6_5_2-499947.pt"
+                ]
+            },
+            {
+                "steps": 500011,
+                "file_path": "results\\SAC_04_entcoef\\SAC_6_5_2\\SAC_6_5_2-500011.onnx",
+                "reward": null,
+                "creation_time": 1643411047.92151,
+                "auxillary_file_paths": [
+                    "results\\SAC_04_entcoef\\SAC_6_5_2\\SAC_6_5_2-500011.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 500011,
+            "file_path": "results\\SAC_04_entcoef\\SAC_6_5_2.onnx",
+            "reward": null,
+            "creation_time": 1643411047.92151,
+            "auxillary_file_paths": [
+                "results\\SAC_04_entcoef\\SAC_6_5_2\\SAC_6_5_2-500011.pt"
+            ]
+        }
+    },
+    "SAC_6_5": {
+        "checkpoints": [
+            {
+                "steps": 349989,
+                "file_path": "results\\SAC_04_entcoef\\SAC_6_5\\SAC_6_5-349989.onnx",
+                "reward": null,
+                "creation_time": 1643409152.6816583,
+                "auxillary_file_paths": [
+                    "results\\SAC_04_entcoef\\SAC_6_5\\SAC_6_5-349989.pt"
+                ]
+            },
+            {
+                "steps": 399988,
+                "file_path": "results\\SAC_04_entcoef\\SAC_6_5\\SAC_6_5-399988.onnx",
+                "reward": null,
+                "creation_time": 1643409764.4752798,
+                "auxillary_file_paths": [
+                    "results\\SAC_04_entcoef\\SAC_6_5\\SAC_6_5-399988.pt"
+                ]
+            },
+            {
+                "steps": 449974,
+                "file_path": "results\\SAC_04_entcoef\\SAC_6_5\\SAC_6_5-449974.onnx",
+                "reward": null,
+                "creation_time": 1643410396.4243958,
+                "auxillary_file_paths": [
+                    "results\\SAC_04_entcoef\\SAC_6_5\\SAC_6_5-449974.pt"
+                ]
+            },
+            {
+                "steps": 499956,
+                "file_path": "results\\SAC_04_entcoef\\SAC_6_5\\SAC_6_5-499956.onnx",
+                "reward": null,
+                "creation_time": 1643411046.3392508,
+                "auxillary_file_paths": [
+                    "results\\SAC_04_entcoef\\SAC_6_5\\SAC_6_5-499956.pt"
+                ]
+            },
+            {
+                "steps": 500020,
+                "file_path": "results\\SAC_04_entcoef\\SAC_6_5\\SAC_6_5-500020.onnx",
+                "reward": null,
+                "creation_time": 1643411047.814991,
+                "auxillary_file_paths": [
+                    "results\\SAC_04_entcoef\\SAC_6_5\\SAC_6_5-500020.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 500020,
+            "file_path": "results\\SAC_04_entcoef\\SAC_6_5.onnx",
+            "reward": null,
+            "creation_time": 1643411047.814991,
+            "auxillary_file_paths": [
+                "results\\SAC_04_entcoef\\SAC_6_5\\SAC_6_5-500020.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.27.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}
