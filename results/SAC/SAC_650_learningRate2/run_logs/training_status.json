@@ -1,0 +1,127 @@
+{
+    "SAC_6_5_2": {
+        "checkpoints": [
+            {
+                "steps": 49961,
+                "file_path": "results\\SAC_final_learningRate_2\\SAC_6_5_2\\SAC_6_5_2-49961.onnx",
+                "reward": null,
+                "creation_time": 1643317478.2622693,
+                "auxillary_file_paths": [
+                    "results\\SAC_final_learningRate_2\\SAC_6_5_2\\SAC_6_5_2-49961.pt"
+                ]
+            },
+            {
+                "steps": 99999,
+                "file_path": "results\\SAC_final_learningRate_2\\SAC_6_5_2\\SAC_6_5_2-99999.onnx",
+                "reward": null,
+                "creation_time": 1643318595.071494,
+                "auxillary_file_paths": [
+                    "results\\SAC_final_learningRate_2\\SAC_6_5_2\\SAC_6_5_2-99999.pt"
+                ]
+            },
+            {
+                "steps": 139291,
+                "file_path": "results\\SAC_final_learningRate_2\\SAC_6_5_2\\SAC_6_5_2-139291.onnx",
+                "reward": null,
+                "creation_time": 1643319461.2452426,
+                "auxillary_file_paths": [
+                    "results\\SAC_final_learningRate_2\\SAC_6_5_2\\SAC_6_5_2-139291.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 139291,
+            "file_path": "results\\SAC_final_learningRate_2\\SAC_6_5_2.onnx",
+            "reward": null,
+            "creation_time": 1643319461.2452426,
+            "auxillary_file_paths": [
+                "results\\SAC_final_learningRate_2\\SAC_6_5_2\\SAC_6_5_2-139291.pt"
+            ]
+        }
+    },
+    "SAC_6_5_3": {
+        "checkpoints": [
+            {
+                "steps": 49942,
+                "file_path": "results\\SAC_final_learningRate_2\\SAC_6_5_3\\SAC_6_5_3-49942.onnx",
+                "reward": null,
+                "creation_time": 1643317479.430972,
+                "auxillary_file_paths": [
+                    "results\\SAC_final_learningRate_2\\SAC_6_5_3\\SAC_6_5_3-49942.pt"
+                ]
+            },
+            {
+                "steps": 99992,
+                "file_path": "results\\SAC_final_learningRate_2\\SAC_6_5_3\\SAC_6_5_3-99992.onnx",
+                "reward": null,
+                "creation_time": 1643318596.8368003,
+                "auxillary_file_paths": [
+                    "results\\SAC_final_learningRate_2\\SAC_6_5_3\\SAC_6_5_3-99992.pt"
+                ]
+            },
+            {
+                "steps": 139142,
+                "file_path": "results\\SAC_final_learningRate_2\\SAC_6_5_3\\SAC_6_5_3-139142.onnx",
+                "reward": null,
+                "creation_time": 1643319461.5367932,
+                "auxillary_file_paths": [
+                    "results\\SAC_final_learningRate_2\\SAC_6_5_3\\SAC_6_5_3-139142.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 139142,
+            "file_path": "results\\SAC_final_learningRate_2\\SAC_6_5_3.onnx",
+            "reward": null,
+            "creation_time": 1643319461.5367932,
+            "auxillary_file_paths": [
+                "results\\SAC_final_learningRate_2\\SAC_6_5_3\\SAC_6_5_3-139142.pt"
+            ]
+        }
+    },
+    "SAC_6_5": {
+        "checkpoints": [
+            {
+                "steps": 49949,
+                "file_path": "results\\SAC_final_learningRate_2\\SAC_6_5\\SAC_6_5-49949.onnx",
+                "reward": null,
+                "creation_time": 1643317480.1020885,
+                "auxillary_file_paths": [
+                    "results\\SAC_final_learningRate_2\\SAC_6_5\\SAC_6_5-49949.pt"
+                ]
+            },
+            {
+                "steps": 99974,
+                "file_path": "results\\SAC_final_learningRate_2\\SAC_6_5\\SAC_6_5-99974.onnx",
+                "reward": null,
+                "creation_time": 1643318595.820124,
+                "auxillary_file_paths": [
+                    "results\\SAC_final_learningRate_2\\SAC_6_5\\SAC_6_5-99974.pt"
+                ]
+            },
+            {
+                "steps": 139306,
+                "file_path": "results\\SAC_final_learningRate_2\\SAC_6_5\\SAC_6_5-139306.onnx",
+                "reward": null,
+                "creation_time": 1643319461.3872676,
+                "auxillary_file_paths": [
+                    "results\\SAC_final_learningRate_2\\SAC_6_5\\SAC_6_5-139306.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 139306,
+            "file_path": "results\\SAC_final_learningRate_2\\SAC_6_5.onnx",
+            "reward": null,
+            "creation_time": 1643319461.3872676,
+            "auxillary_file_paths": [
+                "results\\SAC_final_learningRate_2\\SAC_6_5\\SAC_6_5-139306.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.27.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}
