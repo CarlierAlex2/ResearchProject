@@ -1,0 +1,181 @@
+{
+    "PPO_6_5": {
+        "checkpoints": [
+            {
+                "steps": 899986,
+                "file_path": "results\\PPO_step3000_1\\PPO_6_5\\PPO_6_5-899986.onnx",
+                "reward": 1285.8000755310059,
+                "creation_time": 1643286382.8095186,
+                "auxillary_file_paths": [
+                    "results\\PPO_step3000_1\\PPO_6_5\\PPO_6_5-899986.pt"
+                ]
+            },
+            {
+                "steps": 1199981,
+                "file_path": "results\\PPO_step3000_1\\PPO_6_5\\PPO_6_5-1199981.onnx",
+                "reward": 1493.2375855445862,
+                "creation_time": 1643287485.256252,
+                "auxillary_file_paths": [
+                    "results\\PPO_step3000_1\\PPO_6_5\\PPO_6_5-1199981.pt"
+                ]
+            },
+            {
+                "steps": 1499966,
+                "file_path": "results\\PPO_step3000_1\\PPO_6_5\\PPO_6_5-1499966.onnx",
+                "reward": 1574.907222202846,
+                "creation_time": 1643288727.4411738,
+                "auxillary_file_paths": [
+                    "results\\PPO_step3000_1\\PPO_6_5\\PPO_6_5-1499966.pt"
+                ]
+            },
+            {
+                "steps": 1799997,
+                "file_path": "results\\PPO_step3000_1\\PPO_6_5\\PPO_6_5-1799997.onnx",
+                "reward": 1485.238070678711,
+                "creation_time": 1643290028.201308,
+                "auxillary_file_paths": [
+                    "results\\PPO_step3000_1\\PPO_6_5\\PPO_6_5-1799997.pt"
+                ]
+            },
+            {
+                "steps": 1800061,
+                "file_path": "results\\PPO_step3000_1\\PPO_6_5\\PPO_6_5-1800061.onnx",
+                "reward": 1485.238070678711,
+                "creation_time": 1643290028.7544036,
+                "auxillary_file_paths": [
+                    "results\\PPO_step3000_1\\PPO_6_5\\PPO_6_5-1800061.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1800061,
+            "file_path": "results\\PPO_step3000_1\\PPO_6_5.onnx",
+            "reward": 1485.238070678711,
+            "creation_time": 1643290028.7544036,
+            "auxillary_file_paths": [
+                "results\\PPO_step3000_1\\PPO_6_5\\PPO_6_5-1800061.pt"
+            ]
+        }
+    },
+    "PPO_6_5_3": {
+        "checkpoints": [
+            {
+                "steps": 899980,
+                "file_path": "results\\PPO_step3000_1\\PPO_6_5_3\\PPO_6_5_3-899980.onnx",
+                "reward": 1093.4133877754211,
+                "creation_time": 1643286382.9820487,
+                "auxillary_file_paths": [
+                    "results\\PPO_step3000_1\\PPO_6_5_3\\PPO_6_5_3-899980.pt"
+                ]
+            },
+            {
+                "steps": 1199976,
+                "file_path": "results\\PPO_step3000_1\\PPO_6_5_3\\PPO_6_5_3-1199976.onnx",
+                "reward": 1039.5825514793396,
+                "creation_time": 1643287484.8836882,
+                "auxillary_file_paths": [
+                    "results\\PPO_step3000_1\\PPO_6_5_3\\PPO_6_5_3-1199976.pt"
+                ]
+            },
+            {
+                "steps": 1499996,
+                "file_path": "results\\PPO_step3000_1\\PPO_6_5_3\\PPO_6_5_3-1499996.onnx",
+                "reward": 1189.4917302429676,
+                "creation_time": 1643288728.1292932,
+                "auxillary_file_paths": [
+                    "results\\PPO_step3000_1\\PPO_6_5_3\\PPO_6_5_3-1499996.pt"
+                ]
+            },
+            {
+                "steps": 1799955,
+                "file_path": "results\\PPO_step3000_1\\PPO_6_5_3\\PPO_6_5_3-1799955.onnx",
+                "reward": 1136.923803806305,
+                "creation_time": 1643290028.4558516,
+                "auxillary_file_paths": [
+                    "results\\PPO_step3000_1\\PPO_6_5_3\\PPO_6_5_3-1799955.pt"
+                ]
+            },
+            {
+                "steps": 1800019,
+                "file_path": "results\\PPO_step3000_1\\PPO_6_5_3\\PPO_6_5_3-1800019.onnx",
+                "reward": 1136.923803806305,
+                "creation_time": 1643290028.6523855,
+                "auxillary_file_paths": [
+                    "results\\PPO_step3000_1\\PPO_6_5_3\\PPO_6_5_3-1800019.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1800019,
+            "file_path": "results\\PPO_step3000_1\\PPO_6_5_3.onnx",
+            "reward": 1136.923803806305,
+            "creation_time": 1643290028.6523855,
+            "auxillary_file_paths": [
+                "results\\PPO_step3000_1\\PPO_6_5_3\\PPO_6_5_3-1800019.pt"
+            ]
+        }
+    },
+    "PPO_6_5_2": {
+        "checkpoints": [
+            {
+                "steps": 899971,
+                "file_path": "results\\PPO_step3000_1\\PPO_6_5_2\\PPO_6_5_2-899971.onnx",
+                "reward": 1015.2580413103103,
+                "creation_time": 1643286383.1480775,
+                "auxillary_file_paths": [
+                    "results\\PPO_step3000_1\\PPO_6_5_2\\PPO_6_5_2-899971.pt"
+                ]
+            },
+            {
+                "steps": 1199951,
+                "file_path": "results\\PPO_step3000_1\\PPO_6_5_2\\PPO_6_5_2-1199951.onnx",
+                "reward": 1558.5267311731975,
+                "creation_time": 1643287485.1107264,
+                "auxillary_file_paths": [
+                    "results\\PPO_step3000_1\\PPO_6_5_2\\PPO_6_5_2-1199951.pt"
+                ]
+            },
+            {
+                "steps": 1499984,
+                "file_path": "results\\PPO_step3000_1\\PPO_6_5_2\\PPO_6_5_2-1499984.onnx",
+                "reward": 1201.7688114121556,
+                "creation_time": 1643288727.8447437,
+                "auxillary_file_paths": [
+                    "results\\PPO_step3000_1\\PPO_6_5_2\\PPO_6_5_2-1499984.pt"
+                ]
+            },
+            {
+                "steps": 1799966,
+                "file_path": "results\\PPO_step3000_1\\PPO_6_5_2\\PPO_6_5_2-1799966.onnx",
+                "reward": 1337.3034048080444,
+                "creation_time": 1643290028.0542817,
+                "auxillary_file_paths": [
+                    "results\\PPO_step3000_1\\PPO_6_5_2\\PPO_6_5_2-1799966.pt"
+                ]
+            },
+            {
+                "steps": 1800030,
+                "file_path": "results\\PPO_step3000_1\\PPO_6_5_2\\PPO_6_5_2-1800030.onnx",
+                "reward": 1337.3034048080444,
+                "creation_time": 1643290028.5553687,
+                "auxillary_file_paths": [
+                    "results\\PPO_step3000_1\\PPO_6_5_2\\PPO_6_5_2-1800030.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1800030,
+            "file_path": "results\\PPO_step3000_1\\PPO_6_5_2.onnx",
+            "reward": 1337.3034048080444,
+            "creation_time": 1643290028.5553687,
+            "auxillary_file_paths": [
+                "results\\PPO_step3000_1\\PPO_6_5_2\\PPO_6_5_2-1800030.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.27.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}

@@ -1,0 +1,65 @@
+{
+    "PPO_6_5": {
+        "checkpoints": [
+            {
+                "steps": 799938,
+                "file_path": "results\\PPO_6_5_testCheckpointAngle_1\\PPO_6_5\\PPO_6_5-799938.onnx",
+                "reward": 802.392539024353,
+                "creation_time": 1643280592.3092318,
+                "auxillary_file_paths": [
+                    "results\\PPO_6_5_testCheckpointAngle_1\\PPO_6_5\\PPO_6_5-799938.pt"
+                ]
+            },
+            {
+                "steps": 999993,
+                "file_path": "results\\PPO_6_5_testCheckpointAngle_1\\PPO_6_5\\PPO_6_5-999993.onnx",
+                "reward": 763.629328250885,
+                "creation_time": 1643280869.4838116,
+                "auxillary_file_paths": [
+                    "results\\PPO_6_5_testCheckpointAngle_1\\PPO_6_5\\PPO_6_5-999993.pt"
+                ]
+            },
+            {
+                "steps": 1199987,
+                "file_path": "results\\PPO_6_5_testCheckpointAngle_1\\PPO_6_5\\PPO_6_5-1199987.onnx",
+                "reward": 769.8080421447754,
+                "creation_time": 1643281142.9157412,
+                "auxillary_file_paths": [
+                    "results\\PPO_6_5_testCheckpointAngle_1\\PPO_6_5\\PPO_6_5-1199987.pt"
+                ]
+            },
+            {
+                "steps": 1399995,
+                "file_path": "results\\PPO_6_5_testCheckpointAngle_1\\PPO_6_5\\PPO_6_5-1399995.onnx",
+                "reward": 795.1408758064111,
+                "creation_time": 1643281416.6157184,
+                "auxillary_file_paths": [
+                    "results\\PPO_6_5_testCheckpointAngle_1\\PPO_6_5\\PPO_6_5-1399995.pt"
+                ]
+            },
+            {
+                "steps": 1500005,
+                "file_path": "results\\PPO_6_5_testCheckpointAngle_1\\PPO_6_5\\PPO_6_5-1500005.onnx",
+                "reward": 742.5657514844622,
+                "creation_time": 1643281559.2044528,
+                "auxillary_file_paths": [
+                    "results\\PPO_6_5_testCheckpointAngle_1\\PPO_6_5\\PPO_6_5-1500005.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1500005,
+            "file_path": "results\\PPO_6_5_testCheckpointAngle_1\\PPO_6_5.onnx",
+            "reward": 742.5657514844622,
+            "creation_time": 1643281559.2044528,
+            "auxillary_file_paths": [
+                "results\\PPO_6_5_testCheckpointAngle_1\\PPO_6_5\\PPO_6_5-1500005.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.27.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}
