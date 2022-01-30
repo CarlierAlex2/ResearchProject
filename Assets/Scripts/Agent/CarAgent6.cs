@@ -34,6 +34,7 @@ public class CarAgent6 : Agent
 
     //mlagents-learn config/SAC/SAC_stepsUpdateBatch3.yaml --run-id=SAC_stepsUpdateBatch3 --env=builds/SAC_CarAgent6_multi --resume
     
+    //mlagents-learn config/SAC/SAC_03_learningRate.yaml --run-id=SAC_03_learningRate --env=builds/SAC_CarAgent6_multi
     //mlagents-learn config/PPO/PPO_03_gamma.yaml --run-id=PPO_03_gamma --env=builds/PPO_CarAgent6_multi
 
     [SerializeField] private Transform target;

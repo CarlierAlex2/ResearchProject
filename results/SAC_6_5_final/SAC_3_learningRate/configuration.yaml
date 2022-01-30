@@ -136,7 +136,7 @@ engine_settings:
   no_graphics: false
 environment_parameters: null
 checkpoint_settings:
-  run_id: SAC_batch1024_n64_lr
+  run_id: SAC_03_learningRate
   initialize_from: null
   load_model: false
   resume: false
