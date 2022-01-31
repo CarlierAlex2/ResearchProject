@@ -2,6 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+/// <summary> 
+/// Configuration class for agent parameters that can be overriden for multiple agent versions.
+/// </summary>
 public class ConfigAgent
 {
     public ConfigAgent()
@@ -20,18 +24,23 @@ public class ConfigAgent
         this.STEERING_ANGLE_MIN = 0;
     }
 
-    //--
+    //--- Pathfinding ---
     public int INDEX_START { get; internal set; }
+
     //--
     public float CHECKPOINT_OFFSET { get; internal set; }
+
     //--
     public float CHECKPOINT_RANGE { get; internal set; }
     public float CHECKPOINT_ANGLE { get; internal set; }
     public float CHECKPOINT_ANGLE_MAX { get; internal set; }
     public float CHECKPOINT_DIST { get; internal set; }
     public float CHECKPOINT_DIST_MAX { get; internal set; }
-    //--
+
+    //--- Velocity ---
     public float VELOCITY_MIN { get; internal set; }
+
+    //--- Steering ---
     public float STEERING_ANGLE { get; internal set; }
     public float STEERING_ANGLE_MIN { get; internal set; }
 }

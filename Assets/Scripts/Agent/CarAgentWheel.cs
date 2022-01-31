@@ -133,7 +133,7 @@ public class CarAgentWheel : MonoBehaviour
     }
 
     /// <summary> 
-    /// Update the individual wheels models position and rotation (only visuals)
+    /// Update the wheels models position and rotation (only visuals)
     /// </summary>
     private void UpdateWheel()
     {
@@ -145,6 +145,9 @@ public class CarAgentWheel : MonoBehaviour
         UpdateWheel(backRight, backRightTransform);
     }
 
+    /// <summary> 
+    /// Update the individual wheel model position and rotation (only visuals)
+    /// </summary>
     private void UpdateWheel(WheelCollider col, Transform trans) 
     {
         col.GetWorldPose(out Vector3 pos, out Quaternion rot);
