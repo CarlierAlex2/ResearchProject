@@ -2,22 +2,37 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary> 
+/// Component that serves as a GPS, generating the pathfinding grid and routes
+/// Link: https://unitycodemonkey.com/video.php?v=alU04hvz6L4 
+/// </summary>
 public class GPS : MonoBehaviour
 {
-    [SerializeField] private bool showDebug = false;
+    // --- Grid ---
     [SerializeField] private float cellSize = 2f;
     [SerializeField] private int width = 10;
     [SerializeField] private int height = 20;
-    [SerializeField] private float raycastDuration = 1f;
     private Pathfinding pathfinding;
     private bool isObstaclesDone = false;
+
+    // --- Debug ---
+    [SerializeField] private bool showDebug = false;
+    [SerializeField] private float raycastDuration = 1f;
+
+    //--
     private bool isInit = false;
 
+    /// <summary> 
+    ///  Start is called before the first frame update.
+    /// </summary>
     private void Start()
     {
         Init();
     }
 
+    /// <summary> 
+    ///  Initialize the component.
+    /// </summary>
     public void Init()
     {
         if(isInit)
@@ -27,22 +42,34 @@ public class GPS : MonoBehaviour
         //SetupObstacles();
     }
 
-    public void Update() 
+    /// <summary> 
+    ///  Update is called every frame.
+    /// </summary>
+    private void Update() 
     {
         if(showDebug)
             pathfinding.ShowDebug();
     }
 
+    /// <summary> 
+    /// Is a position walkable/an obstacle?
+    /// </summary>
     public bool IsWalkable (Vector3 pos)
     {
         return pathfinding.IsWalkable(pos);
     }
 
+    /// <summary> 
+    /// Create a path from a starting point to an endpoint.
+    /// </summary>
     public List<Vector3> FindPath(Vector3 startPos, Vector3 endPos) 
     {
         return pathfinding.FindPath(startPos, endPos);
     }
 
+    /// <summary> 
+    /// Check if each cells are walkable using raycasts.
+    /// </summary>
     public void SetupObstacles()
     {
         if(isObstaclesDone)

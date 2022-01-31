@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary> 
+/// Class containing reward calculation functions.
+/// </summary>
 public class RewardFunctions
 {
     private ConfigAgent CONFIG;
@@ -13,11 +16,17 @@ public class RewardFunctions
         this.REWARDS = rewards;
     }
 
+    /// <summary> 
+    /// Calculate reward for steps taken by agent's.
+    /// </summary>
     public float Time()
     {
         return REWARDS.TIME;
     }
 
+    /// <summary> 
+    /// Calculate reward for agent's movement.
+    /// </summary>
     public float Movement(float velocityForward, float[] actionOutput)
     {
         float absVelocity = Mathf.Abs(velocityForward);
@@ -35,11 +44,17 @@ public class RewardFunctions
         return reward;
     }
 
+    /// <summary> 
+    /// Calculate reward for agent reaching the checkpoint.
+    /// </summary>
     public float Checkpoint(bool isCheckPoint)
     {
         return (isCheckPoint) ? REWARDS.CHECKPOINT_PASS : 0;
     }
 
+    /// <summary> 
+    /// Calculate reward for agent's distance to checkpoint.
+    /// </summary>
     public float CheckpointDist(Vector3 oldPos, Vector3 newPos, Vector3 checkpoint)
     {
         oldPos.y = 0;
@@ -61,6 +76,9 @@ public class RewardFunctions
         return reward;
     }
 
+    /// <summary> 
+    /// Calculate reward for agent's angle between forward vector and direction to checkpoint.
+    /// </summary>
     public float CheckpointAngle(Vector3 oldPos, Vector3 oldForward, Vector3 newPos, Vector3 newForward, Vector3 checkpoint)
     {
         oldPos.y = 0;
@@ -77,7 +95,6 @@ public class RewardFunctions
         float reward = 0;
 
         // encourage smaller angles = steering towards
-        //reward += ((angleDiff <= 0) && (angleNew > CONFIG.CHECKPOINT_ANGLE)) ? 0 : REWARDS.CHECKPOINT_ANGLE;
         reward += ((angleOld > CONFIG.CHECKPOINT_ANGLE) && (angleDiff >= 0)) ?  REWARDS.CHECKPOINT_ANGLE_NEG : REWARDS.CHECKPOINT_ANGLE;
 
         // discourage MAX steering angle

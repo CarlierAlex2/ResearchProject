@@ -2,6 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+/// <summary> 
+/// Utility code. Based on the implementation of Code Monkey for grid generation (see Grid.cs).
+/// Link: https://unitycodemonkey.com/video.php?v=waEsGu--9P8
+/// </summary>
 public class Utils
 {
     public static TextMesh CreateWorldText(string text, Transform parent=null, Vector3 localPosition = default(Vector3), int fontSize=40, Color color=default(Color), TextAnchor textAnchor=TextAnchor.MiddleCenter, TextAlignment textAlignment=TextAlignment.Center, int sortingOrder = 0)

@@ -42,7 +42,7 @@ public class CarAgentWheel : MonoBehaviour
     private float isBraking = 0f;
 
     /// <summary> 
-    ///  Start is called before the first frame update
+    ///  Start is called before the first frame update.
     /// </summary>
     private void Start()
     {
@@ -51,7 +51,7 @@ public class CarAgentWheel : MonoBehaviour
     }
 
     /// <summary> 
-    ///  Set action values for the controller
+    ///  Set action values for the controller.
     /// </summary>
     public void SetActions(float actionMove, float actionRotate, bool actionBrake)
     {
@@ -60,7 +60,7 @@ public class CarAgentWheel : MonoBehaviour
     }
 
     /// <summary> 
-    ///  Set action values for the controller
+    ///  Set action values for the controller.
     /// </summary>
     public void SetActions(float actionMove, float actionRotate, float actionBrake)
     {
@@ -70,7 +70,7 @@ public class CarAgentWheel : MonoBehaviour
     }
 
     /// <summary> 
-    /// FixedUpdate is called once for every physics frame
+    /// FixedUpdate is called once for every physics frame.
     /// </summary>
     private void FixedUpdate()
     {
@@ -81,7 +81,7 @@ public class CarAgentWheel : MonoBehaviour
     }
 
     /// <summary> 
-    /// Reset the controller's speed
+    /// Reset the controller's speed.
     /// </summary>
     public void ResetVelocity()
     {
@@ -90,7 +90,7 @@ public class CarAgentWheel : MonoBehaviour
     }
 
     /// <summary> 
-    /// Reset the wheels
+    /// Resets the wheels.
     /// </summary>
     public void ResetWheels()
     {
@@ -102,7 +102,7 @@ public class CarAgentWheel : MonoBehaviour
     }
 
     /// <summary> 
-    /// Calculate the torque speed for the wheels
+    /// Calculate the torque speed for the wheels.
     /// </summary>
     private void Acceleration(float input, float isBraking)
     {
@@ -121,7 +121,7 @@ public class CarAgentWheel : MonoBehaviour
     }
 
     /// <summary> 
-    /// Calculate the wheel steering
+    /// Calculate the wheel steering.
     /// </summary>
     private void Steering(float input)
     {
@@ -133,7 +133,7 @@ public class CarAgentWheel : MonoBehaviour
     }
 
     /// <summary> 
-    /// Update the wheels models position and rotation (only visuals)
+    /// Update the wheels models position and rotation (only visuals).
     /// </summary>
     private void UpdateWheel()
     {
@@ -146,7 +146,7 @@ public class CarAgentWheel : MonoBehaviour
     }
 
     /// <summary> 
-    /// Update the individual wheel model position and rotation (only visuals)
+    /// Update the individual wheel model position and rotation (only visuals).
     /// </summary>
     private void UpdateWheel(WheelCollider col, Transform trans) 
     {

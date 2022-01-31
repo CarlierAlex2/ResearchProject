@@ -2,6 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+/// <summary> 
+/// Component that generates a grid. Based on the implementation of Code Monkey.
+/// Link: https://unitycodemonkey.com/video.php?v=waEsGu--9P8
+/// </summary>
 public class Grid<TGridObject>
 {
     // --- VARIABLES ------------------------------------------------------------------
@@ -55,7 +60,7 @@ public class Grid<TGridObject>
 
     private void CreateTextGrid(bool setActive)
     {
-        Debug.Log("Grid: " + width + " - "  + height);
+        //Debug.Log("Grid: " + width + " - "  + height);
         Color color = Color.white;
 
         for(int x = 0; x < gridArray.GetLength(0); x++)

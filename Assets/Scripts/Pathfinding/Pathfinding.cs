@@ -2,6 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+/// <summary> 
+/// Component that generates a pathfinding grid. Based on the implementation of Code Monkey.
+/// Link: https://unitycodemonkey.com/video.php?v=alU04hvz6L4 
+/// </summary>
 public class Pathfinding
 {
     private const int MOVE_STRAIGHT_COST = 10;
