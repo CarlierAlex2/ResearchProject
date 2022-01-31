@@ -7,8 +7,8 @@ using Unity.MLAgents.Sensors;
 
 
 /// <summary> 
-/// Defines the agent's behavior.
-/// <para>This class inherits from the agent class from the Unity ML-Agents Toolkit</para> 
+/// Component that defines the agent's behavior.
+/// <para>This class inherits from the agent class from the Unity ML-Agents Toolkit.</para> 
 /// <para>Github: https://github.com/Unity-Technologies/ml-agents</para> 
 /// </summary>
 public class CarAgent6 : Agent
